@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -18,13 +20,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Bitter", serif;
+    /* font-family: "Poppins", sans-serif; */
     scroll-behavior: smooth;
     color-scheme: light; /* Use light color scheme by default */
   }
+  .swiper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .swiper-slide {
+    text-align: center !important;
+    font-size: 18px !important;
+    background: #fff !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .swiper-slide img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .swiper-pagination-bullet {
+    @apply !bg-white !border-2 !opacity-100 !border-white !transition-colors !duration-300;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply !w-3 !h-3 !bg-transparent !border-2 !border-white;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    @apply !text-white;
+  }
+
+  .swiper-pagination {
+    @apply flex justify-center items-center !bottom-5;
+  }
+
+
+
+  
 }
 
 @layer components {
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  .font-playfair {
+    font-family: "Playfair Display", serif;
+  }
+
   /* .bg-hero-pattern {
     background-image: url("./assets/herobg.png");
     background-position: center;
