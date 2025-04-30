@@ -7,7 +7,6 @@ function App() {
     <BrowserRouter>
       <div className="relative z-0 bg-white text-black">
         <Navbar />
-        test
       </div>
     </BrowserRouter>
   )
