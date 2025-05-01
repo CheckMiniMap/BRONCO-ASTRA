@@ -66,6 +66,10 @@
 }
 
 @layer components {
+  .aspect-1-1 {
+    aspect-ratio: 1 / 1;
+  }
+
   .font-poppins {
     font-family: "Poppins", sans-serif;
   }

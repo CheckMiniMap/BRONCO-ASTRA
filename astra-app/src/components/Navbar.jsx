@@ -14,7 +14,9 @@ const Navbar = () => {
       className={`${styles.paddingX} mx-64 w-full flex items-center fixed top-0 z-20 bg-white`}
     >
       <div className="w-full h-100% flex justify-between items-center py-3 mx-auto border-b-2 border-green-950">
-        <img src={logo} alt="logo" className="w-25 h-25" />
+        <Link to={`/`}>
+          <img src={logo} alt="logo" className="w-20 h-20" />
+        </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-5">
           {navLinks.map((link) => (

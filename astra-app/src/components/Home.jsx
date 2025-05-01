@@ -28,7 +28,7 @@ const Carousel = () => {
           <img src={carousel2} alt="Slide 2" className="w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-        <div className="absolute md:top-8 top-30 md:left-27 left-5 font-medium text-7xl text-left text-white z-2">
+        <div className="absolute md:top-8 top-5 md:left-27 left-15 font-medium md:text-7xl text-3xl text-left text-white z-2">
           <h1 className="font-playfair">Quick</h1>
           <h1 className="font-playfair pt-1">& Easy</h1>
           <div 
@@ -78,8 +78,8 @@ const HomeFooter = () => {
 
 const Home = () => {
   return (
-    <div className="relative w-full h-175 mt-31">
-      <div className="absolute top-5 right-5 font-semibold text-5xl text-right text-white z-2">
+    <div className="relative w-full mt-26">
+      <div className="absolute top-5 right-5 font-semibold md:text-5xl text-3xl text-right text-white z-2">
         <h1 className="font-poppins">PROJECT</h1>
         <h1 className="font-poppins pt-3">ASTRA 2025</h1>
       </div>
