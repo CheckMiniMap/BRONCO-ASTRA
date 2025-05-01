@@ -47,9 +47,9 @@ const Carousel = () => {
 
 const HomeContent = () => {
   return (
-    <section className="flex flex-col lg:flex-row gap-5 w-full h-auto pt-10">
-      <img src={placeholder} alt="Placeholder" className="w-full lg:w-1/2 object-cover" />
-      <div className="">
+    <section className="grid justify-items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10">
+      <img src={placeholder} alt="Placeholder" className="w-full object-cover" />{/*w-8/10 lg:w-full*/}
+      <div className="w-auto">
         <h1 className="font-poppins font-semibold text-6xl">ABOUT</h1>
         <p className="pt-5">{homeContent.p1}</p>
         <p className="pt-5">{homeContent.p2}</p>
@@ -78,7 +78,7 @@ const HomeFooter = () => {
 
 const Home = () => {
   return (
-    <div className="relative w-full mt-26">
+    <div className="relative w-full mt-26">{/*  h-150 */}
       <div className="absolute top-5 right-5 font-semibold md:text-5xl text-3xl text-right text-white z-2">
         <h1 className="font-poppins">PROJECT</h1>
         <h1 className="font-poppins pt-3">ASTRA 2025</h1>
