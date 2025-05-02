@@ -1,4 +1,4 @@
-import { leochen, ashtonvogel, hannahhornung, joshuaestrada, maxgross, danielleking } from "../assets";
+import { placeholder, leochen, ashtonvogel, hannahhornung, joshuaestrada, maxgross, danielleking, stephenposner, lizethgallegos, jacknajarian, carlomaldonado } from "../assets";
 
 export const navLinks = [
   {
@@ -134,6 +134,290 @@ const team = {
       ],
       object: "[90%_20%]"
     },
+  ],
+
+
+
+  teams: [
+    {
+      header: "UAV Design",
+      leads: [
+        {
+          name: "Leo Chen",
+          img: leochen,
+        },
+      ],
+      members: [
+        {
+          name: "Stephen Posner",
+          img: stephenposner,
+        },
+        {
+          name: "Lizeth Gallegos",
+          img: lizethgallegos,
+        },
+        {
+          name: "Jack Najarian",
+          img: jacknajarian,
+        },
+        {
+          name: "Carlo Maldonado",
+          img: carlomaldonado,
+        },
+      ],
+      content: [
+        {
+          text: `Our UAV Design Subteam was responsible for the structural, aerodynamic, and mechanical aspects of Project Astra’s quadcopter. From initial concept to final assembly, our team ensured the aircraft was lightweight, durable, and optimized for performance.`,
+          img: placeholder,
+        },
+        {
+          text: `We focused on airframe design and material selection, ensuring that our UAV met all requirements for flight capability, size, collapsibility, and weight while maximizing efficiency. Our team worked closely with Systems Engineering to make evidence-backed, logic-driven design decisions and collaborated with Autonomous Navigation and Payload to ensure seamless system integration.`,
+          img: placeholder,
+        },
+        {
+          text: `Through CAD modeling, simulations, and physical prototyping, we refined our design to maximize stability, maneuverability, and payload capacity. Our team successfully built a highly reliable and efficient UAV capable of executing complex autonomous missions with precision.`,
+          img: placeholder,
+        }
+      ]
+    },
+    {
+      header: "Electrical Integration",
+      leads: [
+        {
+          name: "Ashton Vogel",
+          img: ashtonvogel,
+        },
+      ],
+      members: [
+        {
+          name: "John Fernandez",
+          img: johnfernandez,
+        },
+        {
+          name: "Justine Gabuya",
+          img: justinegabuya,
+        },
+        {
+          name: "Waamiq Sharrar",
+          img: waamiqsharrar,
+        },
+        {
+          name: "Issac Gutierrez",
+          img: issacgutierrez,
+        },
+      ],
+      content: [
+        {
+          text: `The Electrical Integration Subteam played a crucial role in ensuring seamless communication and power distribution across all subsystems of our UAV. Our team was responsible for helping the other subteams with electrical connections, integrating power systems, and ensuring that all components worked together effectively.`,
+          img: placeholder,
+        },
+        {
+          text: `We facilitated the integration of sensors, cameras, motors, and control systems, making sure that each electrical component was properly connected and functional. Our team worked closely with the UAV Design, Payload, Autonomous Navigation, Obstacle Avoidance, and Object Detection teams to ensure that power requirements were met and that electrical signals were transmitted accurately across the system.`,
+          img: placeholder,
+        },
+        {
+          text: `Through careful planning and precise execution, we ensured that the UAV's electrical systems operated reliably, enabling smooth functionality for all subsystems during autonomous missions. Our goal was to support the overall development process, ensuring that the electrical systems contributed to the UAV's high performance, reliability, and safety during competition.`,
+          img: placeholder,
+        }
+      ]
+    },
+    {
+      header: "Autonomous Navigation",
+      leads: [
+        {
+          name: "Ashton Vogel",
+          img: ashtonvogel,
+        },
+        {
+          name: "Leo Chen",
+          img: leochen,
+        },
+      ],
+      members: [
+        {
+          name: "Thein Nam Anh Vu",
+          img: theinnamanhvu,
+        },
+      ],
+      content: [
+        {
+          text: `The Autonomous Navigation Subteam developed the systems that allowed our UAV to navigate autonomously through complex environments. Using advanced algorithms, our team ensured that the UAV could take off, fly, and land without manual control, following predefined flight paths with high precision.`,
+          img: placeholder,
+        },
+        {
+          text: `We integrated data from the UAV’s sensors, including GPS, LiDAR, and cameras, to create a comprehensive understanding of the environment and enabled smooth, autonomous flight. The navigation system was designed to adjust in real time, making dynamic decisions to optimize flight routes and avoid obstacles.`,
+          img: placeholder,
+        },
+        {
+          text: `Our goal was to build a navigation system that guaranteed accurate and reliable autonomous performance, ensuring the UAV could execute complex missions with precision, while maintaining safety and efficiency throughout its operation.`,
+          img: placeholder,
+        }
+      ]
+    },
+    {
+      header: "Payload",
+      leads: [
+        {
+          name: "Hannah Hornung",
+          img: hannahhornung,
+        }
+      ],
+      members: [
+        {
+          name: "Sergio Jimenez",
+          img: sergiojimenez,
+        },
+        {
+          name: "Elias Diosdado",
+          img: eliasdiosdado,
+        },
+        {
+          name: "Federico Serrano",
+          img: federicoserrano,
+        },
+      ],
+      content: [
+        {
+          text: `The Payload Subteam was responsible for designing and integrating the systems that allowed our UAV to carry and deploy multiple payloads during the competition. We focused on creating precise payload mechanisms to ensure safe and accurate deployment of up to four strobing beacons from 50-75 feet to designated targets.`,
+          img: placeholder,
+        },
+        {
+          text: `We worked closely with the UAV Design and Object Detection teams to ensure seamless integration, making sure the payload system was lightweight, efficient, and reliable. Through careful engineering, we developed a system that could handle payload deployment autonomously, based on visual cues from the UAV’s object detection system.`,
+          img: placeholder,
+        },
+        {
+          text: `Our goal was to create a payload system that not only met competition requirements but also enhanced the UAV's overall performance, ensuring it could execute precise, autonomous missions with high reliability and efficiency.`,
+          img: placeholder,
+        }
+      ]
+    },
+    {
+      header: "Object Recognition",
+      leads: [
+        {
+          name: "Joshua Estrada",
+          img: joshuaestrada,
+        }
+      ],
+      members: [
+        {
+          name: "Annika Ruggles",
+          img: annikaruggles,
+        },
+        {
+          name: "Ryan Tran",
+          img: ryantran,
+        },
+        {
+          name: "John Germing",
+          img: johngerming,
+        },
+        {
+          name: "Andrew Valdez",
+          img: andrewvaldez,
+        },
+        {
+          name: "Jimmy Nguyen",
+          img: jimmynguyen,
+        },
+      ],
+      content: [
+        {
+          text: `The Object Detection Subteam was responsible for enabling our UAV to autonomously identify and interact with objects on the ground, which were provided by the competition ahead of time. We developed and refined the UAV’s ability to detect and recognize specific targets using advanced computer vision algorithms.`,
+          img: placeholder,
+        },
+        {
+          text: `In addition to simulations, we trained our object detection system using real camera footage captured from the drone itself. This approach allowed us to fine-tune the system for real-world conditions, ensuring accurate object recognition during the competition. The onboard system processed visual data to support tasks such as payload deployment and area mapping, ensuring the UAV operated effectively and autonomously.`,
+          img: placeholder,
+        },
+        {
+          text: `Our focus was on optimizing the accuracy, speed, and reliability of the object detection system, allowing the UAV to interact seamlessly with objects in dynamic, real-world environments.`,
+          img: placeholder,
+        }
+      ]
+    },
+    {
+      header: "LiDAR",
+      leads: [
+        {
+          name: "Max Gross",
+          img: maxgross,
+        }
+      ],
+      members: [
+        {
+          name: "Ethan Ngo",
+          img: ethanngo,
+        },
+        {
+          name: "Kevin Kopcinski",
+          img: kevinkopcinski,
+        },
+        {
+          name: "Ethan McKendell",
+          img: ethanmckendell,
+        },
+        {
+          name: "Sneha Ramakrishnan",
+          img: sneharamakrishnan,
+        },
+      ],
+      content: [
+        {
+          text: `The Obstacle Avoidance Subteam equipped our UAV with the ability to detect and avoid obstacles during autonomous flight using a LiDAR (Light Detection and Ranging) system. Our team focused on integrating this cutting-edge technology to enhance the UAV's situational awareness, allowing it to navigate safely through complex environments.`,
+          img: placeholder,
+        },
+        {
+          text: `By utilizing the LiDAR system, we generated a detailed 3D map of the surroundings in real time, enabling the UAV to identify obstacles and make autonomous flight path adjustments. This system ensured that the UAV could avoid collisions, maintain stable flight, and complete missions without manual intervention.`,
+          img: placeholder,
+        },
+        {
+          text: `Our goal was to develop an obstacle avoidance system that operated seamlessly with other subsystems, contributing to the UAV’s overall reliability and safety during competition missions. By focusing on precision, safety, and autonomy, we succeeded in enabling our UAV to navigate even the most challenging environments with confidence.`,
+          img: placeholder,
+        }
+      ]
+    },
+    {
+      header: "Systems",
+      leads: [
+        {
+          name: "Danielle King",
+          img: danielleking,
+        }
+      ],
+      members: [
+        {
+          name: "Alissa Everman",
+          img: alissaeverman,
+        },
+        {
+          name: "Ricardo Paz",
+          img: ricardopaz,
+        },
+        {
+          name: "Adrian Spitzzeri",
+          img: adrianspitzzeri,
+        },
+      ],
+      content: [
+        {
+          text: `The Systems Subteam was responsible for overseeing the aerospace systems within the UAV, ensuring that every component worked together to create a functional and efficient aircraft. We handled everything from the conceptual design review and preliminary design review to system integration, ensuring that all subsystems performed optimally throughout the development process.`,
+          img: placeholder,
+        },
+        {
+          text: `Our responsibilities extended beyond just the technical aspects of the UAV. We were also tasked with creating the technical report, producing a safety video, and developing the team website. We ensured that all aspects of the project were well-documented, adhering to the highest standards of engineering and safety practices.`,
+          img: placeholder,
+        },
+        {
+          text: `The Systems Subteam played a critical role in coordinating the entire project, ensuring smooth communication between teams, managing documentation, and conducting reviews. By balancing technical development with comprehensive reporting and safety protocols, we ensured that the UAV was ready for competition and capable of performing complex autonomous missions.`,
+          img: placeholder,
+        }
+      ]
+    },
+
+
+
+
   ]
 }
 

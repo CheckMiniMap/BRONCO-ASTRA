@@ -16,6 +16,10 @@ import hannahhornung from "./people/hannah-hornung.jpg";
 import joshuaestrada from "./people/joshua-estrada.jpg";
 import maxgross from "./people/max-gross.jpg";
 import danielleking from "./people/danielle-king.jpg";
+import stephenposner from "./people/stephen-posner.jpg";
+import lizethgallegos from "./people/lizeth-gallegos.jpg";
+import jacknajarian from "./people/jack-najarian.jpg";
+import carlomaldonado from "./people/carlo-maldonado.jpg";
 
 export {
   logo,
@@ -33,4 +37,8 @@ export {
   joshuaestrada,
   maxgross,
   danielleking,
+  stephenposner,
+  lizethgallegos,
+  jacknajarian,
+  carlomaldonado,
 };

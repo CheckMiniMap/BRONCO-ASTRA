@@ -1,13 +1,5 @@
 import React from 'react';
-import { Hero, ProjectLead, SubteamLeads } from './team_sections';
-
-const UAVDesignSection = () => {
-  return (
-    <section className="">
-
-    </section>
-  );
-}
+import { Hero, ProjectLead, SubteamLeads, AllTeamsSections, ProjectAdvisor, Sponsors } from './team_sections';
 
 const Team = () => {
   return (
@@ -15,6 +7,9 @@ const Team = () => {
       <Hero />
       <ProjectLead />
       <SubteamLeads />
+      <AllTeamsSections />
+      <ProjectAdvisor />
+      <Sponsors />
     </div>
   )
 }
