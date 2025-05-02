@@ -138,11 +138,10 @@ const team = {
     },
   ],
 
-
-
   teams: [
     {
       header: "UAV Design",
+      id: "uav-design",
       leads: [
         {
           name: "Leo Chen",
@@ -191,6 +190,7 @@ const team = {
     },
     {
       header: "Electrical Integration",
+      id: "electrical-integration",
       leads: [
         {
           name: "Ashton Vogel",
@@ -239,6 +239,7 @@ const team = {
     },
     {
       header: "Autonomous Navigation",
+      id: "autonomous-navigation",
       leads: [
         {
           name: "Ashton Vogel",
@@ -275,6 +276,7 @@ const team = {
     },
     {
       header: "Payload",
+      id: "payload",
       leads: [
         {
           name: "Hannah Hornung",
@@ -319,6 +321,7 @@ const team = {
     },
     {
       header: "Object Recognition",
+      id: "object-recognition",
       leads: [
         {
           name: "Joshua Estrada",
@@ -371,6 +374,7 @@ const team = {
     },
     {
       header: "LiDAR",
+      id: "lidar",
       leads: [
         {
           name: "Max Gross",
@@ -417,6 +421,7 @@ const team = {
     },
     {
       header: "Systems",
+      id: "systems",
       leads: [
         {
           name: "Danielle King",

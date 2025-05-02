@@ -119,7 +119,7 @@ const TeamSection = ({ team }) => {
   const WrappedContentSection = SectionWrapper(ContentSection, '');
 
   return (
-    <section className="flex flex-col items-center w-full h-auto pt-10">
+    <section className="flex flex-col items-center w-full h-auto pt-10" id={team.id}>
       <motion.h1 variants={fadeIn("up", "spring", 0.5, 0.75)} className="font-poppins text-5xl font-semibold">
         {team.header}
       </motion.h1>

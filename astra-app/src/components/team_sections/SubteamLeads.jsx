@@ -21,7 +21,12 @@ const SubteamProfileCard = ({ index, profile }) => {
               onClick={() => {
                 const element = document.getElementById(title.id);
                 if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
+                  const offset = element.offsetTop; // Get the element's position relative to the top of the page
+                  window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth', // Use 'smooth' for a smooth scroll effect
+                  });
+                  //element.scrollIntoView({ behavior: 'instant', block: 'start' });
                 }
               }}
             >
