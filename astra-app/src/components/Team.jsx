@@ -1,5 +1,5 @@
-import React from 'react';
 import { Hero, ProjectLead, SubteamLeads, AllTeamsSections, ProjectAdvisor, Sponsors } from './team_sections';
+import { Footer } from '../components';
 
 const Team = () => {
   return (
@@ -10,6 +10,7 @@ const Team = () => {
       <AllTeamsSections />
       <ProjectAdvisor />
       <Sponsors />
+      <Footer />
     </div>
   )
 }

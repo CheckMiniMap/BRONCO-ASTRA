@@ -25,6 +25,11 @@
     scroll-behavior: smooth;
     color-scheme: light; /* Use light color scheme by default */
   }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
   .swiper {
     width: 100% !important;
     height: 100% !important;
@@ -66,8 +71,15 @@
 }
 
 @layer components {
+  .hexagon {
+    clip-path: polygon( 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
   .aspect-1-1 {
     aspect-ratio: 1 / 1;
+  }
+
+  .aspect-5-6 {
+    aspect-ratio: 0.8;
   }
 
   .font-poppins {

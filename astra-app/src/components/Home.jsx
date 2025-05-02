@@ -1,8 +1,8 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 import { carousel1, carousel2, carousel3, placeholder } from '../assets';
 import { homeContent } from '../constants';
+import { Footer } from '../components';
 
 const Carousel = () => {
   return (
@@ -85,7 +85,7 @@ const Home = () => {
       </div>
       <Carousel />
       <HomeContent />
-      <HomeFooter />
+      <Footer />
     </div>
   )
 }

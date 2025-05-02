@@ -1,9 +1,32 @@
-import React from 'react'
+import { team } from '../../constants';
+import { SectionWrapper } from '../../hoc';
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from '../../utils/motion';
+
+const SponsorsSection = () => {
+  return (
+    <motion.div
+      variants={fadeIn("", "spring", 0.5, 0.75)}
+      className="flex flex-col items-center w-full max-w-[968px] gap-10 pt-15"
+    >
+      <h1 className="font-poppins font-semibold text-4xl sm:text-5xl">{team.sponsors.title}</h1>
+      <div className="relative flex sm:flex-row flex-col sm:items-start items-center w-full gap-5">
+        <div className="bg-white rounded-lg drop-shadow-md/25">
+          <img src={team.sponsors.img} alt={team.sponsors.alt} className="w-full object-fit rounded-lg" />
+        </div>
+        
+        <p className="text-base md:text-lg w-auto"><span className="ml-5"/>{team.advisor.description}</p>
+      </div>
+    </motion.div>
+  )
+}
 
 const Sponsors = () => {
+  const WrappedSponsorsSection = SectionWrapper(SponsorsSection, "project-advisor");
+
   return (
-    <div>
-      
+    <div className="flex justify-center w-full">
+      <WrappedSponsorsSection />
     </div>
   )
 }
