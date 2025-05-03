@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Team from './Team';
 import Drone from './Drone';
 import Timeline from './Timeline';
+import Tips from './Tips';
 
 export {
   Navbar,
@@ -12,4 +13,5 @@ export {
   Team,
   Drone,
   Timeline,
+  Tips
 };

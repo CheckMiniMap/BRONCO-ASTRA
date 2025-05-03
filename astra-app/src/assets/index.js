@@ -4,13 +4,14 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import placeholder from "./placeholder.svg";
 import lab1 from "./cover/lab1.jpg";
-import carousel1 from "./carousel/carousel1.JPG";
-import carousel2 from "./carousel/carousel2.JPG";
-import carousel3 from "./carousel/carousel3.JPG";
+import carousel1 from "./carousel/carousel1.png";
+import carousel2 from "./carousel/carousel2.png";
+import carousel3 from "./carousel/carousel3.png";
 import lockheed from "./lockheed-martin.png";
 import uav2 from "./uav2.JPG";
 import payload2 from "./payload2.JPG";
 import systems1 from "./systems1.webp";
+import meettheteam from "./meet-the-team.png";
 
 // People
 import adrianspitzzeri from "./people/adrian-spitzzeri.png";
@@ -60,6 +61,7 @@ export {
   uav2,
   payload2,
   systems1,
+  meettheteam,
 
   // People (alphabetical)
   adrianspitzzeri,

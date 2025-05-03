@@ -120,15 +120,17 @@ const ContentSection = ({ team }) => {
 }
 
 const TeamSection = ({ team }) => {
+  const WrappedCommonHeader = SectionWrapper(CommonHeader, '');
   const WrappedLeadsSection = SectionWrapper(LeadsSection, '');
   const WrappedMembersSection = SectionWrapper(MembersSection, '');
   const WrappedContentSection = SectionWrapper(ContentSection, '');
 
   return (
     <section className="flex flex-col items-center w-full h-auto pt-10" id={team.id}>
-      <motion.h1 variants={fadeIn("up", "spring", 0.5, 0.75)} className="font-poppins text-5xl font-semibold">
+      {/* <motion.h1 variants={fadeIn("up", "spring", 0.5, 0.75)} className="font-poppins text-5xl font-semibold">
         {team.header}
-      </motion.h1>
+      </motion.h1> */}
+      <WrappedCommonHeader text={team.header} />
       <WrappedLeadsSection team={team} />
       <WrappedMembersSection team={team} />
       <WrappedContentSection team={team} />
@@ -136,9 +138,34 @@ const TeamSection = ({ team }) => {
   )
 }
 
+const CommonHeader = ({ text }) => {
+  return (
+    <motion.h1 variants={textVariant()} className="font-poppins text-5xl font-semibold pt-10">
+        {text}
+    </motion.h1>
+    // fadeIn("up", "spring", 0.5, 0.75)
+  )
+}
+
+const MeetTheTeam = () => {
+  return (
+    <motion.img 
+        variants={fadeIn("down", "spring", 0.5, 0.75)}
+        src={team.teamsHeaderSection.img}
+        alt={team.teamsHeaderSection.alt}
+        className="md:w-[60vw] w-[100vw] max-h-[600px] object-cover"
+      />
+  )
+}
+
 const AllTeamsSections = () => {
+  const WrappedCommonHeader = SectionWrapper(CommonHeader, '');
+  const WrappedMeetTheTeam = SectionWrapper(MeetTheTeam, '');
+
   return (
     <section className="flex flex-col items-center gap-5 w-full h-auto pt-10">
+      <WrappedCommonHeader text={team.teamsHeaderSection.title} />
+      <WrappedMeetTheTeam />
       {team.teams.map((team, index) => (
         <TeamSection key={index} team={team} />
       ))}
@@ -146,4 +173,4 @@ const AllTeamsSections = () => {
   )
 }
 
-export default AllTeamsSections
+export default SectionWrapper(AllTeamsSections, '');

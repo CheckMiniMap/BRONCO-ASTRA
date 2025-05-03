@@ -44,10 +44,11 @@
     align-items: center !important;
   }
   .swiper-slide img {
-    display: block !important;
+    @apply !block !w-full md:h-[750px] h-[400px] !object-cover;
+    /* display: block !important;
     width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
+    height: 500px !important;
+    object-fit: cover !important; */
   }
   .swiper-pagination-bullet {
     @apply !bg-white !border-2 !opacity-100 !border-white !transition-colors !duration-300;

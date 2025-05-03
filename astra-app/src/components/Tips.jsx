@@ -1,7 +1,7 @@
 import {  } from './team_sections';
 import { Footer } from '../components';
 
-const Timeline = () => {
+const Tips = () => {
   return (
     <div className="relative w-full mt-31">
       
@@ -11,4 +11,4 @@ const Timeline = () => {
   )
 }
 
-export default Timeline
+export default Tips

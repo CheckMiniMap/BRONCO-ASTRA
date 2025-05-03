@@ -1,4 +1,4 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, uav2, payload2, systems1 } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, uav2, payload2, systems1, meettheteam } from "../assets";
 
 export const navLinks = [
   {
@@ -17,6 +17,10 @@ export const navLinks = [
     id: "timeline",
     title: "Timeline",
   },
+  {
+    id: "tips",
+    title: "Tips",
+  }
 ];
 
 const homeContent = {
@@ -110,8 +114,8 @@ const team = {
       object: "object-[0%_50%]",
       titles: [
         {
-          title: "LiDAR",
-          id: "lidar"
+          title: "Obstacle Avoidance",
+          id: "obstacle-avoidance"
         }
       ],
       description: [
@@ -138,6 +142,12 @@ const team = {
     },
   ],
 
+  teamsHeaderSection: 
+  {
+    title: "Meet The Team",
+    img: meettheteam,
+    alt: "Matthew and Ben test flying drone at field.",
+  },
   teams: [
     {
       header: "UAV Design",
@@ -375,8 +385,8 @@ const team = {
       ]
     },
     {
-      header: "LiDAR",
-      id: "lidar",
+      header: "Obstacle Avoidance",
+      id: "obstacle-avoidance",
       leads: [
         {
           name: "Max Gross",

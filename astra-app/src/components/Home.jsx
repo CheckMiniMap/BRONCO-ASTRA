@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
-import { carousel1, carousel2, carousel3, placeholder } from '../assets';
+import { carousel1, carousel2, carousel3, logo, placeholder } from '../assets';
 import { homeContent } from '../constants';
 import { Footer } from '../components';
 
@@ -22,12 +22,13 @@ const Carousel = () => {
         className="" // mySwiper
       >
         <SwiperSlide>
-          <img src={carousel1} alt="Slide 1" className="w-full h-full object-cover" />
+          <img src={carousel1} alt="Slide 1" className="object-[20%_80%]" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={carousel2} alt="Slide 2" className="w-full h-full object-cover" />
+          <img src={carousel2} alt="Slide 2" className="object-top" />
         </SwiperSlide>
         <SwiperSlide>
+          <img src={carousel3} alt="Slide 3" className="object-top" />
         {/* <div className="absolute md:top-8 top-5 md:left-27 left-15 font-medium md:text-7xl text-3xl text-left text-white z-2">
           <h1 className="font-playfair">Quick</h1>
           <h1 className="font-playfair pt-1">& Easy</h1>
@@ -49,7 +50,6 @@ const Carousel = () => {
             <h3 className="font-playfair font-normal text-lg">Read More</h3>
           </div>
         </div> */}
-          <img src={carousel3} alt="Slide 3" className="w-full h-full object-cover" />
         </SwiperSlide>
       </Swiper>
     </>
@@ -58,10 +58,10 @@ const Carousel = () => {
 
 const HomeContent = () => {
   return (
-    <section className="grid justify-items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10" id="about">
-      <img src={placeholder} alt="Placeholder" className="w-full object-cover" />{/*w-8/10 lg:w-full*/}
+    <section className="grid justify-items-center items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10" id="about">
+      <img src={logo} alt="Bronco Astra Logo" className="w-full max-w-[500px] object-cover" />{/*w-8/10 lg:w-full*/}
       <div className="w-auto">
-        <h1 className="font-poppins font-semibold text-6xl">ABOUT</h1>
+        <h1 className="font-poppins font-semibold text-6xl ">ABOUT</h1>
         <p className="pt-5">{homeContent.p1}</p>
         <p className="pt-5">{homeContent.p2}</p>
         <p className="pt-5">{homeContent.p3}</p>
@@ -74,8 +74,8 @@ const Home = () => {
   return (
     <div className="relative w-full mt-26">{/*  h-150 */}
       <div className="absolute top-5 right-5 font-semibold md:text-5xl text-3xl text-right text-white z-2">
-        <h1 className="font-poppins">PROJECT</h1>
-        <h1 className="font-poppins pt-3">ASTRA 2025</h1>
+        <h1 className="font-poppins drop-shadow-lg/25">PROJECT</h1>
+        <h1 className="font-poppins pt-3 drop-shadow-lg/25">ASTRA 2025</h1>
       </div>
       <Carousel />
       <HomeContent />

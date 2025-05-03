@@ -1,9 +1,12 @@
-import React from 'react'
+import {  } from './team_sections';
+import { Footer } from '../components';
 
 const Drone = () => {
   return (
-    <div>
-      Drone
+    <div className="relative w-full mt-31">
+      
+
+      <Footer />
     </div>
   )
 }
