@@ -28,16 +28,27 @@ const Carousel = () => {
           <img src={carousel2} alt="Slide 2" className="w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-        <div className="absolute md:top-8 top-5 md:left-27 left-15 font-medium md:text-7xl text-3xl text-left text-white z-2">
+        {/* <div className="absolute md:top-8 top-5 md:left-27 left-15 font-medium md:text-7xl text-3xl text-left text-white z-2">
           <h1 className="font-playfair">Quick</h1>
           <h1 className="font-playfair pt-1">& Easy</h1>
           <div 
             className="flex justify-center items-center w-35 h-10 border-1 border-white 
-            hover:bg-white hover:text-black duration-300 ease-in-out mt-3"
+            hover:bg-white hover:text-black duration-300 ease-in-out mt-3 cursor-pointer"
+            onClick={() => {
+              const element = document.getElementById("about");
+              if (element) {
+                const offset = element.offsetTop; // Get the element's position relative to the top of the page
+                window.scrollTo({
+                  top: offset,
+                  behavior: 'smooth', // Use 'smooth' for a smooth scroll effect
+                });
+                //element.scrollIntoView({ behavior: 'instant', block: 'start' });
+              }
+            }}
           >
             <h3 className="font-playfair font-normal text-lg">Read More</h3>
           </div>
-        </div>
+        </div> */}
           <img src={carousel3} alt="Slide 3" className="w-full h-full object-cover" />
         </SwiperSlide>
       </Swiper>
@@ -47,7 +58,7 @@ const Carousel = () => {
 
 const HomeContent = () => {
   return (
-    <section className="grid justify-items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10">
+    <section className="grid justify-items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10" id="about">
       <img src={placeholder} alt="Placeholder" className="w-full object-cover" />{/*w-8/10 lg:w-full*/}
       <div className="w-auto">
         <h1 className="font-poppins font-semibold text-6xl">ABOUT</h1>
@@ -57,23 +68,6 @@ const HomeContent = () => {
       </div>
     </section>
   )
-}
-
-const HomeFooter = () => {
-  return (
-    <section className="flex flex-col lg:justify-center items-center lg:flex-row lg:gap-20 gap-10 w-full pt-15 pb-20">
-      <div className="flex flex-col sm:w-[420px] w-9/10">
-        <h1 className="font-poppins font-semibold text-3xl lg:min-w-[387px]">Contact Project Lead</h1>
-        <h4 className="pl-5 pt-1.5 font-semibold">Project Lead / Chief Engineer</h4>
-        <p className="pl-10">Matthew Romero: macornejo1@cpp.edu</p>
-      </div>
-      <div className="flex flex-col sm:w-[420px] w-9/10">
-        <h1 className="font-poppins font-semibold text-3xl lg:min-w-[387px]">Location</h1>
-        <p className="pl-5 pt-1.5 italic">California State Polytechnic University of Pomona</p>
-        <p className="pl-10">3801 West Temple Ave, Pomona, CA, 91768</p>
-      </div>
-    </section>
-  );
 }
 
 const Home = () => {

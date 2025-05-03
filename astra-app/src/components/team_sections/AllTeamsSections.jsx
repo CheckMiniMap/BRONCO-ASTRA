@@ -86,17 +86,23 @@ const ContentRow = ({ index, content }) => {
     >
       {isMobile ? (
         <>
-          <motion.img src={content.img} alt={content.alt} className="w-full h-50 md:h-60 object-cover" />
+          <div className="w-full h-50 md:h-60 overflow-hidden">
+            <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
+          </div>
           <motion.p key={index} className="text-base"><span className="ml-5"/>{content.text}</motion.p>
         </>
       ) : index % 2 === 0 ? (
         <>
           <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/>{content.text}</motion.p>
-          <motion.img src={content.img} alt={content.alt} className="w-full h-50 object-cover" />
+          <div className="w-full h-50 md:h-60 overflow-hidden">
+            <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
+          </div>
         </>
       ) : (
         <>
-          <motion.img src={content.img} alt={content.alt} className="w-full h-50 object-cover" />
+          <div className="w-full h-50 md:h-60 overflow-hidden">
+            <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
+          </div>
           <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/>{content.text}</motion.p>
         </>
       )}

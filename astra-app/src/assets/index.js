@@ -8,6 +8,9 @@ import carousel1 from "./carousel/carousel1.JPG";
 import carousel2 from "./carousel/carousel2.JPG";
 import carousel3 from "./carousel/carousel3.JPG";
 import lockheed from "./lockheed-martin.png";
+import uav2 from "./uav2.JPG";
+import payload2 from "./payload2.JPG";
+import systems1 from "./systems1.webp";
 
 // People
 import adrianspitzzeri from "./people/adrian-spitzzeri.png";
@@ -54,6 +57,9 @@ export {
   carousel2,
   carousel3,
   lockheed,
+  uav2,
+  payload2,
+  systems1,
 
   // People (alphabetical)
   adrianspitzzeri,

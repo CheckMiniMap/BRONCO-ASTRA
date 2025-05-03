@@ -1,4 +1,4 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, uav2, payload2, systems1 } from "../assets";
 
 export const navLinks = [
   {
@@ -178,8 +178,9 @@ const team = {
         },
         {
           text: `We focused on airframe design and material selection, ensuring that our UAV met all requirements for flight capability, size, collapsibility, and weight while maximizing efficiency. Our team worked closely with Systems Engineering to make evidence-backed, logic-driven design decisions and collaborated with Autonomous Navigation and Payload to ensure seamless system integration.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: uav2,
+          alt: "UAV Design Team Working",
+          object: "object-[0%_20%] scale-150 relative md:left-30 md:bottom-20 sm:left-20 sm:bottom-10 left-30 bottom-20"
         },
         {
           text: `Through CAD modeling, simulations, and physical prototyping, we refined our design to maximize stability, maneuverability, and payload capacity. Our team successfully built a highly reliable and efficient UAV capable of executing complex autonomous missions with precision.`,
@@ -309,8 +310,9 @@ const team = {
         },
         {
           text: `We worked closely with the UAV Design and Object Detection teams to ensure seamless integration, making sure the payload system was lightweight, efficient, and reliable. Through careful engineering, we developed a system that could handle payload deployment autonomously, based on visual cues from the UAV’s object detection system.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: payload2,
+          alt: "Payload Team Testing",
+          object: "object-[0%_40%]"
         },
         {
           text: `Our goal was to create a payload system that not only met competition requirements but also enhanced the UAV's overall performance, ensuring it could execute precise, autonomous missions with high reliability and efficiency.`,
@@ -448,8 +450,8 @@ const team = {
       content: [
         {
           text: `The Systems Subteam was responsible for overseeing the aerospace systems within the UAV, ensuring that every component worked together to create a functional and efficient aircraft. We handled everything from the conceptual design review and preliminary design review to system integration, ensuring that all subsystems performed optimally throughout the development process.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: systems1,
+          alt: "Systems Team",
         },
         {
           text: `Our responsibilities extended beyond just the technical aspects of the UAV. We were also tasked with creating the technical report, producing a safety video, and developing the team website. We ensured that all aspects of the project were well-documented, adhering to the highest standards of engineering and safety practices.`,
@@ -481,7 +483,7 @@ const team = {
     img: lockheed,
     alt: "Lockheed Martin Logo",
     header: "Lockheed Martin",
-    description: `We extend our gratitude to Lockheed Martin for their generous support and sponsorship. Their commitment to innovation and engineering excellence empowers us to push the boundaries of our project and achieve our goals. `
+    description: `We extend our gratitude to Lockheed Martin for their generous support and sponsorship. Their commitment to innovation and engineering excellence empowers us to push the boundaries of our project and achieve our goals.`
   }
 }
 

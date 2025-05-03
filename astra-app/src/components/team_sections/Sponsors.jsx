@@ -15,7 +15,7 @@ const SponsorsSection = () => {
           <img src={team.sponsors.img} alt={team.sponsors.alt} className="w-full object-fit rounded-lg" />
         </div>
         
-        <p className="text-base md:text-lg w-auto"><span className="ml-5"/>{team.advisor.description}</p>
+        <p className="text-base md:text-lg w-auto"><span className="ml-5"/>{team.sponsors.description}</p>
       </div>
     </motion.div>
   )
