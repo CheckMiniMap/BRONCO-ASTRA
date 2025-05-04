@@ -160,12 +160,10 @@ const MeetTheTeam = () => {
 
 const AllTeamsSections = () => {
   const WrappedCommonHeader = SectionWrapper(CommonHeader, '');
-  const WrappedMeetTheTeam = SectionWrapper(MeetTheTeam, '');
 
   return (
     <section className="flex flex-col items-center gap-5 w-full h-auto pt-10">
       <WrappedCommonHeader text={team.teamsHeaderSection.title} />
-      <WrappedMeetTheTeam />
       {team.teams.map((team, index) => (
         <TeamSection key={index} team={team} />
       ))}

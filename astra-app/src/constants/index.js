@@ -497,4 +497,118 @@ const team = {
   }
 }
 
-export { homeContent, team };
+const drone = {
+  about: [
+    {
+      title: "Payload",
+      description: `The payload system is designed to deliver mission-specific objects with precision. It integrates mechanical release mechanisms and structural supports to ensure accurate deployment under various flight conditions, while minimizing aerodynamic and structural impact on the drone.`,
+      btnTitle: "See Components",
+      btnLink: "",
+      img: placeholder,
+      alt: "placeholder",
+    },
+    {
+      title: "Battery",
+      description: `The power system centers around a custom-configured battery pack designed to meet high current demands from all subsystems. Emphasis is placed on energy density, discharge reliability, and safe thermal performance to support sustained autonomous operations.`,
+      btnTitle: "See Components",
+      btnLink: "",
+      img: placeholder,
+      alt: "placeholder",
+    },
+    {
+      title: "Propulsion",
+      description: `The propulsion system is responsible for generating thrust and enabling controlled flight through coordinated operation of motors, propellers, and electronic speed controllers (ESCs). Each component is selected based on performance metrics such as thrust-to-weight ratio, efficiency, and thermal behavior to ensure reliable and responsive flight dynamics.`,
+      btnTitle: "See Components",
+      btnLink: "",
+      img: placeholder,
+      alt: "placeholder",
+    },
+    {
+      title: "Structure",
+      description: `The airframe is constructed using lightweight, high-strength materials—primarily carbon fiber—to optimize strength-to-weight ratio and structural rigidity. The design prioritizes aerodynamic efficiency, modular assembly, and durability under both static and dynamic loading during flight.`,
+      btnTitle: "See Components",
+      btnLink: "",
+      img: placeholder,
+      alt: "placeholder",
+    },
+    {
+      title: "Software",
+      description: `The software stack enables autonomous operation through coordinated communication between flight controllers, onboard processors, and ground control systems. It encompasses waypoint navigation, object recognition, data processing, and safety protocols to support real-time decision-making and control.`,
+      btnTitle: "See Components",
+      btnLink: "",
+      img: placeholder,
+      alt: "placeholder",
+    },
+    {
+      title: "Avionics",
+      description: `The avionics system integrates sensors, processors, and communication modules to facilitate real-time data acquisition, feedback control, and telemetry. Components are selected for their reliability, latency performance, and compatibility with autonomous flight frameworks.`,
+      btnTitle: "See Components",
+      btnLink: "",
+      img: placeholder,
+      alt: "placeholder",
+    },
+  ],
+  allComponents: [
+    {
+      header: "Payload",
+      id: "payload",
+      components: [
+        {
+          img: placeholder,
+          alt: "placeholder",
+          title: "Servo Motors",
+          titleDescription: "– Miuzei 20 KG High Torque RC Servo",
+          description: `This high-torque servo motor is used to control the mechanical hook in the payload drop mechanism. Its strength and reliability allow it to clamp down or release the pulley system with precision, ensuring the payload is securely held and released only when commanded. The servo is powered and controlled by the Pixhawk, allowing for synchronized autonomous or manual payload deployment during the mission.`,
+          bullets: [
+            {
+              point: `Torque: Up to 28 in-lb`,
+            },
+            {
+              point: `Operating Voltage: 4.8V – 6.8V`,
+            },
+            {
+              point: `Speed: ~0.16 sec/60° @ 6.8V`,
+            },
+            {
+              point: `Control Signal: Standard PWM`,
+            },
+            {
+              point: `Rotation Range: ~180°`,
+            },
+            {
+              point: `Dimensions: ~40.5 × 20 × 40.3 mm`,
+            },
+            {
+              point: `Weight: ~60 g`,
+            },
+          ]
+        },
+
+        {
+          img: placeholder,
+          alt: "placeholder",
+          title: "Drop Mechanism",
+          description: `Our drop mechanism is a servo-actuated pulley capture system designed for controlled payload deployment. The servo, powered by the Pixhawk, actuates a hook that locks onto a slotted pulley holding the drop string. A LEGO gear is integrated to modulate the pulley’s rotation, preventing the payload dropping in free fall. Bearings allow smoother rotation of the pulley system, reducing disturbances during flight. A limit switch confirms the string is in place and signals when the cutting sequence can safely initiate. The full assembly mounts directly to the UAV’s housing unit and integrates with the cutting mechanism for precise, automated payload release.`,
+        },
+
+        {
+          img: placeholder,
+          alt: "placeholder",
+          title: "Cutting Mechanism",
+          description: `The cutting mechanism is responsible for severing the string that controls payload release. In this design, the string is delivered with the beacon but will be tied in a way that is easily separated once delivered. The mechanism is powered by the same high-torque servo motor used in the drop mechanism, connected directly to a pair of scissors. When activated by the Pixhawk, the servo rotates to close the blades and cut the string. The design prioritizes simplicity and reliability, with the scissors securely held in place and a housing unit supporting the servo.`,
+        },
+      ]
+    },
+
+
+
+
+
+
+
+
+
+  ]
+}
+
+export { homeContent, team, drone };
