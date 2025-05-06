@@ -5,6 +5,22 @@ import { Header1 } from '../common';
 import { drone } from '../../constants';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+function getElementHeightWithMargin(element) {
+  const computedStyle = window.getComputedStyle(element);
+  const height = element.offsetHeight;
+  const marginTop = parseInt(computedStyle.marginTop, 10) || 0;
+  const marginBottom = parseInt(computedStyle.marginBottom, 10) || 0;
+
+  return height + marginTop + marginBottom;
+}
+
+function getElementYPosition(element) {
+  const rect = element.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const elementHeight = getElementHeightWithMargin(element);
+  return rect.top + scrollTop - 147;
+}
+
 const AboutCard = ({ about, index }) => {
   return (
     <motion.div
@@ -16,7 +32,20 @@ const AboutCard = ({ about, index }) => {
 
       <div 
         className="flex justify-center items-center w-60 h-12 bg-blue-900 text-white hover:bg-blue-700 cursor-pointer"
-        onClick={() => window.open(about.btnLink, '_blank')}
+        onClick={() => {
+          const element = document.getElementById(about.id);
+          const topPos = getElementYPosition(element);
+          //const topPos = element.offsetTop;
+
+          window.scrollTo({
+              top: topPos,
+              behavior: 'smooth'
+          });
+          // if (element) {
+          //   element.scrollIntoView({ behavior: 'smooth' });
+          //   //window.location.hash = `#${about.id}`;
+          // }
+        }}
       >
         <h4 className="text-xl">{about.btnTitle}</h4>
         <MdKeyboardArrowRight className="text-3xl ml-2" />

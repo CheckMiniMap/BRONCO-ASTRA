@@ -31,8 +31,9 @@
   }
 
   .swiper {
-    width: 100% !important;
-    height: 100% !important;
+    @apply !w-full !h-auto;
+    /* width: 100% !important;
+    height: auto !important; */
   }
   .swiper-slide {
     text-align: center !important;
@@ -44,7 +45,7 @@
     align-items: center !important;
   }
   .swiper-slide img {
-    @apply !block !w-full md:h-[750px] h-[400px] !object-cover;
+    @apply !block !w-full lg:h-[770px] sm:h-[500px] h-[300px] !object-cover;
     /* display: block !important;
     width: 100% !important;
     height: 500px !important;

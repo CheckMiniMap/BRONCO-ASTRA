@@ -26,7 +26,6 @@ const SubteamProfileCard = ({ index, profile }) => {
                     top: offset,
                     behavior: 'smooth', // Use 'smooth' for a smooth scroll effect
                   });
-                  //element.scrollIntoView({ behavior: 'instant', block: 'start' });
                 }
               }}
             >

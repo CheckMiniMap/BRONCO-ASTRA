@@ -1,4 +1,4 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, uav2, payload2, systems1, meettheteam } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, servomotors, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, } from "../assets";
 
 export const navLinks = [
   {
@@ -183,8 +183,8 @@ const team = {
       content: [
         {
           text: `Our UAV Design Subteam was responsible for the structural, aerodynamic, and mechanical aspects of Project Astra’s quadcopter. From initial concept to final assembly, our team ensured the aircraft was lightweight, durable, and optimized for performance.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: uav1,
+          alt: "UAV working with Team Lead",
         },
         {
           text: `We focused on airframe design and material selection, ensuring that our UAV met all requirements for flight capability, size, collapsibility, and weight while maximizing efficiency. Our team worked closely with Systems Engineering to make evidence-backed, logic-driven design decisions and collaborated with Autonomous Navigation and Payload to ensure seamless system integration.`,
@@ -194,8 +194,8 @@ const team = {
         },
         {
           text: `Through CAD modeling, simulations, and physical prototyping, we refined our design to maximize stability, maneuverability, and payload capacity. Our team successfully built a highly reliable and efficient UAV capable of executing complex autonomous missions with precision.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: uav3,
+          alt: "UAV Design Team solving problem",
         }
       ]
     },
@@ -233,18 +233,18 @@ const team = {
       content: [
         {
           text: `The Electrical Integration Subteam played a crucial role in ensuring seamless communication and power distribution across all subsystems of our UAV. Our team was responsible for helping the other subteams with electrical connections, integrating power systems, and ensuring that all components worked together effectively.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: electrical1,
+          alt: "Electrical Team working",
         },
         {
           text: `We facilitated the integration of sensors, cameras, motors, and control systems, making sure that each electrical component was properly connected and functional. Our team worked closely with the UAV Design, Payload, Autonomous Navigation, Obstacle Avoidance, and Object Detection teams to ensure that power requirements were met and that electrical signals were transmitted accurately across the system.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: electrical2,
+          alt: "Electrical Team soldering",
         },
         {
           text: `Through careful planning and precise execution, we ensured that the UAV's electrical systems operated reliably, enabling smooth functionality for all subsystems during autonomous missions. Our goal was to support the overall development process, ensuring that the electrical systems contributed to the UAV's high performance, reliability, and safety during competition.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: electrical3,
+          alt: "Electrical Team wiring",
         }
       ]
     },
@@ -270,18 +270,18 @@ const team = {
       content: [
         {
           text: `The Autonomous Navigation Subteam developed the systems that allowed our UAV to navigate autonomously through complex environments. Using advanced algorithms, our team ensured that the UAV could take off, fly, and land without manual control, following predefined flight paths with high precision.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: nav1,
+          alt: "Ashton and Leo at flight test",
         },
         {
           text: `We integrated data from the UAV’s sensors, including GPS, LiDAR, and cameras, to create a comprehensive understanding of the environment and enabled smooth, autonomous flight. The navigation system was designed to adjust in real time, making dynamic decisions to optimize flight routes and avoid obstacles.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: nav2,
+          alt: "Leo preparing for drone flight test",
         },
         {
           text: `Our goal was to build a navigation system that guaranteed accurate and reliable autonomous performance, ensuring the UAV could execute complex missions with precision, while maintaining safety and efficiency throughout its operation.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: nav3,
+          alt: "Matthew and Ben (Thein Nam Anh Vu) preparing for flight test",
         }
       ]
     },
@@ -315,8 +315,8 @@ const team = {
       content: [
         {
           text: `The Payload Subteam was responsible for designing and integrating the systems that allowed our UAV to carry and deploy multiple payloads during the competition. We focused on creating precise payload mechanisms to ensure safe and accurate deployment of up to four strobing beacons from 50-75 feet to designated targets.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: payload1,
+          alt: "Payload Team working",
         },
         {
           text: `We worked closely with the UAV Design and Object Detection teams to ensure seamless integration, making sure the payload system was lightweight, efficient, and reliable. Through careful engineering, we developed a system that could handle payload deployment autonomously, based on visual cues from the UAV’s object detection system.`,
@@ -326,8 +326,8 @@ const team = {
         },
         {
           text: `Our goal was to create a payload system that not only met competition requirements but also enhanced the UAV's overall performance, ensuring it could execute precise, autonomous missions with high reliability and efficiency.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: payload3,
+          alt: "Payload Team tapping holes",
         }
       ]
     },
@@ -369,18 +369,18 @@ const team = {
       content: [
         {
           text: `The Object Detection Subteam was responsible for enabling our UAV to autonomously identify and interact with objects on the ground, which were provided by the competition ahead of time. We developed and refined the UAV’s ability to detect and recognize specific targets using advanced computer vision algorithms.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: obj1,
+          alt: "Entire Object Recognition Team developing/testing",
         },
         {
           text: `In addition to simulations, we trained our object detection system using real camera footage captured from the drone itself. This approach allowed us to fine-tune the system for real-world conditions, ensuring accurate object recognition during the competition. The onboard system processed visual data to support tasks such as payload deployment and area mapping, ensuring the UAV operated effectively and autonomously.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: obj2,
+          alt: "Annika communicating",
         },
         {
           text: `Our focus was on optimizing the accuracy, speed, and reliability of the object detection system, allowing the UAV to interact seamlessly with objects in dynamic, real-world environments.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: obj3,
+          alt: "Joshua overseeing Ryan working",
         }
       ]
     },
@@ -416,18 +416,18 @@ const team = {
       content: [
         {
           text: `The Obstacle Avoidance Subteam equipped our UAV with the ability to detect and avoid obstacles during autonomous flight using a LiDAR (Light Detection and Ranging) system. Our team focused on integrating this cutting-edge technology to enhance the UAV's situational awareness, allowing it to navigate safely through complex environments.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: obs1,
+          alt: "Kevin and Ethan researching and developing",
         },
         {
           text: `By utilizing the LiDAR system, we generated a detailed 3D map of the surroundings in real time, enabling the UAV to identify obstacles and make autonomous flight path adjustments. This system ensured that the UAV could avoid collisions, maintain stable flight, and complete missions without manual intervention.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: obs2,
+          alt: "Max working on LiDAR",
         },
         {
           text: `Our goal was to develop an obstacle avoidance system that operated seamlessly with other subsystems, contributing to the UAV’s overall reliability and safety during competition missions. By focusing on precision, safety, and autonomy, we succeeded in enabling our UAV to navigate even the most challenging environments with confidence.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: obs3,
+          alt: "Obstacle Avoidance software",
         }
       ]
     },
@@ -465,13 +465,13 @@ const team = {
         },
         {
           text: `Our responsibilities extended beyond just the technical aspects of the UAV. We were also tasked with creating the technical report, producing a safety video, and developing the team website. We ensured that all aspects of the project were well-documented, adhering to the highest standards of engineering and safety practices.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: systems2,
+          alt: "Systems Team working",
         },
         {
           text: `The Systems Subteam played a critical role in coordinating the entire project, ensuring smooth communication between teams, managing documentation, and conducting reviews. By balancing technical development with comprehensive reporting and safety protocols, we ensured that the UAV was ready for competition and capable of performing complex autonomous missions.`,
-          img: placeholder,
-          alt: "placeholder",
+          img: systems3,
+          alt: "Systems Team collaborating with other teams",
         }
       ]
     },
@@ -501,51 +501,51 @@ const drone = {
   about: [
     {
       title: "Payload",
+      id: "payload",
       description: `The payload system is designed to deliver mission-specific objects with precision. It integrates mechanical release mechanisms and structural supports to ensure accurate deployment under various flight conditions, while minimizing aerodynamic and structural impact on the drone.`,
       btnTitle: "See Components",
-      btnLink: "",
       img: placeholder,
       alt: "placeholder",
     },
     {
       title: "Battery",
+      id: "battery",
       description: `The power system centers around a custom-configured battery pack designed to meet high current demands from all subsystems. Emphasis is placed on energy density, discharge reliability, and safe thermal performance to support sustained autonomous operations.`,
       btnTitle: "See Components",
-      btnLink: "",
-      img: placeholder,
-      alt: "placeholder",
+      img: battery,
+      alt: "Custom Battery",
     },
     {
       title: "Propulsion",
+      id: "propulsion",
       description: `The propulsion system is responsible for generating thrust and enabling controlled flight through coordinated operation of motors, propellers, and electronic speed controllers (ESCs). Each component is selected based on performance metrics such as thrust-to-weight ratio, efficiency, and thermal behavior to ensure reliable and responsive flight dynamics.`,
       btnTitle: "See Components",
-      btnLink: "",
-      img: placeholder,
-      alt: "placeholder",
+      img: propulsion,
+      alt: "The propulsion system",
     },
     {
       title: "Structure",
+      id: "structure",
       description: `The airframe is constructed using lightweight, high-strength materials—primarily carbon fiber—to optimize strength-to-weight ratio and structural rigidity. The design prioritizes aerodynamic efficiency, modular assembly, and durability under both static and dynamic loading during flight.`,
       btnTitle: "See Components",
-      btnLink: "",
-      img: placeholder,
-      alt: "placeholder",
+      img: structure,
+      alt: "Drone's lightweight airframe structure",
     },
     {
       title: "Software",
+      id: "software",
       description: `The software stack enables autonomous operation through coordinated communication between flight controllers, onboard processors, and ground control systems. It encompasses waypoint navigation, object recognition, data processing, and safety protocols to support real-time decision-making and control.`,
       btnTitle: "See Components",
-      btnLink: "",
-      img: placeholder,
-      alt: "placeholder",
+      img: software,
+      alt: "Python ROS Software",
     },
     {
       title: "Avionics",
+      id: "avionics",
       description: `The avionics system integrates sensors, processors, and communication modules to facilitate real-time data acquisition, feedback control, and telemetry. Components are selected for their reliability, latency performance, and compatibility with autonomous flight frameworks.`,
       btnTitle: "See Components",
-      btnLink: "",
-      img: placeholder,
-      alt: "placeholder",
+      img: avionics,
+      alt: "Avionics components and sensors",
     },
   ],
   allComponents: [
@@ -554,10 +554,10 @@ const drone = {
       id: "payload",
       components: [
         {
-          img: placeholder,
-          alt: "placeholder",
+          img: servomotors,
+          alt: "Servo Motors – Miuzei 20 KG High Torque RC Servo",
           title: "Servo Motors",
-          titleDescription: "– Miuzei 20 KG High Torque RC Servo",
+          titleDescription: "Miuzei 20 KG High Torque RC Servo",
           description: `This high-torque servo motor is used to control the mechanical hook in the payload drop mechanism. Its strength and reliability allow it to clamp down or release the pulley system with precision, ensuring the payload is securely held and released only when commanded. The servo is powered and controlled by the Pixhawk, allowing for synchronized autonomous or manual payload deployment during the mission.`,
           bullets: [
             {
@@ -600,14 +600,526 @@ const drone = {
       ]
     },
 
+    {
+      header: "Battery",
+      id: "battery",
+      components: [
+        {
+          img: individualcells,
+          alt: "Individual Cells - Molicel 21700 P45B 4500mAh 45A",
+          title: "Individual Cells",
+          titleDescription: "Molicel 21700 P45B 4500mAh 45A",
+          description: `To meet the drone’s specific power and weight demands, our team developed a custom battery pack using these high-performance lithium-ion cells. This approach gave us full control over the pack’s voltage, capacity, and physical layout, allowing us to optimize for both endurance and integration. The design supports high current draw during flight while staying under weight limits. Custom-building the pack also enabled better thermal management and compatibility with our drone’s power distribution system.`,
+          bullets: [
+            {
+              point: `Cell Size: 21700`,
+            },
+            {
+              point: `Nominal Voltage: 3.6 V`,
+            },
+            {
+              point: `Capacity: 4500 mAh (4.5 Ah)`,
+            },
+            {
+              point: `Max Continuous Discharge Current: 45 A`,
+            },
+            {
+              point: `Energy: 16.2 Wh`,
+            },
+          ]
+        },
 
+        {
+          img: cellspacers,
+          alt: "Cell Spacers – Heyiarbeit Battery Holders",
+          title: "Cell Spacers",
+          titleDescription: "Heyiarbeit Battery Holders",
+          description: `To securely assemble the individual lithium-ion cells into organized packs, we used modular cell spacers from Heyiarbeit. These plastic holders snap cells into place, providing physical separation, structural integrity, and airflow channels for passive cooling. They also help prevent short circuits by reducing the risk of contact between cells during operation, transport, or vibration in flight.`,
+          bullets: [
+            {
+              point: `Hole Diameter: 21.3 mm (0.84 inches) Amazon+1Amazon+1`,
+            },
+            {
+              point: `Hole Spacing: 22.3 mm (0.88 inches) Amazon`,
+            },
+            {
+              point: `Material: ABS plastic Amazon`,
+            },
+            {
+              point: `Compatibility: Designed for 21700 lithium battery cells`,
+            },
+          ]
+        },
 
+        {
+          img: batterymanagementsystems,
+          alt: "Battery Management Systems - SEQURE 6S 40A Protection Board",
+          title: "Battery Management Systems",
+          titleDescription: "SEQURE 6S 40A Protection Board",
+          description: `To ensure safe and reliable operation of the drone’s custom battery pack, SEQURE 6S 40A protection boards are installed on each 6-cell module. These protect the battery during charging and discharging by balancing cell voltages and preventing overcharge, over-discharge, and overcurrent conditions. The BMS plays a critical role in maintaining long-term battery health, reducing fire risk, and ensuring the drone performs consistently and safely during flight.`,
+          bullets: [
+            {
+              point: `Rated Current: 40A`,
+            },
+            {
+              point: `Overcharge Protection: 4.25V ± 0.025V per cell`,
+            },
+            {
+              point: `Over-discharge Protection: 2.5V ± 0.08V per cell`,
+            },
+            {
+              point: `Operating Temperature: -40°C to 50°C`,
+            },
+            {
+              point: `Dimensions: ~56mm x 45mm x 10mm`,
+            },
+          ]
+        },
 
+        {
+          img: batteryconnections,
+          alt: "Battery Connections – Nickel Strips",
+          title: "Battery Connections",
+          titleDescription: "Nickel Strips",
+          description: `Nickel strips were used to connect individual battery cells via spot welding, forming secure electrical paths between them. Spot welding provides a low-resistance, durable connection without overheating or damaging the cells. This method is preferred in battery pack construction because it ensures both electrical efficiency and mechanical stability. The nickel strips also help distribute current evenly across cells during charge and discharge cycles.`,
+          bullets: [
+            {
+              point: `Material: Pure Nickel`,
+            },
+            {
+              point: `Thickness: 0.15 mm`,
+            },
+            {
+              point: `Width: 8 mm (varies by connection point)`,
+            },
+            {
+              point: `Connection Method: Dual-pulse spot welding`,
+            },
+          ]
+        },
 
+        {
+          img: heatshrinktubing,
+          alt: "Heat Shrink Tubing - HSZJsto Battery Wrap",
+          title: "Heat Shrink Tubing",
+          titleDescription: "HSZJsto Battery Wrap",
+          description: `Heat shrink tubing was applied to insulate and protect the battery packs after assembly. Once heated, the tubing shrinks to tightly wrap the components, helping to prevent short circuits, moisture exposure, and physical wear. It provides a clean, secure finish for the battery system while enhancing safety and durability during handling and flight. The bright blue color also improves visibility and helps distinguish the battery from other components.`,
+          bullets: [
+            {
+              point: `Material: PVC`,
+            },
+            {
+              point: `Shrink Ratio: 2:1`,
+            },
+            {
+              point: `Color: Bright Blue`,
+            },
+            {
+              point: `Thickness: ~0.1mm after shrinkage`,
+            },
+            {
+              point: `Voltage Rating: 600V`,
+            },
+          ]
+        },
 
+        {
+          img: custom12sbattery,
+          alt: "Custom 12S Battery (16 pack, 44.4V, 36Ah, 1598.4Wh, 20 lbs)",
+          title: "Overall Specifications of Custom 12S Battery",
+          titleItalic: true,
+          bullets: [
+            {
+              point: `16 packs in total`,
+              subPoints: [
+                { point: `6 cells in series per pack` },
+                { point: `2 packs in series` },
+                { point: `8 pack pairs in parallel` },
+              ],
+            },
+            {
+              point: `Voltage - 44.4V`,
+            },
+            {
+              point: `Capacity – 36Ah`,
+            },
+            {
+              point: `Energy – 1598.4Wh`,
+            },
+            {
+              point: `Weight – 20 lbs`,
+            },
+          ]
+        },
+      ]
+    },
 
+    {
+      header: "Propulsion",
+      id: "propulsion",
+      components: [
+        {
+          img: motors,
+          alt: "Motors – SunnySky X6215S (170KV)",
+          title: "Motors",
+          titleDescription: "SunnySky X6215S (170KV)",
+          description: `Our drone design uses four SunnySky X6215S motors to provide the propulsion capabilities needed to meet the mission requirements. At maximum voltage and current, each motor is designed to provide up to around 22 lbf. of thrust, which allows us to utilize the full drone weight limit, if needed.`,
+          bullets: [
+            { point: `Weight: 375g`, },
+            { point: `Motor KV: 170`, },
+            { point: `Max Continuous Power: 2175W`, },
+            { point: `Max Thrust: 10050 gf or 22.16 lbf.`, },
+            { point: `Peak Efficiency: 11.11 g/W`, },
+          ]
+        },
 
+        {
+          img: electricalspeedcontrollers,
+          alt: "Electronic Speed Controllers – MAD AMPX 80A",
+          title: "Electronic Speed Controllers",
+          titleDescription: "MAD AMPX 80A",
+          description: `The electronic speed controllers (ESCs) are used to precisely control the rotation speeds of the motors by regulating the power delivery. They enable the motors to make sharp adjustments in motor torque, speed, and direction, which is necessary for drone performance and stability. This ESC is 80A, which is compatible with the SunnySky motors. Additionally, they contain a battery eliminator circuit (BEC), which is able to step down the battery voltage to the motor voltage without the need for a supplemental battery.`,
+          bullets: [
+            { point: `Weight: 90g`, },
+            { point: `Continuous Current: 80A`, },
+            { point: `Max Current: 84A`, },
+          ]
+        },
 
+        {
+          img: propellers,
+          alt: "Propellers – Arris 2272",
+          title: "Propellers",
+          titleDescription: "Arris 2272",
+          description: `The propellers work in tandem with the motors to provide thrust. There are hundreds of options for propellers, but these were chosen because they are carbon fiber, foldable, and are close to the recommended size for the SunnySky motors. Foldable propellers help the drone collapse into as small a footprint as possible. This contributes to the competition task of being able to fit the entire drone into a personal item.`,
+          bullets: [
+            { point: `Weight: 121.5g`, },
+            { point: `Dimensions: 22” x 7.2°`, },
+            { point: `Material: Carbon Fiber Composite`, },
+          ]
+        },
+      ]
+    },
+
+    {
+      header: "Structure",
+      id: "structure",
+      components: [
+        {
+          img: rodsandplates,
+          alt: "Rods and Plates – Carbon Fiber",
+          title: "Rods and Plates",
+          titleDescription: "Carbon Fiber",
+          description: `The main plates and rods comprising the drone frame are carbon fiber. This material was chosen because of its unmatched combination of strength and lightness. The drone is subject to aerodynamic loads, and potentially crashes, which makes strength an important characteristic. Lightness is crucial because of the 45 lbs. weight limit set by the competition.`,
+        },
+
+        {
+          img: batterycasing,
+          alt: "Battery Casing – Custom 3D-Printed Casing",
+          title: "Battery Casing",
+          titleDescription: "Custom 3D-Printed Casing",
+          description: `There are four separate battery cases that hold the battery packs. These were designed and 3D-printed to hold the batteries in place and integrate smoothly with the rest of the frame. They were printed from PLA and contain lids that slide on and off. They also have slots for wiring to pass through as well as drilled holes to provide airflow for cooling.`,
+        },
+      ]
+    },
+
+    {
+      header: "Software",
+      id: "software",
+      components: [
+        {
+          img: groundcontrolstation,
+          alt: "Ground Control Station - Mission Planner",
+          title: "Ground Control Station",
+          titleDescription: "Mission Planner",
+          description: `Mission Planner serves as the primary interface between the drone and the ground team. It is used to upload autonomous mission parameters, monitor real-time telemetry data, and issue manual commands if needed. Through this software, the team can view the drone’s position, battery status, GPS strength, and other critical flight data during the mission. It also allows for the configuration of flight modes, failsafes, and waypoint navigation. Mission Planner is essential for both pre-mission planning and live decision-making during flight.`,
+          bullets: [
+            { point: `Supports autonomous waypoint mission planning`, },
+            { point: `Real-time telemetry display`, },
+            { point: `Compatible with MAVLink-compatible flight controllers`, },
+            { point: `Live map visualization of flight path and vehicle status`, },
+            { point: `Data logging and mission replay for post-flight analysis`, },
+          ]
+        },
+
+        {
+          img: aerialmapping,
+          alt: "Aerial Mapping – OpenDroneMap",
+          title: "Aerial Mapping",
+          titleDescription: "OpenDroneMap",
+          description: `OpenDroneMap is the software we use to generate high-resolution maps during flight. As the drone flies over the designated mapping boundary, it captures overlapping images of the ground. These are stitched together in real time to create a detailed, wide-area map.  OpenDroneMap helps us quickly turn aerial images into a usable map—all while the drone is still in the air.`,
+          bullets: [
+            { point: `Real-time aerial image processing`, },
+            { point: `Converts overlapping images into a seamless, high-resolution map`, },
+            { point: `Compatible with geotagged images from onboard camera`, },
+          ]
+        },
+
+        {
+          img: objectdetectionmodel,
+          alt: "Object Detection Model – YOLOv9",
+          title: "Object Detection Model",
+          titleDescription: "YOLOv9",
+          description: `YOLOv9 (You Only Look Once) is the object detection algorithm used to identify various ground objects during flight. The model runs onboard the drone in real-time, processing video from the downward-facing camera and drawing bounding boxes around detected items. By recognizing objects accurately and quickly, the model supports both navigation decisions and mission task completion. It has been trained on a custom dataset of mission-relevant objects to maximize performance during competition.`,
+          bullets: [
+            { point: `Onboard real-time object detection` },
+            { point: `Low-latency, high-speed processing` },
+            { point: `Trained on mission-specific object categories` },
+            { point: `Outputs object locations and confidence scores` },
+            { point: `Integrates with navigation and decision systems` },
+          ]
+        },
+
+        {
+          img: roboticsmiddleware,
+          alt: "Robotics Middleware – ROS (Robot Operating System)",
+          title: "Robotics Middleware",
+          titleDescription: "ROS (Robot Operating System)",
+          description: `ROS is a flexible middleware framework that allows different parts of the drone’s system to communicate seamlessly. It serves as the backbone for managing data from various components like the LiDAR, onboard computer, and object detection model. By using ROS, our team can run real-time obstacle avoidance, process sensor data, and coordinate autonomous behavior more efficiently. It provides a modular structure that simplifies integration and testing, making it easier to adapt and expand our drone’s capabilities as needed.`,
+          bullets: [
+            { point: `Handles message passing between LiDAR, Jetson, and PixHawk` },
+            { point: `Enables real-time point cloud processing for obstacle detection and mapping` },
+            { point: `Integrates with YOLO to classify targets and support autonomous decision-making` },
+            { point: `Modular architecture allows for easy debugging, simulation, and future upgrades` },
+          ]
+        },
+
+        {
+          img: simulationenvironment,
+          alt: "Simulation Environment – Gazebo",
+          title: "Simulation Environment",
+          titleDescription: "Gazebo",
+          description: `Gazebo is the simulation platform used to test and validate both our LiDAR-based obstacle avoidance system, and our object recognition codes in a virtual environment before physical deployment. By recreating drone flights and sensor interactions in a controlled, realistic 3D world, Gazebo allows the team to observe how the drone would react to obstacles and refine the LiDAR and navigation code accordingly. This simulation was crucial for early-stage development and debugging, especially when the drone was still in early development, so flight tests weren’t yet possible.`,
+          bullets: [
+            { point: `Simulates 3D environments for sensor testing` },
+            { point: `Used to test LiDAR-driven obstacle avoidance logic` },
+            { point: `Integrates with ROS for real-time control and data flow` },
+          ]
+        },
+      ]
+    },
+
+    {
+      header: "Avionics",
+      id: "avionics",
+      components: [
+        {
+          img: lidarsensor2d,
+          alt: "2D LiDAR Sensor - SLAMTEC RPLiDAR A2M8",
+          title: "2D LiDAR Sensor",
+          titleDescription: "SLAMTEC RPLiDAR A2M8",
+          description: `The A2M8 is used as a 2D sensor for obstacle avoidance, serving as a stepping stone for developing and testing fundamental avoidance strategies. This allowed the team to refine obstacle detection methods before moving to a more complex 3D system. The A2M8 is fully prepared to be integrated into the drone for competition if the 3D LiDAR does not meet reliability expectations. However, only one LiDAR system—either 2D or 3D—will be used on mission day, depending on final performance evaluations.`,
+          bullets: [
+            { point: `360° 2D Scanning in XY Plane` },
+            { point: `Max Range: 16 meters` },
+            { point: `Rotation Speed: 10 Hz` },
+            { point: `0.9° Angular Resolution` },
+            { point: `Communication Interface: Serial (UART)` },
+          ]
+        },
+
+        {
+          img: lidarsensor3d,
+          alt: "3D LiDAR Sensor - Unitree 4D LiDAR-L1",
+          title: "3D LiDAR Sensor",
+          titleDescription: "Unitree 4D LiDAR-L1",
+          description: `The L1 is our primary sensor for obstacle avoidance, providing real-time 3D environmental mapping to detect and navigate around obstacles with greater accuracy. Unlike the 2D LiDAR, which scans in a single plane, the L1 provides full 360° coverage in the XY plane while also scanning vertically to create a dome-shaped field of view. This enables it to detect obstacles at varying heights, allowing for more advanced path planning and navigation in complex environments. While this is our preferred system, its integration is still under evaluation. If reliability issues cannot be resolved, the 2D LiDAR (A2M8) is ready as a backup option.`,
+          bullets: [
+            { point: `360° x 90° 3D Scanning in Vertical Planes` },
+            { point: `Max Range: 30 meters` },
+            { point: `Rotation Speed: 10 Hz` },
+            { point: `0.2° Angular Resolution` },
+            { point: `Point Cloud Density: Up to 20,000 points per second` },
+            { point: `Communication Interface: Ethernet` },
+          ]
+        },
+
+        {
+          img: flightcontroller,
+          alt: "Flight Controller - Pixhawk CubeOrange+",
+          title: "Flight Controller",
+          titleDescription: "Pixhawk CubeOrange+",
+          description: `The Pixhawk CubeOrange+ is the central flight controller of our drone, providing high-performance processing for autonomous navigation, sensor integration, and real-time decision-making. Equipped with triple-redundant IMUs and a fail-safe co-processor, it ensures reliable operation even in challenging environments. The CubeOrange+ supports advanced flight algorithms, precise position estimation, and robust communication with onboard systems, making it a critical component for stable and responsive flight control.`,
+          bullets: [
+            { point: `Processor: STM32H7, 480 MHz with FPU` },
+            { point: `IMU Redundancy: 3 accelerometers, 3 gyroscopes, 3 magnetometers, 2 barometers` },
+            { point: `Communication Interfaces: CAN, I2C, UART, SPI` },
+            { point: `Maximum Input Voltage: 5.7V` },
+          ]
+        },
+
+        {
+          img: camera,
+          alt: "Camera - Raspberry Pi HQ",
+          title: "Camera",
+          titleDescription: "Raspberry Pi HQ",
+          description: `The Raspberry Pi HQ Camera serves as our primary imaging device for object detection and mapping. It captures high-resolution images at ___-second intervals, ensuring detailed and accurate data collection. Designed for versatility, the camera performs well in various lighting conditions and features manual focus control, making it ideal for long-distance and dynamic environments. Additionally, its adjustable global shutter minimizes motion blur, while the adaptable lens system allows for customization based on mission requirements.`,
+          bullets: [
+            { point: `12.3 MP Resolution (4056 x 3040 pixels)` },
+            { point: `1.55µm Pixel Size` },
+            { point: `32 µs to 200s Shutter Speed` },
+            { point: `C-mount and CS-mount Lens Mount` },
+          ]
+        },
+
+        {
+          img: gimbal,
+          alt: "Gimbal - 2 Axis Nano Brushless Gimbal ",
+          title: "Gimbal",
+          titleDescription: "2 Axis Nano Brushless Gimbal",
+          description: `The gimbal stabilizes the onboard camera, ensuring clear and steady imagery for mapping and object detection. By compensating for drone movement, it reduces motion blur and enhances image quality in dynamic flight conditions. Its lightweight design minimizes impact on flight performance while maintaining precise control over pitch and roll stabilization, making it ideal for aerial data collection.`,
+          bullets: [
+            { point: `Stabilization: 2-axis (Pitch & Roll)` },
+            { point: `Control Method: Brushless motor with IMU-based stabilization` },
+            { point: `Weight: ~120g` },
+            { point: `Input Voltage: 7.4V-12V` },
+            { point: `Max Control Angle: ±90° (Pitch), ±45° (Roll)` },
+          ]
+        },
+
+        {
+          img: onboardcomputer,
+          alt: "Onboard Computer – NVIDIA Jetson Orin Nano",
+          title: "Onboard Computer",
+          titleDescription: "NVIDIA Jetson Orin Nano",
+          description: `The Jetson serves as the onboard computer, providing powerful AI processing for real-time image analysis, object recognition, and autonomous navigation. Its 1024-core GPU with Thenor Cores enables deep learned-based perception tasks, allowing the drone to detect and classify objects efficiently. Designed for edge computing, it processes data onboard, reducing latency and dependance on external systems. With a power-efficient design, it balances performance and battery life, making it well-suited for aerial applications. Additionally, its multiple PCIe and USB 3,2 interfaces support seamless integration with cameras, sensors, and communication modules for enhances autonomy and mapping capabilities.`,
+          bullets: [
+            { point: `GPU: 1024-core NVIDIA Ampere architecture with 32 Tensor Cores` },
+            { point: `CPU: 6-core Arm Cortex-A78AE` },
+            { point: `Memory: 4GB or 8GB LPDDR5 (depending on model)` },
+            { point: `AI Performance: Up to 40 TOPS (Tera Operations Per Second)` },
+            { point: `Power Consumption: 7W-15W (configurable)` },
+            { point: `Connectivity: 1 x M.2 Key E, 1x M.2 Key M, USB 3.2, PCle Gen3` },
+          ]
+        },
+
+        {
+          img: gpsmodule,
+          alt: "GPS Module - CubePilot Here3+",
+          title: "GPS Module",
+          titleDescription: "CubePilot Here3+",
+          description: `The GPS module is used for precise positioning and navigation. Enabling accurate localization for autonomous flight, it enhances positional accuracy down to the centimeter level, especially when we use 2 modules for redundancy, making it ideal for the mapping and object detection tasks. The Here3+ communicates via a high-speed CAN interface, providing robust data transmission and reduced interference. Additionally, the module includes an integrated IMU and compass, further improving stability and navigation performance in complex environments.`,
+          bullets: [
+            { point: `GNSS Support: GPS, Galileo, GLONASS, BeiDou` },
+            { point: `RTK Accuracy: Centimeter-level (with RTK base station)` },
+            { point: `Communication Interface: UAVCAN (high-speed, low-latency)` },
+            { point: `Update Rate: Up to 10 Hz` },
+            { point: `Operating Voltage: 5V` },
+          ]
+        },
+
+        {
+          img: remotecontroller,
+          alt: "Remote Controller – Taranis X9D+",
+          title: "Remote Controller",
+          titleDescription: "Taranis X9D+",
+          description: `The Taranis X9D+ is our handheld transmitter used by the pilot to manually control the drone when needed. It provides a reliable, low-latency connection to the drone’s RC receiver and is essential for tasks like manual takeoff, landing, or emergency override. In our case, the team is planning for a fully autonomous mission, so this controller should only be used for emergency override in our case. The X9D+ offers precise control through adjustable gimbals and programmable switches. It operates on the ACCST 2.4 GHz protocol, ensuring secure and interference-resistant communication with the drone’s onboard receiver.`,
+          bullets: [
+            { point: `Frequency: 2.4 GHz (ACCST protocol)` },
+            { point: `Channels: Up to 16 (via S.BUS)` },
+            { point: `Transmission Range: Up to 1.5–2 km (line-of-sight)` },
+            { point: `Compatibility: Fully compatible with FrSky X8R and other ACCST receivers` },
+            { point: `Weight: ~850 g (with battery)` },
+          ]
+        },
+
+        {
+          img: placeholder,
+          alt: "RC Receiver - FrSky X8R",
+          title: "RC Receiver",
+          titleDescription: "FrSky X8R",
+          description: `The X8R is the RC receiver, providing reliable long-range communication between the ground controller and the drone. Operating on the 2.4 GHz ACCST protocol, it ensures secure and interference-resistant signal transmission. The X8R supports up to 16 channels, allowing seamless integration with flight controls, gimbals, and auxiliary systems. With a dual-antenna diversity system, it enhances signal stability and reduces the risk of signal loss during flight, The compact and lightweight design makes it well-suited for UAV applications where reliability and range are critical.`,
+          bullets: [
+            { point: `Frequency Range: 2.4 GHz` },
+            { point: `Operating Voltage Range: 4.0V – 10.0V` },
+            { point: `Range: >1.5 km (typical in open conditions with matched transmitter)` },
+            { point: `Dimensions: 46.25 × 26.6 × 14.2 mm` },
+            { point: `Weight: ~16.8 grams` },
+          ]
+        },
+
+        {
+          img: telemetrymodem,
+          alt: "Telemetry Modem – RFD900x",
+          title: "Telemetry Modem",
+          titleDescription: "RFD900x",
+          description: `The RFD900x is a long-range telemetry modem that enables robust wireless communication between the Ground Control Station (GCS) and the drone. It is a critical component for sending and receiving live telemetry data such as GPS position, battery status, and system health. The RFD900x is known for its exceptional range, which far exceeds the distances needed for our mission. Its high-link reliability and customizable settings make it ideal for maintaining stable data transfer even in RF-dense environments. It is fully compatible with MAVLink, allowing seamless integration with Mission Planner.`,
+        },
+
+        {
+          img: powerdistributionboard,
+          alt: "Power Distribution Board – Matek X Class 12S PDB",
+          title: "Power Distribution Board",
+          titleDescription: "Matek X Class 12S PDB",
+          description: `The Matek X Class Power Distribution Board (PDB) is a high-voltage board designed to safely distribute power from our custom battery pack to the drone’s ESCs, motors, and auxiliary systems. With support for up to 12S power systems, it’s perfect for heavy-lift UAVs like ours. The board features integrated voltage and current sensing, which simplifies power monitoring and enables telemetry feedback to the flight controller.`,
+          bullets: [
+            { point: `Max Current: 300A continuous (with heatsinking)` },
+            { point: `PCB Thickness: 3 oz copper` },
+            { point: `Size: 90 × 60 mm` },
+            { point: `Weight: ~30 g` },
+            { point: `Compatibility: Supports direct telemetry to Pixhawk and other flight controllers via analog sensor outputs` },
+          ]
+        },
+
+        {
+          img: circuitbreaker,
+          alt: "Circuit Breaker – Erayco 200 Amp Breaker",
+          title: "Circuit Breaker",
+          titleDescription: "Erayco 200 Amp Breaker",
+          description: `The Erayco 200 serves as a crucial safety component in our drone’s power system. Installed after the battery but before the power distribution board, it protects against electrical overloads and short circuits by automatically interrupting the power flow if current exceeds safe limits. In addition to its automatic trip feature, the breaker includes a manual reset button, allowing for quick shutdowns or reactivation during testing.`,
+          bullets: [
+            { point: `Rated Current: 200 Amps` },
+            { point: `Voltage Rating: 12–48V DC` },
+            { point: `Trip Type: Thermal automatic with manual reset` },
+          ]
+        },
+
+        {
+          img: busbar,
+          alt: "Bus Bar – Mofeez Power Distribution Block",
+          title: "Bus Bar",
+          titleDescription: "Mofeez Power Distribution Block",
+          description: `The Mofeez Power Distribution Block (bus bar) is used to organize and distribute electrical power from the main power source to various subsystems across the drone. It provides a safe but compact way to manage multiple high-current connections. This helps us reduce cable clutter, allowing for a more organized system. The bus bar also ensures that power is cleanly and efficiently delivered to critical components such as ESCs and other avionics. Its insulated base and protective cover enhance safety and prevent accidental shorts during operation and maintenance.`,
+          bullets: [
+            { point: `Voltage Rating: Up to 48V DC` },
+            { point: `Current Capacity: 250A` },
+            { point: `Dimensions: 7.8 × 2.1 × 1.9 in` },
+          ]
+        },
+
+        {
+          img: limitswitch,
+          alt: "Limit Switch – Omron Electronics SS-5GL2",
+          title: "Limit Switch",
+          titleDescription: "Omron Electronics SS-5GL2",
+          description: `The Omron SS-5GL2 limit switch is used to detect the mechanical position of moving components on the drone. In our system, it functions as a trigger or sensor for physical end-stops, such as servo movement limits. This micro switch is compact, lightweight, and highly reliable, making it well-suited for aerospace applications where space is limited and precision is key. Its snap-action mechanism ensures fast, consistent switching with minimal wear.`,
+          bullets: [
+            { point: `Operating Force: 0.33 lb` },
+            { point: `Contact Rating: 5A at 125/250V AC` },
+            { point: `Mechanical Life: 1 million+ operations` },
+            { point: `Electrical Life: 100,000+ operations` },
+            { point: `Size: ~19.8 × 6.4 × 10.2 mm` },
+          ]
+        },
+
+        {
+          img: stepdownmodule,
+          alt: "Step-Down Module - FBHDZVV Buck Voltage Regulator",
+          title: "Step-Down Module",
+          titleDescription: "FBHDZVV Buck Voltage Regulator",
+          description: `The FBHDZVV Buck Voltage Regulator is used to safely convert the drone’s high battery voltage to lower voltages required by various electronics, such as servos, sensors, or the flight controller. This ensures stable voltage output even during load changes, protecting sensitive components from damage. It plays a critical role in maintaining electrical reliability across subsystems with different power requirements and is part of our risk mitigation strategy.`,
+          bullets: [
+            { point: `Input Voltage Range: 6V – 60V DC` },
+            { point: `Output Voltage Range: 1.25V – 30V DC (adjustable)` },
+            { point: `Max Output Current: 5A` },
+            { point: `Efficiency: Up to 95%` },
+            { point: `Cooling: Passive heatsink included` },
+            { point: `Protection Features: Overcurrent, overtemperature, and short circuit protection` },
+            { point: `Size: ~6.6 × 4.3 × 1.8 cm` },
+          ]
+        },
+      ]
+    },
   ]
 }
 
