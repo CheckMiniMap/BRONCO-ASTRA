@@ -8,8 +8,8 @@ function HOC(props) {
     <motion.section
       variants={staggerContainer()}
       initial="hidden"
-      animate="show"
-      //whileInView="show"
+      //animate="show"
+      whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       //viewport={{ once: true, amount: 0.10 }}
       //className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
