@@ -4,22 +4,7 @@ import { fadeIn, textVariant } from '../../utils/motion';
 import { Header1 } from '../common';
 import { drone } from '../../constants';
 import { MdKeyboardArrowRight } from "react-icons/md";
-
-function getElementHeightWithMargin(element) {
-  const computedStyle = window.getComputedStyle(element);
-  const height = element.offsetHeight;
-  const marginTop = parseInt(computedStyle.marginTop, 10) || 0;
-  const marginBottom = parseInt(computedStyle.marginBottom, 10) || 0;
-
-  return height + marginTop + marginBottom;
-}
-
-function getElementYPosition(element) {
-  const rect = element.getBoundingClientRect();
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  const elementHeight = getElementHeightWithMargin(element);
-  return rect.top + scrollTop - 147;
-}
+import { getElementYPosition } from "../../utils/common";
 
 const AboutCard = ({ about, index }) => {
   return (
@@ -34,7 +19,7 @@ const AboutCard = ({ about, index }) => {
         className="flex justify-center items-center w-60 h-12 bg-blue-900 text-white hover:bg-blue-700 cursor-pointer"
         onClick={() => {
           const element = document.getElementById(about.id);
-          const topPos = getElementYPosition(element);
+          const topPos = getElementYPosition(element, 140);
           //const topPos = element.offsetTop;
 
           window.scrollTo({

@@ -101,7 +101,7 @@ const ElementCard = ({ element }) => {
 
         <div
           className={`transition-all duration-300 
-            col-span-4 
+            col-span-6 md:col-span-4 
             group-hover:col-span-6 
             ${expanded ? '!col-span-6' : ''}`}
         >

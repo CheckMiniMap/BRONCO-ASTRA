@@ -4,6 +4,7 @@ import { team } from '../../constants';
 import { SectionWrapper } from '../../hoc';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../../utils/motion';
+import { getElementYPosition } from "../../utils/common";
 
 const SubteamProfileCard = ({ index, profile }) => {
   return (
@@ -17,16 +18,20 @@ const SubteamProfileCard = ({ index, profile }) => {
           {profile.titles.map((title, index) => (
             <div 
               key={index} 
-              className="w-auto h-10 flex justify-center items-center bg-blue-800 text-white font-medium lg:text-[16px] md:text-[12px] sm:text-[14px] text-[3.2vw] hover:text-gray-500 duration-300 ease-in-out cursor-pointer"
+              className="w-auto h-10 flex justify-center items-center bg-blue-900 hover:bg-blue-700 text-white font-medium lg:text-[16px] md:text-[12px] sm:text-[14px] text-[3.2vw] duration-300 ease-in-out cursor-pointer"
               onClick={() => {
                 const element = document.getElementById(title.id);
-                if (element) {
-                  const offset = element.offsetTop; // Get the element's position relative to the top of the page
-                  window.scrollTo({
-                    top: offset,
-                    behavior: 'smooth', // Use 'smooth' for a smooth scroll effect
-                  });
-                }
+                const topPos = getElementYPosition(element, 60);
+                //const topPos = element.offsetTop;
+      
+                window.scrollTo({
+                    top: topPos,
+                    behavior: 'smooth'
+                });
+                // if (element) {
+                //   element.scrollIntoView({ behavior: 'smooth' });
+                //   //window.location.hash = `#${about.id}`;
+                // }
               }}
             >
               {title.title}
