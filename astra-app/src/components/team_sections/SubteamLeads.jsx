@@ -9,7 +9,7 @@ import { getElementYPosition } from "../../utils/common";
 const SubteamProfileCard = ({ index, profile }) => {
   return (
     <motion.div
-      variants={fadeIn(index % 2 == 1 ? "left" : "right", "spring", index % 2 == 0 ? 0.5 : 0.75, 0.75)}
+      variants={fadeIn(index % 2 == 1 ? "left" : "right", "spring", index % 2 == 0 ? 0.4 : 0.7, 0.75)}
     >
       <img src={profile.img} alt={profile.name} className={`w-full object-cover ${profile.object ? profile.object : 'object-[100%_20%]'} aspect-1-1`} />
       <h4 className="font-poppins text-[22px] font-semibold pt-2">{profile.name}</h4>

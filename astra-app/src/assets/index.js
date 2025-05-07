@@ -44,8 +44,8 @@ import theinnamanhvu from "./people/thein-nam-anh-vu.png";
 import waamiqsharrar from "./people/waamiq-sharrar.png";
 
 // Teams
-import meettheteam from "./meet-the-team.png";
-import electrical1 from "./teams/electrical1.png";
+import meettheteam from "./teams/meet-the-team.JPG";
+import electrical1 from "./teams/electrical1.JPG";
 import electrical2 from "./teams/electrical2.png";
 import electrical3 from "./teams/electrical3.png";
 import nav1 from "./teams/nav1.png";
@@ -65,7 +65,7 @@ import systems2 from "./teams/systems2.png";
 import systems3 from "./teams/systems3.png";
 import uav1 from "./teams/uav1.png";
 import uav2 from "./teams/uav2.png";
-import uav3 from "./teams/uav3.png";
+import uav3 from "./teams/uav3.JPG";
 
 // Components
 import lidarsensor2d from "./components/2d-lidar-sensor.png";

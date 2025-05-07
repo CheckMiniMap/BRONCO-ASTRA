@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from '../../utils/motion';
 const ProjectLeadProfileCard = () => {
   return (
     <motion.div 
-      variants={fadeIn("up", "spring", 0.6, 0.75)} 
+      variants={fadeIn("up", "spring", 0.4, 0.75)} 
       className="flex flex-col items-center gap-5 w-full h-auto"
     >
       <img src={mattromero} alt="Matthew Romero" className="w-full md:w-[600px] object-cover aspect-1-1" />
