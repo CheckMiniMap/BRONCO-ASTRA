@@ -1,4 +1,4 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, servomotors, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, servomotors, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422, } from "../assets";
 
 export const navLinks = [
   {
@@ -808,6 +808,7 @@ const drone = {
         {
           img: rodsandplates,
           alt: "Rods and Plates – Carbon Fiber",
+          styles: "scale-75 !aspect-[1.0] relative bottom-5",
           title: "Rods and Plates",
           titleDescription: "Carbon Fiber",
           description: `The main plates and rods comprising the drone frame are carbon fiber. This material was chosen because of its unmatched combination of strength and lightness. The drone is subject to aerodynamic loads, and potentially crashes, which makes strength an important characteristic. Lightness is crucial because of the 45 lbs. weight limit set by the competition.`,
@@ -816,6 +817,7 @@ const drone = {
         {
           img: batterycasing,
           alt: "Battery Casing – Custom 3D-Printed Casing",
+          styles: "object-[22%_20%] scale-115",
           title: "Battery Casing",
           titleDescription: "Custom 3D-Printed Casing",
           description: `There are four separate battery cases that hold the battery packs. These were designed and 3D-printed to hold the batteries in place and integrate smoothly with the rest of the frame. They were printed from PLA and contain lids that slide on and off. They also have slots for wiring to pass through as well as drilled holes to provide airflow for cooling.`,
@@ -1123,4 +1125,587 @@ const drone = {
   ]
 }
 
-export { homeContent, team, drone };
+const timeline = {
+  header: "Our Timeline",
+  description: "A chronological snapshot of our team's progress, decisions, and engineering milestones as we prepare for SUAS 2025.",
+  img: timelinehero,
+  alt: "",
+  elements: [
+    {
+      date: "08/31/2024",
+      title: "ASTRA",
+      titleDescription: "First team meeting for the 2025 competition year",
+      img: team0831,
+      alt: "ASTRA Team",
+      description: `The team kicked off the 2025 SUAS season with a full-group meeting that brought together both returning members and new recruits. This session marked the official start of our yearlong effort. We introduced team roles, reviewed the competition’s mission objectives, and walked through our performance from previous years, highlighting both our successes and lessons learned. It was also a chance to set expectations for the year and begin forming the subteams that would later drive different parts of the project. This meeting laid the foundation for the technical planning, systems thinking, and collaboration that would define our approach moving forward.`
+    },
+
+    {
+      date: "09/18/2024",
+      title: "ASTRA",
+      titleDescription: "SUAS 2025 task ideas and primer released",
+      img: team0918,
+      alt: "ASTRA Team",
+      description: `The SUAS organizers released a primer outlining preliminary task ideas for the 2025 competition. While this provided early insight into potential objectives, many details were still vague and subject to change. As a result, the team was limited in how much concrete progress could be made, focusing instead on broad planning and familiarization while waiting for the finalized rules.`
+    },
+    
+    {
+      date: "09/18/2024",
+      title: "ASTRA",
+      titleDescription: "Research phase begins",
+      img: team09182,
+      alt: "ASTRA Team",
+      description: `With preliminary task ideas released, all subteams entered a focused research phase to better understand their roles and responsibilities. We began exploring relevant hardware, software, and system requirements to build foundational knowledge before the official rules were released to become more specialized. This early learning period helped prepare the team to make informed decisions once the official rules were released and design work could begin in full.`
+    },
+
+    {
+      date: "09/21/2024",
+      title: "Obstacle Avoidance",
+      titleDescription: "2D LiDAR hardware set up and power verified",
+      img: obs0921,
+      alt: "",
+      description: `The team successfully assembled the RPLiDAR A2M8 2D LiDAR system and conducted initial power tests. These tests confirmed that the sensor could be powered safely and consistently, establishing a foundation for further software integration and obstacle detection development.`
+    },
+
+    {
+      date: "09/23/2024",
+      title: "UAV Design",
+      titleDescription: "Initial concept CAD of UAV completed",
+      img: uav0923,
+      alt: "",
+      description: `The UAV Design team finalized the first iteration of the drone’s concept CAD, establishing the baseline for the aircraft’s physical structure. This CAD outlined the basic frame shape, estimated dimensions, and proposed materials—marking the first visual and structural representation of the drone. The design focused on balancing strength and weight using lightweight but rigid materials that could support the expected payload and flight performance. Only 2 aspects were nearly concrete at this point – carbon fiber for material and a quadcopter setup. Based on a basic trade study, we found that the quadcopter gave us the best balance of weight and power, while carbon fiber would be light but strong enough to support it. This early milestone was key to aligning the team on physical constraints and provided a starting point for further aerodynamic analysis, propulsion sizing, and component integration planning. It also laid the groundwork for future CAD modeling and prototyping.`
+    },
+
+    {
+      date: "09/28/2024",
+      title: "Object Detection",
+      titleDescription: "Initial dataset and detection model planning",
+      img: obj0928,
+      alt: "",
+      description: `The team began laying the groundwork for model training by setting an initial goal to compile and label at least 3,000 images per object to be detected during the mission. At this stage, not all SUAS target objects had been officially announced, but the team moved forward with data collection based on ideas provided in the primer. The original plan was to create individual models for each object; however, this approach was soon replaced by a more efficient strategy: developing one comprehensive model trained on all object types. This shift allowed for easier integration and scalability. At the same time, the team explored two major object detection algorithms: YOLO (You Only Look Once) and SSD (Single Shot MultiBox Detector). While YOLO offered faster real-time detection, it came with a slight trade-off in accuracy. SSD, on the other hand, provided more precise results but was slower in inference.`
+    },
+
+    {
+      date: "10/03/2024",
+      title: "Obstacle Avoidance",
+      titleDescription: "ROS workspace set up and RViz visualization achieved",
+      img: obs1003,
+      alt: "",
+      description: `The team set up a functional ROS (Robot Operating System) environment on the Jetson Orin Nano and integrated it with a C++ script to display real-time LiDAR data in RViz. This marked a critical step in confirming communication between the sensor and onboard computer, and it provided the first visual representation of the drone’s surroundings.`
+    },
+
+    {
+      date: "10/05/2024",
+      title: "UAV Design",
+      titleDescription: "Test bench assembly completed for propulsion system",
+      img: uav1005,
+      alt: "",
+      description: `To support early testing of the propulsion system, the UAV Design team designed and built a wooden test bench to safely mount motors, propellers, and ESCs for controlled performance testing. This setup allowed the team to evaluate thrust, power draw, vibration, and heat dissipation under varying loads without needing to install components on the airframe. Conducting these tests was important since real-world performance usually differs from manufacturer-provided specifications, especially since we tested multiple different component combinations. The bench's modular design, including multiple mounting holes, allowed for flexibility in configurations and made it easier to swap parts during iteration. Overall, the test bench streamlined the development process and laid a solid foundation for selecting our final propulsion components.`
+    },
+
+    {
+      date: "10/05/2024",
+      title: "Object Detection",
+      titleDescription: "ROS, YOLO, and custom dataset",
+      img: obj1005,
+      alt: "",
+      description: `The team made significant progress in setting up the development environment by installing Docker on Ubuntu 22.04 and creating a container with ROS Noetic pre-configured for object detection tasks. With the infrastructure in place, the team began training a YOLO model to benchmark its performance against the SSD approach previously researched. As part of this effort, they also investigated the differences between YOLOv5 and YOLOv8, ultimately deciding to start with YOLOv5 for initial testing. The model was trained using a custom dataset curated by the team to observe performance under controlled conditions. Also, image collection and annotation continued to expand the training set so that the model would be trained on a diverse range of objects.`
+    },
+
+    {
+      date: "10/07/2024",
+      title: "Obstacle Avoidance",
+      titleDescription: "2D LiDAR fully operational for object detection",
+      img: obs1007,
+      alt: "",
+      description: `After weeks of setup, troubleshooting, and testing, the RPLiDAR A2M8 became fully operational. The system could detect nearby objects and measure their distance in real time, enabling the next phase of development in autonomous path planning and obstacle avoidance.`
+    },
+
+    {
+      date: "10/09/2024",
+      title: "Whole Team",
+      titleDescription: "SUAS 2025 rules release and registration opens",
+      img: team1009,
+      alt: "",
+      description: `With the official release of the SUAS 2025 rules and the opening of team registration, the competition season formally began. Up until this point, progress was somewhat limited, as the team was working without access to finalized task descriptions or scoring criteria. Having the official rules allowed each subteam to move forward with greater clarity, aligning design decisions and priorities with the actual competition requirements.`
+    },
+
+    {
+      date: "10/09/2024",
+      title: "Payload",
+      titleDescription: "Began conceptual design of dropping mechanism",
+      img: pay1009,
+      alt: "",
+      description: `Early brainstorming focused on how to lower and release the object with accuracy and control. Initial sketches included various holding mechanisms, including grabbing and use of suction.`
+    },
+
+    {
+      date: "10/12/2024",
+      title: "Object Detection",
+      titleDescription: "Getting live video and YOLOv5 running",
+      img: obj1012,
+      alt: "",
+      description: `The team set up a ROS container and created nodes to send and receive live video feed from a laptop camera. Our YOLOv5 model was also successfully brought online and tested using placeholder data, showing encouraging results. While trying to offload some of the processing to the HPC cluster, we ran into issues with batch scripts and had to run everything manually. On the data side, we began importing assets into Unreal Engine and used AirSim to capture new synthetic images. We also started labeling these with bounding boxes for model training. Lastly, we did a trial run of OpenDroneMap using public aerial imagery to get familiar with how it might be used later in our mission.`
+    },
+
+    {
+      date: "10/14/2024",
+      title: "Electrical Integration",
+      titleDescription: "Decision made to design and build custom battery",
+      img: elec1014,
+      alt: "",
+      description: `After several weeks of research and comparison, the Electrical Integration team concluded that no commercially available battery met both the power and weight requirements of the mission. Many options were either underpowered for the full system or exceeded the UAV’s weight constraints. As a result, the team made the strategic decision to design and build a custom lithium-ion battery pack. This would allow for a more tailored balance of energy capacity, weight, and physical configuration to meet the UAV’s unique demands.`
+    },
+
+    {
+      date: "10/16/2024",
+      title: "Payload",
+      titleDescription: "Finalized conceptual design of pulley mechanism with winch",
+      img: pay1016,
+      alt: "",
+      description: `After evaluating different mechanisms, the team finalized a pulley-winch system for controlled payload delivery. This design aimed to control the drop of the payload through controlled lowering with rope that hooked onto the payload.`
+    },
+
+    {
+      date: "10/19/2024",
+      title: "UAV Design",
+      titleDescription: "Down-selected and finalized motors, propellers, and ESCs from initial options found in research",
+      img: uav1019,
+      alt: "",
+      description: `After several weeks of research and test bench trials, the team finalized its selection of motors, propellers, and electronic speed controllers (ESCs). In collaboration with the systems engineering team, a range of candidate components were initially identified based on thrust requirements, efficiency, weight, and compatibility with the planned power system. Through hands-on testing and performance comparisons, the team narrowed down the options to the most reliable and high-performing configuration for our UAV. Finalizing these components allowed the team to move forward with integration planning and airframe design adjustments.`
+    },
+
+    {
+      date: "10/19/2024",
+      title: "Object Detection",
+      titleDescription: "Troubleshooting TensorFlow and expanding datasets",
+      img: obj1019,
+      alt: "",
+      description: `Got TensorFlow to recognize the GPU, which was crucial for speeding up training times. We narrowed the issue down to two main things: making sure we were using the right version of TensorFlow (tensorflow-gpu) and confirming that CUDA paths were set correctly in .bashrc. Meanwhile, we completed our human/mannequin dataset and continued to generate images with AirSim. Unfortunately, the latest YOLO model still wasn't performing well and showed a low success rate. We also tested a large 64-core compute node to speed things up, but it ended up being surprisingly slow—though it may still serve as a backup option.`
+    },
+
+    {
+      date: "10/19/2024",
+      title: "Payload",
+      titleDescription: "Initial drop test completed",
+      img: pay1019,
+      alt: "",
+      styles: "!aspect-auto",
+      description: `The team successfully completed a drop test using the first version of the winch system. A water bottle was lowered and released, confirming basic functionality.`
+    },
+
+    {
+      date: "10/26/2024",
+      title: "Payload",
+      titleDescription: "Upgraded to pulley-belay design",
+      img: pay1026,
+      alt: "",
+      description: `Following early tests, the team upgraded the system to a pulley-belay configuration for better control and reliability. This design was inspired by the belay devices of rock climbers that regulate rope movement through friction and controlled stopping. A servo would rotate an angled, rounded stopper to catch and hold the rope in place when needed. 3D printing of components began for prototype evaluation.`
+    },
+
+    {
+      date: "11/02/2024",
+      title: "Object Detection",
+      titleDescription: "YOLOv5 chosen and first human model trained",
+      img: obj1102,
+      alt: "",
+      description: `After comparing different approaches, we officially chose YOLOv5 over SSD for our object detection pipeline since it was easier to set up and get running. We trained a new model using our labeled human dataset, but the results weren’t great (the accuracy was lower than expected). Hoping for improvement, we also tried training a YOLOv8 model for comparison, but that performed even worse. On the simulation side, we started using Unreal Engine to adjust object textures and materials. This gave us more variety in our synthetic data and should help improve how well the model generalizes during actual testing.`
+    },
+
+    {
+      date: "11/07/2024",
+      title: "Systems Engineering",
+      titleDescription: "Successful conceptual design review presented to Lockheed Martin representatives",
+      img: sys1107,
+      alt: "",
+      description: `Thirteen representatives for the overall team delivered our Conceptual Design Review (CoDR) presentation created and coordinated by the Systems Engineering team to engineers and professionals from Lockheed Martin, our project sponsor. The presentation outlined our drone's initial design, major subsystems, and the rationale behind our planned development path. This was the team’s first formal opportunity to present our technical vision and demonstrate our understanding of the SUAS mission. The feedback received provided valuable insight into industry expectations and helped shape key design decisions moving forward. Additionally, this session resulted in the approval of continued sponsorship and continued project funding, reinforcing Lockheed Martin’s support and confidence in the team. It was a defining moment that validated our direction and re-energized our team members due to the amount of positive feedback.`
+    },
+
+    {
+      date: "11/09/2024",
+      title: "Payload",
+      titleDescription: "First successful pulley system test",
+      img: pay1109,
+      alt: "",
+      description: `The upgraded pulley design was tested and successfully demonstrated controlled object descent, validating key mechanical aspects of the drop mechanism.`
+    },
+
+    {
+      date: "11/09/2024",
+      title: "Object Detection",
+      titleDescription: "Jetson reset and dataset planning",
+      img: obj1109,
+      alt: "",
+      description: `While working with Unreal Engine, we discovered that random color changes only applied to some objects, limiting how diverse our training data could be. We also started building a new top-down dataset for small cars, one of the more challenging objects to detect. At the same time, we created a list to track which object images we could source online versus which ones would need to be simulated or collected manually. The Jetson also became a headache; between poor Wi-Fi and a corrupted SD card, we had no choice but to do a full factory reset to start fresh. While it set us back a bit, it also gave us a chance to reorganize and properly document the setup process.`
+    },
+
+    {
+      date: "11/10/2024",
+      title: "Electrical Integration",
+      titleDescription: "Raspberry Pi HQ camera selected",
+      img: elec1110,
+      alt: "",
+      description: `After evaluating several camera modules, the team selected the Raspberry Pi HQ Camera for its high-resolution imaging and compatibility with existing onboard computing. The decision was based on its balance of image quality, size, and integration ease—making it well-suited for object detection and mapping tasks during the mission.`
+    },
+
+    {
+      date: "11/16/2024",
+      title: "Payload",
+      titleDescription: "Pulley-belay system – 10 ft drop test",
+      img: pay1116,
+      alt: "",
+      description: `The team tested the pulley-belay system at a 10 ft height to test if the mechanism could stop correctly after longer distances than the 1 ft distance of initial tests. The test was successful.`
+    },
+
+    {
+      date: "12/05/2024",
+      title: "Electrical Integration",
+      titleDescription: "Successful camera output via CSI port",
+      img: elec1205,
+      alt: "",
+      description: `The team successfully configured and received output from the Raspberry Pi HQ Camera through the CSI (Camera Serial Interface) port. This confirmed proper connectivity and allowed the team to begin testing image capture and processing pipelines for the object detection model.`
+    },
+
+    {
+      date: "12/07/2024",
+      title: "Object Detection",
+      titleDescription: "Latency fixed but training needs",
+      img: obj1207,
+      alt: "",
+      description: `Fixed a long-standing latency issue! What used to be a 12-second delay between detection and output is now almost instant. The model drops detections as soon as an object enters the frame, though GPS output is still pending implementation. Unfortunately, our car detection model started overfitting badly, hitting 99% accuracy but throwing tons of false positives. So we decided to regenerate the dataset and return back to training. On the simulation side, we ran into objects spawning inside each other or underground, and rotations being off. Despite all that, our object detection system was communicating properly with Mission Planner. One hiccup: one of the Jetson’s ports stopped working.`
+    },
+
+    {
+      date: "12/08/2024",
+      title: "Payload",
+      titleDescription: "First iteration of cutting mechanism developed",
+      img: pay1208,
+      alt: "",
+      description: `The first cutting mechanism was designed, featuring a large scissor design, which introduced size limitations. It required significant space and failed to consistently sever the rope, highlighting the need for refinement.`
+    },
+
+    {
+      date: "01/04/2025",
+      title: "Object Detection",
+      titleDescription: "Established heartbeat connection between Jetson and Pixhawk",
+      img: obj0104,
+      alt: "",
+      description: `After months of troubleshooting throughout the fall semester, the team successfully established a fully reliable heartbeat connection between the Jetson and Pixhawk. Prior to this, the connection would frequently drop or fail to initialize, limiting development and integration progress.`
+    },
+
+    {
+      date: "01/04/2025",
+      title: "Obstacle Avoidance",
+      titleDescription: "Reliable Jetson-Pixhawk heartbeat connection established",
+      img: obs0104,
+      alt: "",
+      description: `A new communication cable was designed and implemented to finally establish a stable heartbeat connection between the Jetson and the Pixhawk flight controller. This was an issue that the team had struggled with all throughout the fall semester. This upgrade achieved 100% reliability in communication, ensuring consistent data exchange during flight operations, which was a massive relief for the team.`
+    },
+
+    {
+      date: "01/12/2025",
+      title: "Object Detection",
+      titleDescription: "Software integration successful but introduced more issues",
+      img: obj0112,
+      alt: "",
+      styles: "!aspect-auto",
+      description: `Enabled the CSI camera using GStreamer and confirmed compatibility with OpenCV. This setup was important for real-time video processing. However, integrating this system with the servo controls revealed a dependency issue between OpenCV and ROS, specifically within cv_bridge. After reviewing the setup, the team determined that the current catkin_make build system needed to be upgraded to catkin_make_isolated to better handle the complex dependencies.`
+    },
+
+    {
+      date: "01/15/2025",
+      title: "Payload",
+      titleDescription: "Second pulley-belay system fully constructed",
+      img: pay0115,
+      alt: "",
+      description: `The team completed the second full construction of the pulley-belay design. In prior testing, the rope had been falling out of the intended path and would get caught during some drops. The new design incorporated improvements for these issues and was structurally ready for integration with other components.`
+    },
+
+    {
+      date: "01/19/2025",
+      title: "Systems Engineering",
+      titleDescription: "Website and technical design report development began",
+      img: sys0119,
+      alt: "",
+      description: `The team officially began development of two major SUAS deliverables: the Technical Design Report (TDR) and the team website. Beforehand, the members were creating daily documentation – both written and visual – to record the full history of the drone’s progress. Early work focused on assigning responsibilities, outlining report sections, and establishing a structure for the website and its pages.`
+    },
+
+    {
+      date: "01/28/2024",
+      title: "Payload",
+      titleDescription: "Major drop mechanism redesign initiated",
+      img: pay0128,
+      alt: "",
+      description: `Despite continuous testing, troubleshooting, and refinement, the pulley-belay system was not consistent enough for use in competition. Thus, the team shifted to designing a new payload drop mechanism aimed at improving reliability. This change marked a pivot in the overall delivery strategy.`
+    },
+
+    {
+      date: "01/29/2025",
+      title: "Object Detection",
+      titleDescription: "Switched from YOLOv5 to YOLOv9",
+      img: obj0129,
+      alt: "",
+      description: `Despite improvements, the YOLOv5 model wasn’t reaching high enough confidence levels. Out of curiosity, the team tested the dataset (at that point), which was more developed than that of their initial test, with YOLOv9 and the results were much more accurate. Thus, they made a switch to use v9.`
+    },
+
+    {
+      date: "02/01/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "Introduction to the 3S Drone",
+      img: nav0201,
+      alt: "",
+      description: `As part of our safety plan, our team tests the simplest of components before testing interactions and then subsystems, slowly building up to the full system. As a result, unfinalized subsystems would require testing, but the team decided it would be too risky to use the main drone for testing (failed tests that resulted in damage would set the timeline back too much). Thus, the team purchased a small drone that is powered by a 3S battery (much smaller than the 12S of our full drone). This drone would be used for small-scale testing such as obtaining pictures using the camera for quality tests or for testing LiDAR. On this day, the 3S was opened, and members from Auto Nav began to familiarize themselves with it.`
+    },
+
+    {
+      date: "02/10/2025",
+      title: "Electrical Integration",
+      titleDescription: "Gimbal selected for camera stabilization",
+      img: elec0210,
+      alt: "",
+      description: `The team finalized its choice of gimbal to support the onboard camera, ensuring stable and clear imaging during flight. The gimbal will help reduce motion blur and maintain a consistent downward view for both mapping and object recognition tasks, enhancing overall mission performance.`
+    },
+
+    {
+      date: "02/10/2025",
+      title: "Object Detection",
+      titleDescription: "Model performance evaluation",
+      img: obj0210,
+      alt: "",
+      description: `The team analyzed model training results and saw clear signs that learning was happening: the loss graphs were trending down, and key metrics like precision, recall, and mAP were steadily improving. But they also discovered that the dataset was heavily skewed toward the “person” category, which showed up way more than any other object. To avoid the model focusing too much on just that one class, the next step was to rebalance the dataset and improve how well the model can recognize all the different required objects.`
+    },
+
+    {
+      date: "02/14/2024",
+      title: "Payload",
+      titleDescription: "First static test of new payload design",
+      img: pay0214,
+      alt: "",
+      description: `The team conducted the first static test of the newly designed drop system, evaluating both mechanical function and overall performance. The test showed that even the initial new design, which featured a LEGO gear for precision, was more consistent than the previous design.`
+    },
+
+    {
+      date: "03/01/2025",
+      title: "Obstacle Avoidance",
+      titleDescription: "Successful Gazebo simulation with obstacle recognition and reaction",
+      img: obs0301,
+      alt: "",
+      description: `Using the 2D LiDAR in a simulated Gazebo environment, the drone was able to detect a large fire truck and adjust its position accordingly. This marked the first successful demonstration of object-aware motion response in simulation, showing strong progress toward real-time obstacle avoidance during flight.`
+    },
+
+    {
+      date: "03/13/2025",
+      title: "Systems Engineering",
+      titleDescription: "Successful preliminary design review presented to Lockheed Martin representatives",
+      img: sys0313,
+      alt: "",
+      description: `Thirteen representatives for the overall team delivered our Preliminary Design Review (PDR) presentation, created and coordinated by the Systems Engineering team. The presentation was shared with Lockheed Martin engineers and technical advisors, and focused on detailed subsystem progress, updated requirements tracking, and the results of early testing efforts. Each subteam highlighted the evolution of their designs since CoDR and shared how feedback from the earlier review had been implemented. The PDR demonstrated a significant leap in technical development, project cohesion, and readiness for integration. Valuable feedback was once again provided, reinforcing the team’s direction and helping shape the next stages of development. The review was met with strong support from Lockheed Martin and served as both a validation of our work and a motivating milestone for the team.`
+    },
+
+    {
+      date: "03/14/2024",
+      title: "Payload",
+      titleDescription: "Second iteration of cutting mechanism completed",
+      img: pay0314,
+      alt: "",
+      description: `A new version of the cutting mechanism was built using smaller scissors and a switch from rope to ribbon, aiming for a cleaner and more consistent cut during deployment.`
+    },
+
+    {
+      date: "03/14/2025",
+      title: "Electrical Integration",
+      titleDescription: "Payload electrical system integrated with Pixhawk",
+      img: elec0314,
+      alt: "",
+      description: `The electrical system for the payload assembly (servos and limit switches) was successfully connected and integrated with the Pixhawk flight controller. This enabled the payload to be tested and operated using onboard commands, marking a key step toward full mission integration.`
+    },
+
+    {
+      date: "03/15/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "3S manual flight test for calibration",
+      img: nav0315,
+      alt: "",
+      description: `The team conducted a manual flight test using the 3S drone to verify flight stability and calibrate the control systems. This test ensured that the Pixhawk, RC transmitter, and GPS were all properly configured before moving on to autonomous flight modes. On this day, 3S was able to complete manual takeoff and loiter.`
+    },
+    
+    {
+      date: "03/15/2025",
+      title: "Object Detection",
+      titleDescription: "Object detection code ready for camera testing",
+      img: obj0315,
+      alt: "",
+      description: `The object recognition code reached a stage of readiness for initial testing with the camera being held from a high place (e.g. parking structure). With the core detection and classification pipeline in place, the team was able to begin capturing test images using the actual drone camera and verifying the system’s ability to detect and classify various objects. This milestone marked the transition from development to active testing and tuning.`
+    },
+
+    {
+      date: "03/16/2024",
+      title: "Payload",
+      titleDescription: "Full static test of new payload and cutting systems together",
+      img: pay0316,
+      alt: "",
+      description: `After continuous testing and refinement at a small scale, the team successfully tested the full drop and cut system in a static setup from 20 ft, demonstrating reliable function of the new drop mechanism and cutting mechanism together.`
+    },
+
+    {
+      date: "03/16/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "3S first autonomous flight",
+      img: nav0316,
+      alt: "",
+      styles: "!aspect-auto",
+      colSpan: 6,
+      description: `The team conducted our first successful autonomous flight test using the 3S drone. The drone followed a mission plan programmed in Mission Planner, and the pilot was able to take manual control mid-flight without issue. This confirmed that both the autonomous navigation logic and manual override procedures were functioning correctly, paving the way for full-scale integration on the 12S.`
+    },
+
+    {
+      date: "03/17/2025",
+      title: "Electrical Integration",
+      titleDescription: "Custom battery complete",
+      img: elec0317,
+      alt: "",
+      description: `The team successfully completed the assembly of the custom 12S lithium-ion battery pack designed specifically to meet the drone’s power and weight requirements. This milestone marked the completion of one of the most critical components for sustained flight and system reliability.`
+    },
+
+    {
+      date: "03/18/2025",
+      title: "Electrical Integration",
+      titleDescription: "Custom battery successfully wired to drone",
+      img: elec0318,
+      alt: "",
+      description: `We completed the final wiring of the custom-built 12S battery to the drone, with battery cases for protection. This marked a critical step in integrating the power system with the rest of the UAV’s electronics, ensuring proper distribution to the flight controller, propulsion, and peripheral subsystems. With this milestone, the drone became fully powered by its intended flight battery for the first time, paving the way for full system testing and validation.`
+    },
+
+    {
+      date: "03/21/2025",
+      title: "UAV Design",
+      titleDescription: "First motor test with custom battery",
+      img: uav0321,
+      alt: "",
+      description: `The UAV Design team successfully completed the first motor test using the finalized 12S custom battery configuration. This test confirmed that the propulsion system - motors, propellers, and ESCs - could operate reliably at full voltage under realistic conditions. It was a key validation step, ensuring that the battery delivers sufficient power to support the drone's thrust requirements.`
+    },
+
+    {
+      date: "03/21/2025",
+      title: "Electrical Integration",
+      titleDescription: "Ground test - custom battery powers entire system",
+      img: elec0321,
+      alt: "",
+      description: `This ground test verified that the custom battery could power all critical subsystems on the drone. This included avionics, telemetry, servos, and the payload deployment system. The test observed stable voltage levels across the system, confirming compatibility between the battery and onboard electronics. It also validated that the custom battery design meets the UAV’s total power demands, supporting safe and uninterrupted operation during flight.`
+    },
+
+    {
+      date: "03/22/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "3S first test with major avionics (failed)",
+      img: nav0322,
+      alt: "",
+      description: `The 3S training drone was meant to be tested with the LiDAR, gimbal, camera, and Jetson onboard to test the object recognition model. However, the drone was unable to lift off. At the time, it was unclear whether the issue was due to excessive weight, insufficient battery power, or lack of thrust.`
+    },
+
+    {
+      date: "03/22/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "12S first successful manual flight with custom battery",
+      img: nav03222,
+      alt: "",
+      description: `Equipped with the custom-built 12S battery system, the UAV successfully achieved stable manual flight. This was a major milestone, confirming that the drone’s airframe, propulsion system, and custom power supply were capable of supporting the UAV in real-world conditions.`
+    },
+
+    {
+      date: "03/24/2025",
+      title: "Object Detection",
+      titleDescription: "Successful waypoint test",
+      img: obj0324,
+      alt: "",
+      description: `The drone tracked and updated its position through a predefined sequence of GPS waypoints! The log output confirmed that each waypoint was registered with accurate latitude, longitude, and altitude values, and that the software could detect when a waypoint has been reached before moving to the next.`
+    },
+
+    {
+      date: "03/24/2025",
+      title: "Payload",
+      titleDescription: "Full payload system mounted to 12S drone",
+      img: pay0324,
+      alt: "",
+      description: `The complete payload system was mounted to the bottom of the drone in preparation for the Flight Readiness Video. This was the first time the fully integrated mechanism was flight-ready for demonstration and future autonomous tests.`
+    },
+
+    {
+      date: "03/26/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "12S first successful autonomous flight",
+      img: nav0326,
+      alt: "",
+      description: `The team completed its first autonomous mission flight using the 12S drone at the Cal Poly Pomona Farm. Though the test covered a small area, it successfully demonstrated waypoint tracking and autonomous control, marking a key step forward in mission-readiness and overall system integration.`
+    },
+
+    {
+      date: "03/29/2025",
+      title: "Systems Engineering",
+      titleDescription: "Flight readiness video script and shot plan completed",
+      img: sys0329,
+      alt: "",
+      styles: "!aspect-auto",
+      colSpan: 6,
+      description: `The team finalized the script and shot plan for the Proof of Flight Readiness video, a required submission for SUAS competition eligibility. The plan outlines the sequence of shots, flight maneuvers, and narration needed to meet all video requirements. This planning ensured that no requirement would be left unaccounted for and that all leads were clear on what the video would look like before anything was even filmed.`
+    },
+
+    {
+      date: "04/03/2025",
+      title: "Obstacle Avoidance",
+      titleDescription: "First test of the 2D LiDAR on the 3S",
+      img: obs0403,
+      alt: "",
+      description: `This was the first time that the LiDAR (A2M8) was tested in a real flight. During the test, an obstacle was in the LiDAR’s path (a tree) and the 3S drone successfully stopped and backed away from the obstacle. The mission did not continue from there, but the test showed that the LiDAR was successfully detecting obstacles and communicating with the Pixhawk to change the flight path.`
+    },
+
+    {
+      date: "04/11/2025",
+      title: "Object Detection",
+      titleDescription: "Full mission simulation completed",
+      img: obj0411,
+      alt: "",
+      description: `The full mission was simulated (from an object recognition point of view). The simulated drone was able to successfully recognize the object, move to the correct location, initiate the payload drop, and complete the rest of the mission. At this point, the team just needed to focus on the detection model, until the Flight Readiness Video was sorted out before fully testing with the actual drone.`
+    },
+
+    {
+      date: "04/12/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "First attempt at filming flight readiness video",
+      img: nav0412,
+      alt: "",
+      description: `The team completed the first attempt at filming test flights for the Flight Readiness Video. While the test flight was successful for the manual portion, the autonomous portion ended in a rough landing, which required new propellers to be ordered. Also, the payload components were still mounted on the bottom of the drone, but the payload team had recently decided to mount them on the sides. As a result, the team treated this filming session as a practice run, allowing the pilot to rehearse the required maneuvers and camera shots in preparation for the final version once the updated payload configuration is complete. Other supervising team members took notes on procedure and performance for cross-training purposes and to observe any points of improvement for their subsystem.`
+    },
+
+    {
+      date: "04/19/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "Second attempt at filming flight readiness video",
+      img: nav0419,
+      alt: "",
+      description: `During flight testing, the team discovered an error, where activating the kill switch or disarming the system while in a stabilized flight mode caused a “coupling”. The Pixhawk would momentarily re-engage and spike throttle unexpectedly. After diagnosing the problem, the system was modified to prevent this reaction from occurring again. As an added safety measure, the team decided that in any future emergency, both the kill switch and disarm functions will be used together to ensure the system powers down completely and predictably.`
+    },
+
+    {
+      date: "04/20/2025",
+      title: "Autonomous Navigation",
+      titleDescription: "Third attempt at filming flight readiness video",
+      img: nav0420,
+      alt: "",
+      description: `Tensions were high as the team worried about the autonomous section of the video and the drone’s ability to complete it. A new error popped up, but was quickly mitigated. Finally, the drone was able to fly the autonomous mission, completing 3 miles through a repeated figure 8 shape.`
+    },
+
+    {
+      date: "04/22/2025",
+      title: "Whole Team",
+      titleDescription: "FRV submission and qualification",
+      img: team0422,
+      alt: "",
+      styles: "!aspect-auto",
+      colSpan: 6,
+      description: `After months of development and testing, the team put together the flight readiness video and submitted it - just 6 days before the deadline. Not even 2 hours later, the RoboNation team responded, notifying us that we had qualified for competition! This milestone was a massive relief for the team, serving as reassurance of our past efforts and motivation for our future.`
+    },
+  ]
+}
+
+export { homeContent, team, drone, timeline };

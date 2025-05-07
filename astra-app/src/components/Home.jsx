@@ -59,7 +59,7 @@ const Carousel = () => {
 const HomeContent = () => {
   return (
     <section className="grid justify-items-center items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10" id="about">
-      <img src={logo} alt="Bronco Astra Logo" className="w-full md:max-w-[500px] max-w-[50%] object-cover" />{/*w-8/10 lg:w-full*/}
+      <img src={logo} alt="Bronco Astra Logo" className="w-full md:max-w-[600px] max-w-[70%] object-cover" />{/*w-8/10 lg:w-full*/}
       <div className="w-auto">
         <h1 className="font-poppins font-semibold text-6xl ">ABOUT</h1>
         <p className="pt-5">{homeContent.p1}</p>
@@ -74,8 +74,8 @@ const Home = () => {
   return (
     <div className="relative w-full mt-26">{/*  h-150 */}
       <div className="absolute sm:top-5 top-2 right-5 font-semibold sm:text-3xl lg:text-5xl text-xl text-right text-white z-2">
-        <h1 className="font-poppins drop-shadow-lg/25">PROJECT</h1>
-        <h1 className="font-poppins sm:pt-3 drop-shadow-lg/25">ASTRA 2025</h1>
+        <h1 className="font-poppins drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">PROJECT</h1>
+        <h1 className="font-poppins sm:pt-3 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">ASTRA 2025</h1>
       </div>
       <Carousel />
       <HomeContent />
