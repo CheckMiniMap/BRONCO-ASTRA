@@ -1,4 +1,4 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, cutmechanism, dropmechanism, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, payload, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422,  } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, cutmechanism, dropmechanism, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, payload, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422, docnav1, docnav2, docnav3, docobj1, docobj2, docobj3, docobj4, docobj5, docobj6, docobj7, docobj8, docobj9, docobs1, docuav1, docuav2, graphics1, graphics2, } from "../assets";
 
 export const navLinks = [
   {
@@ -1728,4 +1728,237 @@ const timeline = {
   ]
 }
 
-export { homeContent, team, drone, timeline };
+const tips = {
+  header: "Helpful Tips!",
+  description: "Whether you're new to drone development or just looking to learn something new, at Cal Poly Pomona, we’re here to help! For many members of our team, this was our first time building a drone from the ground up, so we saw firsthand how overwhelming it can be. Here, we’ve gathered some resources, guides, and lessons that helped us most along the way.",
+
+  simulation: {
+    title: "Simulation",
+    description: "Simulation tools allow teams to test and validate their ideas in a virtual environment before real-world implementation. By simulating beforehand, you can identify issues early, refine performance, and save valuable time and resources. This section includes example videos and setups used to support our object detection and LiDAR development.",
+
+    teams: [
+      {
+        sections: [
+          {
+            linkText: "2D Lidar Simulation",
+            link: `https://www.youtube.com/watch?v=xgWjMpqiuKk`,
+            author: "Max Gross",
+            description: `This video shows a virtual drone in Gazebo navigating a simulated environment using our 2D LiDAR sensor. The LiDAR continuously scans the area in a horizontal plane, detecting and mapping nearby obstacles. As the drone moves, detection data is visualized in real-time, demonstrating how the system recognizes and avoids objects by adjusting its path. This simulation verified that our avoidance logic works as expected before conducting any real flight tests, minimizing risk and saving valuable development time. For new teams, setting up a similar simulation using Gazebo and ROS is a great way to test LiDAR-based obstacle detection safely and iteratively.`,
+          },
+    
+          {
+            linkText: "(Waiting for video from josh)",
+            link: ``,
+            author: "Joshua Estrada",
+            description: `This video demonstrates a full example mission in simulation, integrating our object recognition system with waypoint-based flight. Using Mission Planner, a set of waypoints is preloaded to simulate a real SUAS flight path. Objects are placed throughout the simulated field, and the virtual drone follows its mission route, just like it would during competition. As the drone flies, it uses its downward-facing camera to detect target objects in real-time. Detection logs are printed to the terminal, showing how the system tracks the number of detections and dynamically inserts waypoints to simulate a payload drop. Each “drop” is performed once per lap to mirror mission rules. This simulation setup, built using tools like AirSim and Mission Planner, has allowed us to verify our object recognition code in a realistic scenario before any physical testing — making it a valuable reference for other teams developing autonomous vision and mission-integration pipelines.`,
+          },
+        ],
+      }
+    ]
+  },
+
+  documents: {
+    title: "Documents",
+    description: `Our team members have compiled helpful guides with step-by-steps, images, and videos for various aspects of the process, from quick 2-page references to in-depth 30-page walkthroughs. Whether you're troubleshooting a setup or trying to understand a system from scratch, these documents are a great place to start. Click the links below to explore!`,
+
+    teams: [
+      {
+        header: "UAV Design",
+
+        sections: [
+          {
+            linkText: "Motor Test Documentation",
+            link: `https://drive.google.com/file/d/1mKE4JleJ8vwjK3KJ-UvFX8AAanI8kxly/view`,
+            author: "Leo Chen",
+            details: "(6 pages)",
+            description: `This document outlines the full procedure used to conduct motor tests for motors used in a previous competition year on a secured test bench. It includes a checklist of measuring tools (digital tachometer, clamp meter), safety protocols, and step-by-step instructions for setup, calibration, and data collection. The guide emphasizes safety procedures like checking ESC wire direction, battery disconnection before propeller installation, and temperature monitoring at high throttle levels.`,
+            img: docuav1,
+            alt: "Document for Motor Test",
+          },
+
+          {
+            linkText: "Simulation of the Quadcopter Dynamics with LQR Based Control",
+            link: `https://drive.google.com/file/d/1IRNoMYoV04OhFAlQ5JqsOju_Xs2RquTZ/view`,
+            author: "Ahmad et. Al",
+            details: "(7 pages)",
+            description: `This research paper was NOT written by one of our team members, but our UAV Design team used it as a valuable resource for understanding the stability and controls aspect of the drone. The paper presents a detailed simulation study on quadcopter UAV dynamics using a Linear Quadratic Regulator (LQR) control approach. It covers mathematical modeling of the drone's motion, control input strategies, and improvements using integral feedback. The simulations demonstrate how LQR can optimize flight control, especially in reducing steady-state error for altitude.`,
+            img: docuav2,
+            alt: "Document for Simulation of the Quadcopter Dynamics with LQR Based Control",
+          },
+        ],
+      },
+
+      {
+        header: "Obstacle Avoidance",
+
+        sections: [
+          {
+            linkText: "The Basics of LiDAR and Obstacle Avoidance",
+            link: `https://drive.google.com/file/d/1NpjCnWOdh9B8eaUiAXJacj806BH2M0pz/view`,
+            author: "Ethan McKendell",
+            details: "(29 pages)",
+            description: `This document is a technical guide to support the integration of LiDAR sensors with the Pixhawk flight controller for autonomous UAV operations. It walks through key topics like setting up the LiDAR (specifically the A2M8 for this guide), configuring parameters in Mission Planner, understanding MavLink communication protocols, and using ROS for obstacle avoidance. The guide also includes detailed setup instructions, software installation links, and algorithm explanations (e.g., Bendy Ruler and Dijkstra’s) used for path planning. It is intended as both a tutorial and reference for other teams or future developers working on autonomous drone navigation.`,
+            img: docobs1,
+            alt: "Document for The Basics of LiDAR and Obstacle Avoidance",
+          },
+        ],
+      },
+
+      {
+        header: "Object Recognition",
+
+        sections: [
+          {
+            linkText: "Outside Resources",
+            link: `https://drive.google.com/file/d/1CyF5JXQ4XNBDaqAWo7-REXlAQl6nki6c/view`,
+            author: "Joshua Estrada",
+            details: "(2 pages)",
+            description: `This is a collection of resources made by our Object Recognition lead for his members to review key concepts. Each resource is linked with a short description, like another version of this page!`,
+            img: docobj1,
+            alt: "Document for Outside Resources",
+          },
+
+          {
+            linkText: "Introduction to Git",
+            link: `https://drive.google.com/file/d/18qc60whzcmoNA6KMzxyfIcvbi6WTPn85/view`,
+            author: "Joshua Estrada",
+            details: "(4 pages)",
+            description: `This document is a beginner-friendly guide to Git, a version control system widely used in software development. It explains key concepts like repositories, commits, branches, and merges, and includes step-by-step instructions for common Git tasks such as cloning, pushing, and pulling code. It also walks through how to set up a Git repository from scratch or clone an existing one from a server.`,
+            img: docobj2,
+            alt: "Document for Introduction to Git",
+          },
+
+          {
+            linkText: "HPC Setup and Usage Guide",
+            link: `https://drive.google.com/file/d/1BHXE00T8IiNq5O0i74lIv9tuetUUwOH4/view`,
+            author: "Joshua Estrada",
+            details: "(6 pages)",
+            description: `This document is a step-by-step guide to setting up and using a High-Performance Computing (HPC) environment. It walks through initial login procedures, setting up Python environments with Conda, using Tmux for multitasking in the terminal, and managing job scheduling with SLURM. The guide also explains how to run scripts and monitor jobs effectively. It's a great resource for new users looking to familiarize themselves with Linux-based computing environments and parallel processing systems.`,
+            img: docobj3,
+            alt: "Document for HPC Setup and Usage Guide",
+          },
+
+          {
+            linkText: "Camera Output Through CSI Port",
+            link: `https://drive.google.com/file/d/1clkcGX-6ExURnzAfNaQ1HDYKYNxslzf3/view`,
+            author: "Justine Gabuya",
+            details: "(4 pages)",
+            description: `This document is a step-by-step guide for connecting and configuring a Raspberry Pi HQ Camera to the Jetson Orin Nano via the CSI (Camera Serial Interface) port. It covers everything from safely connecting the hardware, setting up the Jetson IO interface, and verifying the camera connection, to streaming video using GStreamer in both terminal and Visual Studio Code. It also includes a working Python script for real-time video capture using OpenCV and explanations of the GStreamer pipeline. While it is specifically for our avionics, its information may be useful across various other setups.`,
+            img: docobj4,
+            alt: "Document for Camera Output Through CSI Port",
+          },
+
+          {
+            linkText: "Yolo Execution Process",
+            link: `https://drive.google.com/file/d/1Sl6ZkP9zT73NhPNl5Hbss5TQJfqgo1Q8/view`,
+            author: "Andrew Valdez",
+            details: "(3 pages)",
+            description: `This document walks through the full process of running and training a YOLO object detection model on a High Performance Computing (HPC) system. It includes step-by-step instructions for setting up your environment, downloading datasets from Roboflow, running YOLO training using the srun command, and organizing files correctly using tools like Termius. It also explains how to retrieve model outputs and monitor batch file progress.`,
+            img: docobj5,
+            alt: "Document for Yolo Execution Process",
+          },
+
+          {
+            linkText: "Object Rec Troubleshooting",
+            link: `https://drive.google.com/file/d/1egNxZQlA4XwPPMUmJVF9SlUMzbspvsRy/view`,
+            author: "Justine Gabuya",
+            details: "(5 pages)",
+            description: `This troubleshooting guide addresses common problems faced during the setup and operation of the object detection pipeline, particularly with OpenCV, ROS, GStreamer, and latency issues. It provides detailed steps to resolve version conflicts, reinstall OpenCV with proper compatibility, reconfigure cv_bridge, fix ROS rosrun errors, and optimize GStreamer pipelines to reduce latency in camera feeds.`,
+            img: docobj6,
+            alt: "Document for Object Rec Troubleshooting",
+          },
+
+          {
+            linkText: "Training Environment Specifications",
+            link: `https://drive.google.com/file/d/1OKKMdNn5EfT20LufHpSlHMm-gublGUKT/view`,
+            author: "Joshua Estrada",
+            details: "(3 pages)",
+            description: `This document offers guidance on how to generate effective training data for object detection models. It explains the importance of capturing objects in various orientations, sizes, and positions, as well as how to vary camera perspectives—such as changing height or tilt angle—to simulate real aerial conditions. These strategies help improve model accuracy by exposing it to realistic variations that may occur during flight.`,
+            img: docobj7,
+            alt: "Document for Training Environment Specifications",
+          },
+
+          {
+            linkText: "How to Capture Photos with AMCap",
+            link: `https://drive.google.com/file/d/15rSeBIM3vNaglQPyKazlqKhVddnBNEc5/view`,
+            author: "Justine Gabuya",
+            details: "(1 pages)",
+            description: `This document provides a quick tutorial on using the AMCap software to capture still images with the camera chosen for object recognition. It includes a download link, step-by-step instructions for launching the application, selecting the correct camera device, previewing the image, and saving snapshots.`,
+            img: docobj8,
+            alt: "Document for How to Capture Photos with AMCap",
+          },
+
+          {
+            linkText: "Pixhawk Configuration and Parameter Update",
+            link: `https://drive.google.com/file/d/18r2iqr_RY9kcO4v6e1DHiI6wKi2dEe75/view`,
+            author: "Justine Gabuya",
+            details: "(3 pages)",
+            description: `This guide walks through the process of setup and tuning of a Pixhawk flight controller using Mission Planner. It covers essential preflight checks, RC controller mapping, flight mode customization, and parameter tuning for a larger drone. It also explains how to resolve common issues such as the “PreArm: Compass not calibrated” and “Potential Thrust Loss” errors. It also includes tables showing before-and-after values for key parameters like motor thrust, PID filters, and servo functions that were specifically our drone. This should not be taken as a literal step-by-step guide, as each drone will be different. Rather, it is meant to show how these parameters can affect the performance of the drone.`,
+            img: docobj9,
+            alt: "Document for Pixhawk Configuration and Parameter Update",
+          },
+        ],
+      },
+
+      {
+        header: "Autonomous Navigation",
+
+        sections: [
+          {
+            linkText: "Setting Up A Parallel GCS",
+            link: `https://drive.google.com/file/d/1EaFy_zblDd3bfZs68HcaGJPzxSHykwfz/view`,
+            author: "Kevin Kopcinski",
+            details: "(2 pages)",
+            description: `This is a short how-to for setting up multiple Ground Control Stations (GCS) to connect simultaneously to a single UAV using Mission Planner, MAVProxy, and Tailscale. It includes step-by-step instructions for configuring the server (host connected to the Pixhawk) and clients, establishing UDP connections, and routing telemetry data across different IP addresses and ports. It also outlines how to use Tailscale to create a peer-to-peer VPN network for remote or distributed team collaboration. The document is meant to help teams monitor or control their UAV from multiple laptops or locations during testing or mission flights.`,
+            img: docnav1,
+            alt: "Document for Setting Up A Parallel GCS",
+          },
+
+          {
+            linkText: "Pre-Flight Checklist",
+            link: `https://drive.google.com/file/d/1suxkOlfv0v5XavHAQb0hyod1w8exiWKX/view`,
+            author: "Leo Chen",
+            details: "(6 pages)",
+            description: `This document outlines a detailed pre-flight and on-site flight test checklist used by the UAV Design team to ensure hardware readiness and system safety before each drone flight. It includes critical steps like frame inspections, component mounting verifications, motor calibration tests, and propeller safety checks. The procedure also highlights key signs to monitor during flight (e.g., oscillations, loose hardware, skid bending) and includes reference configurations for PWM wiring and propeller labeling. While tailored specifically to our custom drone, this checklist may serve as a helpful starting point for other teams building and testing their own UAV platforms.`,
+            img: docnav2,
+            alt: "Document for Pre-Flight Checklist",
+          },
+
+          {
+            linkText: "Flight Setup Procedure",
+            link: `https://drive.google.com/file/d/1UaYqpfVA8zMIWchikrr0c650LqeKA-qq/view`,
+            author: "Ashton Vogel",
+            details: "(5 pages)",
+            description: `This document outlines the complete step-by-step guide for preparing the drone for flight, whether in manual or autonomous modes. It covers the required hardware (e.g., telemetry radios, RC controller, GPS), detailed calibration steps using QGroundControl, how to verify correct RC channel mapping, and instructions for safe motor and battery checks. While this document was written for future years of Cal Poly’s team, its information may prove helpful to others as well.`,
+            img: docnav3,
+            alt: "Document for Flight Setup Procedure",
+          },
+        ],
+      },
+    ],
+  },
+
+  techGraphics: {
+    header: "Technical Graphics:",
+    p1: `This diagram shows the software pipeline our team used to connect object detection, mapping, and flight path data using ROS. It outlines how images from the drone’s camera are processed through YOLOv5, validated, localized, and sent to mapping and MAVLink integration. New teams can use this as a reference for building a structured, modular detection and localization system.`,
+
+    img1: graphics1,
+    alt1: "Software Communication Pipeline Diagram",
+
+    img2: graphics2,
+    alt2: "Motor Specs",
+
+    p2: `The table above is a picture of the trade study we used to decide on our propellers. Trade studies are a key part of our Systems Engineering approach that are used to make informed, objective decisions. In engineering, choices should be driven by logic and backed by quantitative analysis. A trade study helps compare multiple options against key criteria by following these general steps:`,
+    ol: [
+      "Identify the most important decision criteria",
+      "Assign a weight to each criterion based on its importance",
+      "Create a scoring scale for each criterion (e.g., 40–45 lbs = 9, 45–50 lbs = 8, etc.)",
+      "Score each option using the defined scale",
+      "Multiply each score by its weight to calculate weighted values",
+      "Add the total weighted scores for each option",
+    ],
+    p3: `The option with the highest total score is the most justified based on your analysis. Trade studies are especially useful for comparing components, designs, or strategies and can be tailored to fit any team’s decision-making process.`,
+  }
+}
+
+export { homeContent, team, drone, timeline, tips };

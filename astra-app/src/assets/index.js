@@ -3,7 +3,6 @@ import logo from "./finallogo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import placeholder from "./placeholder.svg";
-import lab1 from "./cover/lab1.jpg";
 import carousel1 from "./carousel/carousel1.jpeg";
 import carousel2 from "./carousel/carousel2.png";
 import carousel3 from "./carousel/carousel3.JPG";
@@ -174,13 +173,31 @@ import nav0419 from "./timeline/4.19 auto nav.png";
 import nav0420 from "./timeline/4.20 auto nav.png";
 import team0422 from "./timeline/4.22 whole team.png";
 
+// Tips
+import docnav1 from "./tips/doc-nav-1.png";
+import docnav2 from "./tips/doc-nav-2.png";
+import docnav3 from "./tips/doc-nav-3.png";
+import docobj1 from "./tips/doc-obj-1.png";
+import docobj2 from "./tips/doc-obj-2.png";
+import docobj3 from "./tips/doc-obj-3.png";
+import docobj4 from "./tips/doc-obj-4.png";
+import docobj5 from "./tips/doc-obj-5.png";
+import docobj6 from "./tips/doc-obj-6.png";
+import docobj7 from "./tips/doc-obj-7.png";
+import docobj8 from "./tips/doc-obj-8.png";
+import docobj9 from "./tips/doc-obj-9.png";
+import docobs1 from "./tips/doc-obs-1.png";
+import docuav1 from "./tips/doc-uav-1.png";
+import docuav2 from "./tips/doc-uav-2.png";
+import graphics1 from "./tips/graphics-1.png";
+import graphics2 from "./tips/graphics-2.png";
+
 export {
   // UI Assets
   logo,
   menu,
   close,
   placeholder,
-  lab1,
   carousel1,
   carousel2,
   carousel3,
@@ -350,4 +367,23 @@ export {
   nav0419,
   nav0420,
   team0422,
+
+  // Tips
+  docnav1,
+  docnav2,
+  docnav3,
+  docobj1,
+  docobj2,
+  docobj3,
+  docobj4,
+  docobj5,
+  docobj6,
+  docobj7,
+  docobj8,
+  docobj9,
+  docobs1,
+  docuav1,
+  docuav2,
+  graphics1,
+  graphics2,
 };
