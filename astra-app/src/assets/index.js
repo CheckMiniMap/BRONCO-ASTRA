@@ -4,9 +4,9 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import placeholder from "./placeholder.svg";
 import lab1 from "./cover/lab1.jpg";
-import carousel1 from "./carousel/carousel1.png";
+import carousel1 from "./carousel/carousel1.jpeg";
 import carousel2 from "./carousel/carousel2.png";
-import carousel3 from "./carousel/carousel3.png";
+import carousel3 from "./carousel/carousel3.JPG";
 import lockheed from "./lockheed-martin.png";
 
 // People
