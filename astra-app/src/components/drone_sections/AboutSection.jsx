@@ -36,7 +36,7 @@ const AboutCard = ({ about, index }) => {
         <MdKeyboardArrowRight className="text-3xl ml-2" />
       </div>
 
-      <img className="w-full h-60 object-cover rounded-lg" src={about.img} alt={about.alt} />
+      <img className={"w-full h-60 object-cover rounded-lg " + about.styles} src={about.img} alt={about.alt} />
     </motion.div>
   )
 }

@@ -514,6 +514,7 @@ const drone = {
       btnTitle: "See Components",
       img: battery,
       alt: "Custom Battery",
+      styles: "object-[10%_30%]"
     },
     {
       title: "Propulsion",
@@ -522,6 +523,7 @@ const drone = {
       btnTitle: "See Components",
       img: propulsion,
       alt: "The propulsion system",
+      styles: "object-[10%_30%]"
     },
     {
       title: "Structure",
