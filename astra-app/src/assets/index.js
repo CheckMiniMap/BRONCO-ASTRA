@@ -40,7 +40,7 @@ import ryantran from "./people/ryan-tran.jpg";
 import sergiojimenez from "./people/sergio-jimenez.JPG";
 import sneharamakrishnan from "./people/sneha-ramakrishnan.png";
 import stephenposner from "./people/stephen-posner.jpg";
-import theinnamanhvu from "./people/thein-nam-anh-vu.png";
+import theinnamanhvu from "./people/thein-nam-anh-vu.jpg";
 import waamiqsharrar from "./people/waamiq-sharrar.png";
 
 // Teams
@@ -48,23 +48,23 @@ import meettheteam from "./teams/meet-the-team.JPG";
 import electrical1 from "./teams/electrical1.JPG";
 import electrical2 from "./teams/electrical2.png";
 import electrical3 from "./teams/electrical3.png";
-import nav1 from "./teams/nav1.png";
-import nav2 from "./teams/nav2.png";
-import nav3 from "./teams/nav3.png";
-import obj1 from "./teams/obj1.png";
-import obj2 from "./teams/obj2.png";
-import obj3 from "./teams/obj3.png";
+import nav1 from "./teams/nav1.JPG";
+import nav2 from "./teams/nav2.JPG";
+import nav3 from "./teams/nav3.JPG";
+import obj1 from "./teams/obj1.JPG";
+import obj2 from "./teams/obj2.JPG";
+import obj3 from "./teams/obj3.JPG";
 import obs1 from "./teams/obs1.png";
 import obs2 from "./teams/obs2.png";
 import obs3 from "./teams/obs3.png";
 import payload1 from "./teams/payload1.png";
 import payload2 from "./teams/payload2.JPG";
-import payload3 from "./teams/payload3.webp";
+import payload3 from "./teams/payload3.png";
 import systems1 from "./teams/systems1.webp";
 import systems2 from "./teams/systems2.png";
 import systems3 from "./teams/systems3.png";
 import uav1 from "./teams/uav1.png";
-import uav2 from "./teams/uav2.png";
+import uav2 from "./teams/uav2.JPG";
 import uav3 from "./teams/uav3.JPG";
 
 // Components

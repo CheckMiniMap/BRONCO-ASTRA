@@ -10,7 +10,7 @@ const LeadProfile = ({ size, index, profile }) => {
       variants={fadeIn(index > size / 2 ? "left" : "right", "spring", index * 0.5, 0.75)}
       className="flex flex-col items-center "
     >
-      <img src={profile.img} alt={profile.name} className={`w-65 rounded-full object-cover ${profile.object ? `object-${profile.object}` : 'object-[100%_20%]'} aspect-1-1`} />
+      <img src={profile.img} alt={profile.name} className={`w-65 rounded-full drop-shadow-xl object-cover ${profile.object ? `object-${profile.object}` : 'object-[100%_20%]'} aspect-1-1`} />
       <h4 className="font-poppins text-[20px] font-semibold pt-2">{profile.name}</h4>
     </motion.div>
   );
@@ -44,7 +44,7 @@ const MemberProfile = ({ size, index, profile }) => {
       variants={fadeIn(index >= size / 2 ? "left" : "right", "spring", index * 0.5, 0.75)}
       className={`flex flex-col items-center ${colStyles}`}
     >
-      <img src={profile.img} alt={profile.name} className={`w-[45vw] h-[50vw] sm:w-55 sm:h-65 hexagon object-cover ${profile.object ? profile.object : 'object-[100%_20%]'}`} />
+      <img src={profile.img} alt={profile.name} className={`w-[45vw] h-[50vw] sm:w-55 sm:h-65 hexagon drop-shadow-xl object-cover ${profile.object ? profile.object : 'object-[100%_20%]'}`} />
       <h4 className="text-[4vw] sm:text-[20px] pt-2">{profile.name}</h4>
     </motion.div>
   );
@@ -78,6 +78,8 @@ const ContentRow = ({ index, content }) => {
   }, []);
 
   const isMobile = viewportWidth < 640; // Adjust the breakpoint as needed
+  const divStyles = "w-full h-50 md:h-60 rounded-xl drop-shadow-xl overflow-hidden";
+
 
   return (
     <motion.div
@@ -86,7 +88,7 @@ const ContentRow = ({ index, content }) => {
     >
       {isMobile ? (
         <>
-          <div className="w-full h-50 md:h-60 overflow-hidden">
+          <div className={divStyles}>
             <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
           </div>
           <motion.p key={index} className="text-base"><span className="ml-5"/>{content.text}</motion.p>
@@ -94,13 +96,13 @@ const ContentRow = ({ index, content }) => {
       ) : index % 2 === 0 ? (
         <>
           <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/>{content.text}</motion.p>
-          <div className="w-full h-50 md:h-60 overflow-hidden">
+          <div className={divStyles}>
             <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
           </div>
         </>
       ) : (
         <>
-          <div className="w-full h-50 md:h-60 overflow-hidden">
+          <div className={divStyles}>
             <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
           </div>
           <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/>{content.text}</motion.p>

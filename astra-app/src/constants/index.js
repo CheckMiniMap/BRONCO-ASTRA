@@ -184,18 +184,18 @@ const team = {
         {
           text: `Our UAV Design Subteam was responsible for the structural, aerodynamic, and mechanical aspects of Project Astra’s quadcopter. From initial concept to final assembly, our team ensured the aircraft was lightweight, durable, and optimized for performance.`,
           img: uav1,
-          alt: "UAV working with Team Lead",
+          alt: "Drone model from UAV Design",
         },
         {
           text: `We focused on airframe design and material selection, ensuring that our UAV met all requirements for flight capability, size, collapsibility, and weight while maximizing efficiency. Our team worked closely with Systems Engineering to make evidence-backed, logic-driven design decisions and collaborated with Autonomous Navigation and Payload to ensure seamless system integration.`,
           img: uav2,
-          alt: "UAV Design Team Working",
-          object: "object-[0%_20%] scale-150 relative md:left-30 md:bottom-20 sm:left-20 sm:bottom-10 left-30 bottom-20"
+          alt: "UAV working with Team Lead",
+          object: "object-[50%_20%]"
         },
         {
           text: `Through CAD modeling, simulations, and physical prototyping, we refined our design to maximize stability, maneuverability, and payload capacity. Our team successfully built a highly reliable and efficient UAV capable of executing complex autonomous missions with precision.`,
           img: uav3,
-          alt: "UAV Design Team solving problem",
+          alt: "UAV Design Team Working",
         }
       ]
     },
@@ -240,6 +240,7 @@ const team = {
           text: `We facilitated the integration of sensors, cameras, motors, and control systems, making sure that each electrical component was properly connected and functional. Our team worked closely with the UAV Design, Payload, Autonomous Navigation, Obstacle Avoidance, and Object Detection teams to ensure that power requirements were met and that electrical signals were transmitted accurately across the system.`,
           img: electrical2,
           alt: "Electrical Team soldering",
+          object: "object-[50%_40%]"
         },
         {
           text: `Through careful planning and precise execution, we ensured that the UAV's electrical systems operated reliably, enabling smooth functionality for all subsystems during autonomous missions. Our goal was to support the overall development process, ensuring that the electrical systems contributed to the UAV's high performance, reliability, and safety during competition.`,
@@ -271,7 +272,8 @@ const team = {
         {
           text: `The Autonomous Navigation Subteam developed the systems that allowed our UAV to navigate autonomously through complex environments. Using advanced algorithms, our team ensured that the UAV could take off, fly, and land without manual control, following predefined flight paths with high precision.`,
           img: nav1,
-          alt: "Ashton and Leo at flight test",
+          alt: "Ashton and Leo prepping drone at flight test",
+          object: "object-[50%_57%]"
         },
         {
           text: `We integrated data from the UAV’s sensors, including GPS, LiDAR, and cameras, to create a comprehensive understanding of the environment and enabled smooth, autonomous flight. The navigation system was designed to adjust in real time, making dynamic decisions to optimize flight routes and avoid obstacles.`,
@@ -281,7 +283,7 @@ const team = {
         {
           text: `Our goal was to build a navigation system that guaranteed accurate and reliable autonomous performance, ensuring the UAV could execute complex missions with precision, while maintaining safety and efficiency throughout its operation.`,
           img: nav3,
-          alt: "Matthew and Ben (Thein Nam Anh Vu) preparing for flight test",
+          alt: "Autonomous Navigation discussing with team at flight test",
         }
       ]
     },
@@ -327,7 +329,8 @@ const team = {
         {
           text: `Our goal was to create a payload system that not only met competition requirements but also enhanced the UAV's overall performance, ensuring it could execute precise, autonomous missions with high reliability and efficiency.`,
           img: payload3,
-          alt: "Payload Team tapping holes",
+          alt: "Payload Team working",
+          object: "object-[50%_0%]"
         }
       ]
     },
