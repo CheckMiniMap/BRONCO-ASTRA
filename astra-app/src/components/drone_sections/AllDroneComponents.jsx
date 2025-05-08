@@ -21,8 +21,8 @@ const ComponentSection = ({ component }) => {
         variants={fadeIn("up", "spring", 0.3, 0.5)}
         className="grid grid-cols-4 gap-3 mt-8"
     >
-      <div className="w-full aspect-[1.2] md:col-span-1 col-span-4 md:mt-7 rounded-lg drop-shadow-lg/25 bg-white overflow-hidden">
-        <img className={`w-full aspect-[1.2] object-cover ${component.styles}`} src={component.img} alt={component.alt} />
+      <div className="flex w-full aspect-[1.2] md:col-span-1 col-span-4 md:mt-7 rounded-lg drop-shadow-lg/25 bg-white overflow-hidden">
+        <img className={`w-full aspect-auto object-cover ${component.styles}`} src={component.img} alt={component.alt} />
       </div>
       
       <div className="w-full md:col-span-3 col-span-4 md:text-base text-sm">

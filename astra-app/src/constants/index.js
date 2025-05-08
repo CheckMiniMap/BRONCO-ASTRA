@@ -1,4 +1,4 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, servomotors, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422, } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, cutmechanism, dropmechanism, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, payload, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422,  } from "../assets";
 
 export const navLinks = [
   {
@@ -504,8 +504,8 @@ const drone = {
       id: "payload",
       description: `The payload system is designed to deliver mission-specific objects with precision. It integrates mechanical release mechanisms and structural supports to ensure accurate deployment under various flight conditions, while minimizing aerodynamic and structural impact on the drone.`,
       btnTitle: "See Components",
-      img: placeholder,
-      alt: "placeholder",
+      img: payload,
+      alt: "Payload Models",
     },
     {
       title: "Battery",
@@ -553,47 +553,48 @@ const drone = {
       header: "Payload",
       id: "payload",
       components: [
-        {
-          img: servomotors,
-          alt: "Servo Motors – Miuzei 20 KG High Torque RC Servo",
-          title: "Servo Motors",
-          titleDescription: "Miuzei 20 KG High Torque RC Servo",
-          description: `This high-torque servo motor is used to control the mechanical hook in the payload drop mechanism. Its strength and reliability allow it to clamp down or release the pulley system with precision, ensuring the payload is securely held and released only when commanded. The servo is powered and controlled by the Pixhawk, allowing for synchronized autonomous or manual payload deployment during the mission.`,
-          bullets: [
-            {
-              point: `Torque: Up to 28 in-lb`,
-            },
-            {
-              point: `Operating Voltage: 4.8V – 6.8V`,
-            },
-            {
-              point: `Speed: ~0.16 sec/60° @ 6.8V`,
-            },
-            {
-              point: `Control Signal: Standard PWM`,
-            },
-            {
-              point: `Rotation Range: ~180°`,
-            },
-            {
-              point: `Dimensions: ~40.5 × 20 × 40.3 mm`,
-            },
-            {
-              point: `Weight: ~60 g`,
-            },
-          ]
-        },
+        // {
+        //   img: servomotors,
+        //   alt: "Servo Motors – Miuzei 20 KG High Torque RC Servo",
+        //   title: "Servo Motors",
+        //   titleDescription: "Miuzei 20 KG High Torque RC Servo",
+        //   description: `This high-torque servo motor is used to control the mechanical hook in the payload drop mechanism. Its strength and reliability allow it to clamp down or release the pulley system with precision, ensuring the payload is securely held and released only when commanded. The servo is powered and controlled by the Pixhawk, allowing for synchronized autonomous or manual payload deployment during the mission.`,
+        //   bullets: [
+        //     {
+        //       point: `Torque: Up to 28 in-lb`,
+        //     },
+        //     {
+        //       point: `Operating Voltage: 4.8V – 6.8V`,
+        //     },
+        //     {
+        //       point: `Speed: ~0.16 sec/60° @ 6.8V`,
+        //     },
+        //     {
+        //       point: `Control Signal: Standard PWM`,
+        //     },
+        //     {
+        //       point: `Rotation Range: ~180°`,
+        //     },
+        //     {
+        //       point: `Dimensions: ~40.5 × 20 × 40.3 mm`,
+        //     },
+        //     {
+        //       point: `Weight: ~60 g`,
+        //     },
+        //   ]
+        // },
 
         {
-          img: placeholder,
-          alt: "placeholder",
+          img: dropmechanism,
+          alt: "Drop Mechanism Model",
           title: "Drop Mechanism",
           description: `Our drop mechanism is a servo-actuated pulley capture system designed for controlled payload deployment. The servo, powered by the Pixhawk, actuates a hook that locks onto a slotted pulley holding the drop string. A LEGO gear is integrated to modulate the pulley’s rotation, preventing the payload dropping in free fall. Bearings allow smoother rotation of the pulley system, reducing disturbances during flight. A limit switch confirms the string is in place and signals when the cutting sequence can safely initiate. The full assembly mounts directly to the UAV’s housing unit and integrates with the cutting mechanism for precise, automated payload release.`,
         },
 
         {
-          img: placeholder,
-          alt: "placeholder",
+          img: cutmechanism,
+          alt: "Cutting Mechanism Model",
+          styles: "scale-[0.9]",
           title: "Cutting Mechanism",
           description: `The cutting mechanism is responsible for severing the string that controls payload release. In this design, the string is delivered with the beacon but will be tied in a way that is easily separated once delivered. The mechanism is powered by the same high-torque servo motor used in the drop mechanism, connected directly to a pair of scissors. When activated by the Pixhawk, the servo rotates to close the blades and cut the string. The design prioritizes simplicity and reliability, with the scissors securely held in place and a housing unit supporting the servo.`,
         },
@@ -607,6 +608,7 @@ const drone = {
         {
           img: individualcells,
           alt: "Individual Cells - Molicel 21700 P45B 4500mAh 45A",
+          styles: "object-[0%_20%]",
           title: "Individual Cells",
           titleDescription: "Molicel 21700 P45B 4500mAh 45A",
           description: `To meet the drone’s specific power and weight demands, our team developed a custom battery pack using these high-performance lithium-ion cells. This approach gave us full control over the pack’s voltage, capacity, and physical layout, allowing us to optimize for both endurance and integration. The design supports high current draw during flight while staying under weight limits. Custom-building the pack also enabled better thermal management and compatibility with our drone’s power distribution system.`,
@@ -654,6 +656,7 @@ const drone = {
         {
           img: batterymanagementsystems,
           alt: "Battery Management Systems - SEQURE 6S 40A Protection Board",
+          styles: "scale-[1.2]",
           title: "Battery Management Systems",
           titleDescription: "SEQURE 6S 40A Protection Board",
           description: `To ensure safe and reliable operation of the drone’s custom battery pack, SEQURE 6S 40A protection boards are installed on each 6-cell module. These protect the battery during charging and discharging by balancing cell voltages and preventing overcharge, over-discharge, and overcurrent conditions. The BMS plays a critical role in maintaining long-term battery health, reducing fire risk, and ensuring the drone performs consistently and safely during flight.`,
@@ -776,6 +779,7 @@ const drone = {
         {
           img: electricalspeedcontrollers,
           alt: "Electronic Speed Controllers – MAD AMPX 80A",
+          styles: "scale-[0.6] overflow-visible",
           title: "Electronic Speed Controllers",
           titleDescription: "MAD AMPX 80A",
           description: `The electronic speed controllers (ESCs) are used to precisely control the rotation speeds of the motors by regulating the power delivery. They enable the motors to make sharp adjustments in motor torque, speed, and direction, which is necessary for drone performance and stability. This ESC is 80A, which is compatible with the SunnySky motors. Additionally, they contain a battery eliminator circuit (BEC), which is able to step down the battery voltage to the motor voltage without the need for a supplemental battery.`,
@@ -808,7 +812,7 @@ const drone = {
         {
           img: rodsandplates,
           alt: "Rods and Plates – Carbon Fiber",
-          styles: "scale-75 !aspect-[1.0] relative bottom-5",
+          styles: "scale-[0.75] overflow-visible",
           title: "Rods and Plates",
           titleDescription: "Carbon Fiber",
           description: `The main plates and rods comprising the drone frame are carbon fiber. This material was chosen because of its unmatched combination of strength and lightness. The drone is subject to aerodynamic loads, and potentially crashes, which makes strength an important characteristic. Lightness is crucial because of the 45 lbs. weight limit set by the competition.`,
@@ -817,7 +821,6 @@ const drone = {
         {
           img: batterycasing,
           alt: "Battery Casing – Custom 3D-Printed Casing",
-          styles: "object-[22%_20%] scale-115",
           title: "Battery Casing",
           titleDescription: "Custom 3D-Printed Casing",
           description: `There are four separate battery cases that hold the battery packs. These were designed and 3D-printed to hold the batteries in place and integrate smoothly with the rest of the frame. They were printed from PLA and contain lids that slide on and off. They also have slots for wiring to pass through as well as drilled holes to provide airflow for cooling.`,
@@ -847,6 +850,7 @@ const drone = {
         {
           img: aerialmapping,
           alt: "Aerial Mapping – OpenDroneMap",
+          styles: "scale-[0.9] overflow-visible",
           title: "Aerial Mapping",
           titleDescription: "OpenDroneMap",
           description: `OpenDroneMap is the software we use to generate high-resolution maps during flight. As the drone flies over the designated mapping boundary, it captures overlapping images of the ground. These are stitched together in real time to create a detailed, wide-area map.  OpenDroneMap helps us quickly turn aerial images into a usable map—all while the drone is still in the air.`,
@@ -908,6 +912,7 @@ const drone = {
         {
           img: lidarsensor2d,
           alt: "2D LiDAR Sensor - SLAMTEC RPLiDAR A2M8",
+          styles: "scale-[0.9] overflow-visible",
           title: "2D LiDAR Sensor",
           titleDescription: "SLAMTEC RPLiDAR A2M8",
           description: `The A2M8 is used as a 2D sensor for obstacle avoidance, serving as a stepping stone for developing and testing fundamental avoidance strategies. This allowed the team to refine obstacle detection methods before moving to a more complex 3D system. The A2M8 is fully prepared to be integrated into the drone for competition if the 3D LiDAR does not meet reliability expectations. However, only one LiDAR system—either 2D or 3D—will be used on mission day, depending on final performance evaluations.`,
@@ -923,6 +928,7 @@ const drone = {
         {
           img: lidarsensor3d,
           alt: "3D LiDAR Sensor - Unitree 4D LiDAR-L1",
+          styles: "scale-[0.9] overflow-visible",
           title: "3D LiDAR Sensor",
           titleDescription: "Unitree 4D LiDAR-L1",
           description: `The L1 is our primary sensor for obstacle avoidance, providing real-time 3D environmental mapping to detect and navigate around obstacles with greater accuracy. Unlike the 2D LiDAR, which scans in a single plane, the L1 provides full 360° coverage in the XY plane while also scanning vertically to create a dome-shaped field of view. This enables it to detect obstacles at varying heights, allowing for more advanced path planning and navigation in complex environments. While this is our preferred system, its integration is still under evaluation. If reliability issues cannot be resolved, the 2D LiDAR (A2M8) is ready as a backup option.`,
@@ -939,6 +945,7 @@ const drone = {
         {
           img: flightcontroller,
           alt: "Flight Controller - Pixhawk CubeOrange+",
+          styles: "scale-[0.8] overflow-visible object-[50%_100%]",
           title: "Flight Controller",
           titleDescription: "Pixhawk CubeOrange+",
           description: `The Pixhawk CubeOrange+ is the central flight controller of our drone, providing high-performance processing for autonomous navigation, sensor integration, and real-time decision-making. Equipped with triple-redundant IMUs and a fail-safe co-processor, it ensures reliable operation even in challenging environments. The CubeOrange+ supports advanced flight algorithms, precise position estimation, and robust communication with onboard systems, making it a critical component for stable and responsive flight control.`,
@@ -998,6 +1005,7 @@ const drone = {
         {
           img: gpsmodule,
           alt: "GPS Module - CubePilot Here3+",
+          styles: "scale-[0.7] overflow-visible",
           title: "GPS Module",
           titleDescription: "CubePilot Here3+",
           description: `The GPS module is used for precise positioning and navigation. Enabling accurate localization for autonomous flight, it enhances positional accuracy down to the centimeter level, especially when we use 2 modules for redundancy, making it ideal for the mapping and object detection tasks. The Here3+ communicates via a high-speed CAN interface, providing robust data transmission and reduced interference. Additionally, the module includes an integrated IMU and compass, further improving stability and navigation performance in complex environments.`,
@@ -1013,6 +1021,7 @@ const drone = {
         {
           img: remotecontroller,
           alt: "Remote Controller – Taranis X9D+",
+          styles: "scale-[0.8] overflow-visible",
           title: "Remote Controller",
           titleDescription: "Taranis X9D+",
           description: `The Taranis X9D+ is our handheld transmitter used by the pilot to manually control the drone when needed. It provides a reliable, low-latency connection to the drone’s RC receiver and is essential for tasks like manual takeoff, landing, or emergency override. In our case, the team is planning for a fully autonomous mission, so this controller should only be used for emergency override in our case. The X9D+ offers precise control through adjustable gimbals and programmable switches. It operates on the ACCST 2.4 GHz protocol, ensuring secure and interference-resistant communication with the drone’s onboard receiver.`,
@@ -1043,6 +1052,7 @@ const drone = {
         {
           img: telemetrymodem,
           alt: "Telemetry Modem – RFD900x",
+          styles: "scale-[0.95] overflow-visible",
           title: "Telemetry Modem",
           titleDescription: "RFD900x",
           description: `The RFD900x is a long-range telemetry modem that enables robust wireless communication between the Ground Control Station (GCS) and the drone. It is a critical component for sending and receiving live telemetry data such as GPS position, battery status, and system health. The RFD900x is known for its exceptional range, which far exceeds the distances needed for our mission. Its high-link reliability and customizable settings make it ideal for maintaining stable data transfer even in RF-dense environments. It is fully compatible with MAVLink, allowing seamless integration with Mission Planner.`,
@@ -1051,6 +1061,7 @@ const drone = {
         {
           img: powerdistributionboard,
           alt: "Power Distribution Board – Matek X Class 12S PDB",
+          styles: "scale-[0.7] overflow-visible",
           title: "Power Distribution Board",
           titleDescription: "Matek X Class 12S PDB",
           description: `The Matek X Class Power Distribution Board (PDB) is a high-voltage board designed to safely distribute power from our custom battery pack to the drone’s ESCs, motors, and auxiliary systems. With support for up to 12S power systems, it’s perfect for heavy-lift UAVs like ours. The board features integrated voltage and current sensing, which simplifies power monitoring and enables telemetry feedback to the flight controller.`,
@@ -1066,6 +1077,7 @@ const drone = {
         {
           img: circuitbreaker,
           alt: "Circuit Breaker – Erayco 200 Amp Breaker",
+          styles: "scale-[0.75] overflow-visible",
           title: "Circuit Breaker",
           titleDescription: "Erayco 200 Amp Breaker",
           description: `The Erayco 200 serves as a crucial safety component in our drone’s power system. Installed after the battery but before the power distribution board, it protects against electrical overloads and short circuits by automatically interrupting the power flow if current exceeds safe limits. In addition to its automatic trip feature, the breaker includes a manual reset button, allowing for quick shutdowns or reactivation during testing.`,
@@ -1079,6 +1091,7 @@ const drone = {
         {
           img: busbar,
           alt: "Bus Bar – Mofeez Power Distribution Block",
+          styles: "scale-[0.9] overflow-visible",
           title: "Bus Bar",
           titleDescription: "Mofeez Power Distribution Block",
           description: `The Mofeez Power Distribution Block (bus bar) is used to organize and distribute electrical power from the main power source to various subsystems across the drone. It provides a safe but compact way to manage multiple high-current connections. This helps us reduce cable clutter, allowing for a more organized system. The bus bar also ensures that power is cleanly and efficiently delivered to critical components such as ESCs and other avionics. Its insulated base and protective cover enhance safety and prevent accidental shorts during operation and maintenance.`,
@@ -1092,6 +1105,7 @@ const drone = {
         {
           img: limitswitch,
           alt: "Limit Switch – Omron Electronics SS-5GL2",
+          styles: "scale-[0.8] overflow-visible",
           title: "Limit Switch",
           titleDescription: "Omron Electronics SS-5GL2",
           description: `The Omron SS-5GL2 limit switch is used to detect the mechanical position of moving components on the drone. In our system, it functions as a trigger or sensor for physical end-stops, such as servo movement limits. This micro switch is compact, lightweight, and highly reliable, making it well-suited for aerospace applications where space is limited and precision is key. Its snap-action mechanism ensures fast, consistent switching with minimal wear.`,
@@ -1107,6 +1121,7 @@ const drone = {
         {
           img: stepdownmodule,
           alt: "Step-Down Module - FBHDZVV Buck Voltage Regulator",
+          styles: "scale-[0.7] overflow-visible",
           title: "Step-Down Module",
           titleDescription: "FBHDZVV Buck Voltage Regulator",
           description: `The FBHDZVV Buck Voltage Regulator is used to safely convert the drone’s high battery voltage to lower voltages required by various electronics, such as servos, sensors, or the flight controller. This ensures stable voltage output even during load changes, protecting sensitive components from damage. It plays a critical role in maintaining electrical reliability across subsystems with different power requirements and is part of our risk mitigation strategy.`,

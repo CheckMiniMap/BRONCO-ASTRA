@@ -81,9 +81,11 @@ import camera from "./components/camera.png";
 import cellspacers from "./components/cell-spacers.png";
 import circuitbreaker from "./components/circuit-breaker.png";
 import custom12sbattery from "./components/custom-12s-battery.png";
+import cutmechanism from "./components/cut-mechanism.png";
+import dropmechanism from "./components/drop-mechanism.png";
 import electricalspeedcontrollers from "./components/electrical-speed-controllers.png";
 import flightcontroller from "./components/flight-controller.png";
-import gimbal from "./components/gimbal.jpg";
+import gimbal from "./components/gimbal.png";
 import gpsmodule from "./components/gps-module.png";
 import groundcontrolstation from "./components/ground-control-station.png";
 import heatshrinktubing from "./components/heat-shrink-tubing.png";
@@ -92,13 +94,14 @@ import limitswitch from "./components/limit-switch.png";
 import motors from "./components/motors.png";
 import objectdetectionmodel from "./components/object-detection-model.png";
 import onboardcomputer from "./components/onboard-computer.png";
+import payload from "./components/payload.png";
 import powerdistributionboard from "./components/power-distribution-board.png";
 import propellers from "./components/propellers.png";
 import propulsion from "./components/propulsion.png";
 import remotecontroller from "./components/remote-controller.png";
 import roboticsmiddleware from "./components/robotics-middleware.png";
 import rodsandplates from "./components/rods-and-plates.png";
-import servomotors from "./components/servo-motors.png";
+//import servomotors from "./components/servo-motors.png";
 import simulationenvironment from "./components/simulation-environment.png";
 import software from "./components/software.png";
 import stepdownmodule from "./components/step-down-module.png";
@@ -255,6 +258,8 @@ export {
   cellspacers,
   circuitbreaker,
   custom12sbattery,
+  cutmechanism,
+  dropmechanism,
   electricalspeedcontrollers,
   flightcontroller,
   gimbal,
@@ -266,13 +271,14 @@ export {
   motors,
   objectdetectionmodel,
   onboardcomputer,
+  payload,
   powerdistributionboard,
   propellers,
   propulsion,
   remotecontroller,
   roboticsmiddleware,
   rodsandplates,
-  servomotors,
+  //servomotors,
   simulationenvironment,
   software,
   stepdownmodule,
