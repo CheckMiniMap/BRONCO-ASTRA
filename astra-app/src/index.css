@@ -79,6 +79,20 @@
 }
 
 @layer components {
+  mark {
+    background-color: #fef08a;
+    padding: 0 2px;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  .text-xs {
+    line-height: 1.25rem;
+    max-height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
   .hexagon {
     clip-path: polygon( 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }

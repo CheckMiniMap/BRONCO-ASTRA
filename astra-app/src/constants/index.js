@@ -1,4 +1,14 @@
-import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, cutmechanism, dropmechanism, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, payload, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422, docnav1, docnav2, docnav3, docobj1, docobj2, docobj3, docobj4, docobj5, docobj6, docobj7, docobj8, docobj9, docobs1, docuav1, docuav2, graphics1, graphics2, } from "../assets";
+import { placeholder, adrianspitzzeri, alissaeverman, andrewvaldez, annikaruggles, ashtonvogel, bhandari, carlomaldonado, danielleking, eliasdiosdado, ethanmckendell, ethanngo, federicoserrano, hannahhornung, issacgutierrez, jacknajarian, jimmynguyen, johnfernandez, johngerming, joshuaestrada, justinegabuya, kevinkopcinski, leochen, lizethgallegos, mattromero, maxgross, ricardopaz, ryantran, sergiojimenez, sneharamakrishnan, stephenposner, theinnamanhvu, waamiqsharrar, lockheed, meettheteam, electrical1, electrical2, electrical3, nav1, nav2, nav3, obj1, obj2, obj3, obs1, obs2, obs3, payload1, payload2, payload3, systems1, systems2, systems3, uav1, uav2, uav3, lidarsensor2d, lidarsensor3d, aerialmapping, avionics, batterycasing, batteryconnections, batterymanagementsystems, battery, busbar, camera, cellspacers, circuitbreaker, custom12sbattery, cutmechanism, dropmechanism, electricalspeedcontrollers, flightcontroller, gimbal, gpsmodule, groundcontrolstation, heatshrinktubing, individualcells, limitswitch, motors, objectdetectionmodel, onboardcomputer, payload, powerdistributionboard, propellers, propulsion, remotecontroller, roboticsmiddleware, rodsandplates, receiver, simulationenvironment, software, stepdownmodule, structure, telemetrymodem, transmitter, antisparkswitch, timelineherocalpoly, timelinehero, team0918, team09182, obs0921, uav0923, obj0928, obs1003, obj1005, uav1005, obs1007, pay1009, team1009, obj1012, elec1014, pay1016, obj1019, pay1019, uav1019, pay1026, obj1102, sys1107, obj1109, pay1109, elec1110, pay1116, elec1205, obj1207, pay1208, obj0104, obs0104, obj0112, pay0115, sys0119, pay0128, obj0129, nav0201, elec0210, team0831, obj0210, pay0214, obs0301, sys0313, elec0314, pay0314, nav0315, obj0315, nav0316, pay0316, elec0317, elec0318, elec0321, uav0321, nav0322, nav03222, obj0324, pay0324, nav0326, sys0329, obs0403, obj0411, nav0412, nav0419, nav0420, team0422, docnav1, docnav2, docnav3, docobj1, docobj2, docobj3, docobj4, docobj5, docobj6, docobj7, docobj8, docobj9, docobs1, docuav1, docuav2, graphics1, graphics2, simlidar, simobj } from "../assets";
+
+export const footer = {
+  id: "footer",
+  contactTitle: "Contact Project Lead",
+  leadTitle: "Project Lead / Chief Engineer",
+  leadContact: "Matthew Romero: macornejo1@cpp.edu",
+  locationTitle: "Location",
+  schoolTitle: "California State Polytechnic University of Pomona",
+  schoolAddress: "3801 West Temple Ave, Pomona, CA, 91768"
+}
 
 export const navLinks = [
   {
@@ -24,13 +34,16 @@ export const navLinks = [
 ];
 
 const homeContent = {
-  p1: `We are Project Astra, a student-led Unmanned Aerial Systems (UAS) team at California State Polytechnic University, Pomona. Our mission is to push the boundaries of autonomous aerial technology through innovation, collaboration, and hands-on engineering. We bring together students from diverse engineering disciplines to design, build, and test cutting-edge UAV systems capable of real-world applications.`,
+  id: "about",
+  p1: `We are Project ASTRA, a student-led Unmanned Aerial Systems (UAS) team at California State Polytechnic University, Pomona. Our mission is to push the boundaries of autonomous aerial technology through innovation, collaboration, and hands-on engineering. We bring together students from diverse engineering disciplines to design, build, and test cutting-edge UAV systems capable of real-world applications.`,
   p2: `This year, we are developing a quadcopter to compete in the prestigious SUAS Competition in Maryland this June. Our UAV is designed for fully autonomous flight and navigation, integrating advanced object detection, precision payload deployment, and aerial mapping capabilities. The system will carry up to four payloads and deliver them with accuracy to designated targets, while also generating detailed image maps of the flight area to enhance mission awareness and performance.`,
   p3: `As a team, we are committed to pushing the limits of UAV technology through rigorous research, iterative design, and hands-on testing. With months of development, we refined our systems to meet the complex demands of the competition. Project Astra is more than just a competition team—we are a group of passionate engineers, problem solvers, and innovators striving to make an impact in the world of autonomous aviation.`
 }
 
 const team = {
   projectLead: {
+    id: "project-lead",
+    title: "Matthew Romero",
     p1: `As our Project Lead, Matthew balances two key responsibilities: providing leadership and organization to keep the team on track while also overseeing the technical development and integration of all components into a fully functional system for competition.`,
     p2: `With experience as an Industrial Automation Intern, Matthew brings extensive hands-on expertise in electrical engineering, software development, and system integration. He has worked on electrical skids, custom firmware for microcontrollers like the ESP32, and the design of critical electrical systems.`,
     p3: `His leadership is reflected in his structured approach—setting clear deadlines, fostering collaboration between project leads and subteams, and ensuring efficient workflow. He also manages logistics, from ordering components to troubleshooting integration challenges, ensuring that all moving parts come together safely and effectively to achieve the team’s vision.`,
@@ -39,6 +52,7 @@ const team = {
   },
   profiles: [
     {
+      id: "sublead-leo",
       img: leochen,
       name: "Leo Chen",
       titles: [
@@ -58,6 +72,7 @@ const team = {
       ]
     },
     {
+      id: "sublead-ashton",
       img: ashtonvogel,
       name: "Ashton Vogel",
       titles: [
@@ -77,6 +92,7 @@ const team = {
       ]
     },
     {
+      id: "sublead-hannah",
       img: hannahhornung,
       name: "Hannah Hornung",
       object: "object-[50%_20%]",
@@ -93,6 +109,7 @@ const team = {
       ],
     },
     {
+      id: "sublead-joshua",
       img: joshuaestrada,
       name: "Joshua Estrada",
       object: "object-[0%_25%]",
@@ -109,6 +126,7 @@ const team = {
       ]
     },
     {
+      id: "sublead-max",
       img: maxgross,
       name: "Max Gross",
       object: "object-[0%_50%]",
@@ -125,6 +143,7 @@ const team = {
       ]
     },
     {
+      id: "sublead-danielle",
       img: danielleking,
       name: "Danielle King",
       object: "object-[40%_0%]",
@@ -478,13 +497,10 @@ const team = {
         }
       ]
     },
-
-
-
-
   ],
 
   advisor: {
+    id: "advisor",
     title: "Project Advisor",
     name: "Dr. Subodh Bhandari",
     img: bhandari,
@@ -492,6 +508,7 @@ const team = {
   },
 
   sponsors: {
+    id: "sponsors",
     title: "Sponsors",
     img: lockheed,
     alt: "Lockheed Martin Logo",
@@ -558,38 +575,8 @@ const drone = {
       header: "Payload",
       id: "payload",
       components: [
-        // {
-        //   img: servomotors,
-        //   alt: "Servo Motors – Miuzei 20 KG High Torque RC Servo",
-        //   title: "Servo Motors",
-        //   titleDescription: "Miuzei 20 KG High Torque RC Servo",
-        //   description: `This high-torque servo motor is used to control the mechanical hook in the payload drop mechanism. Its strength and reliability allow it to clamp down or release the pulley system with precision, ensuring the payload is securely held and released only when commanded. The servo is powered and controlled by the Pixhawk, allowing for synchronized autonomous or manual payload deployment during the mission.`,
-        //   bullets: [
-        //     {
-        //       point: `Torque: Up to 28 in-lb`,
-        //     },
-        //     {
-        //       point: `Operating Voltage: 4.8V – 6.8V`,
-        //     },
-        //     {
-        //       point: `Speed: ~0.16 sec/60° @ 6.8V`,
-        //     },
-        //     {
-        //       point: `Control Signal: Standard PWM`,
-        //     },
-        //     {
-        //       point: `Rotation Range: ~180°`,
-        //     },
-        //     {
-        //       point: `Dimensions: ~40.5 × 20 × 40.3 mm`,
-        //     },
-        //     {
-        //       point: `Weight: ~60 g`,
-        //     },
-        //   ]
-        // },
-
         {
+          id: "drop-mechanism",
           img: dropmechanism,
           alt: "Drop Mechanism Model",
           title: "Drop Mechanism",
@@ -597,6 +584,7 @@ const drone = {
         },
 
         {
+          id: "cutting-mechanism",
           img: cutmechanism,
           alt: "Cutting Mechanism Model",
           styles: "scale-[0.9]",
@@ -611,6 +599,7 @@ const drone = {
       id: "battery",
       components: [
         {
+          id: "individual-cells",
           img: individualcells,
           alt: "Individual Cells - Molicel 21700 P45B 4500mAh 45A",
           styles: "object-[0%_20%]",
@@ -637,6 +626,7 @@ const drone = {
         },
 
         {
+          id: "cell-spacers",
           img: cellspacers,
           alt: "Cell Spacers – Heyiarbeit Battery Holders",
           title: "Cell Spacers",
@@ -659,6 +649,7 @@ const drone = {
         },
 
         {
+          id: "battery-management-systems",
           img: batterymanagementsystems,
           alt: "Battery Management Systems - SEQURE 6S 40A Protection Board",
           styles: "scale-[1.2]",
@@ -685,6 +676,7 @@ const drone = {
         },
 
         {
+          id: "battery-connections",
           img: batteryconnections,
           alt: "Battery Connections – Nickel Strips",
           title: "Battery Connections",
@@ -707,6 +699,7 @@ const drone = {
         },
 
         {
+          id: "heat-shrink-tubing",
           img: heatshrinktubing,
           alt: "Heat Shrink Tubing - HSZJsto Battery Wrap",
           title: "Heat Shrink Tubing",
@@ -732,6 +725,7 @@ const drone = {
         },
 
         {
+          id: "custom-battery",
           img: custom12sbattery,
           alt: "Custom 12S Battery (16 pack, 44.4V, 36Ah, 1598.4Wh, 20 lbs)",
           title: "Overall Specifications of Custom 12S Battery",
@@ -746,16 +740,19 @@ const drone = {
               ],
             },
             {
-              point: `Voltage - 44.4V`,
+              point: `Voltage - 43.2V`,
             },
             {
               point: `Capacity – 36Ah`,
             },
             {
-              point: `Energy – 1598.4Wh`,
+              point: `Energy – 1555.2Wh`,
             },
             {
               point: `Weight – 20 lbs`,
+            },
+            {
+              point: `Each individual battery is 97.2Wh`,
             },
           ]
         },
@@ -767,6 +764,7 @@ const drone = {
       id: "propulsion",
       components: [
         {
+          id: "motors",
           img: motors,
           alt: "Motors – SunnySky X6215S (170KV)",
           title: "Motors",
@@ -782,6 +780,7 @@ const drone = {
         },
 
         {
+          id: "electronic-speed-controllers",
           img: electricalspeedcontrollers,
           alt: "Electronic Speed Controllers – MAD AMPX 80A",
           styles: "scale-[0.6] overflow-visible",
@@ -796,6 +795,7 @@ const drone = {
         },
 
         {
+          id: "propellers",
           img: propellers,
           alt: "Propellers – Arris 2272",
           title: "Propellers",
@@ -815,6 +815,7 @@ const drone = {
       id: "structure",
       components: [
         {
+          id: "rods-and-plates",
           img: rodsandplates,
           alt: "Rods and Plates – Carbon Fiber",
           styles: "scale-[0.75] overflow-visible",
@@ -824,6 +825,7 @@ const drone = {
         },
 
         {
+          id: "battery-casing",
           img: batterycasing,
           alt: "Battery Casing – Custom 3D-Printed Casing",
           title: "Battery Casing",
@@ -838,6 +840,7 @@ const drone = {
       id: "software",
       components: [
         {
+          id: "ground-control-station",
           img: groundcontrolstation,
           alt: "Ground Control Station - Mission Planner",
           title: "Ground Control Station",
@@ -853,6 +856,7 @@ const drone = {
         },
 
         {
+          id: "aerial-mapping",
           img: aerialmapping,
           alt: "Aerial Mapping – OpenDroneMap",
           styles: "scale-[0.9] overflow-visible",
@@ -867,6 +871,7 @@ const drone = {
         },
 
         {
+          id: "object-detection-model",
           img: objectdetectionmodel,
           alt: "Object Detection Model – YOLOv9",
           title: "Object Detection Model",
@@ -882,6 +887,7 @@ const drone = {
         },
 
         {
+          id: "robotics-moddleware",
           img: roboticsmiddleware,
           alt: "Robotics Middleware – ROS (Robot Operating System)",
           title: "Robotics Middleware",
@@ -896,6 +902,7 @@ const drone = {
         },
 
         {
+          id: "simulation-environment",
           img: simulationenvironment,
           alt: "Simulation Environment – Gazebo",
           title: "Simulation Environment",
@@ -915,6 +922,7 @@ const drone = {
       id: "avionics",
       components: [
         {
+          id: "lidar-sensor-2d",
           img: lidarsensor2d,
           alt: "2D LiDAR Sensor - SLAMTEC RPLiDAR A2M8",
           styles: "scale-[0.9] overflow-visible",
@@ -931,6 +939,7 @@ const drone = {
         },
 
         {
+          id: "lidar-sensor-3d",
           img: lidarsensor3d,
           alt: "3D LiDAR Sensor - Unitree 4D LiDAR-L1",
           styles: "scale-[0.9] overflow-visible",
@@ -948,6 +957,7 @@ const drone = {
         },
 
         {
+          id: "flight-controller",
           img: flightcontroller,
           alt: "Flight Controller - Pixhawk CubeOrange+",
           styles: "scale-[0.8] overflow-visible object-[50%_100%]",
@@ -963,22 +973,26 @@ const drone = {
         },
 
         {
+          id: "camera",
           img: camera,
-          alt: "Camera - Raspberry Pi HQ",
+          alt: "Camera - Arducam HQ Camera",
           title: "Camera",
-          titleDescription: "Raspberry Pi HQ",
-          description: `The Raspberry Pi HQ Camera serves as our primary imaging device for object detection and mapping. It captures high-resolution images at ___-second intervals, ensuring detailed and accurate data collection. Designed for versatility, the camera performs well in various lighting conditions and features manual focus control, making it ideal for long-distance and dynamic environments. Additionally, its adjustable global shutter minimizes motion blur, while the adaptable lens system allows for customization based on mission requirements.`,
+          titleDescription: "Arducam HQ Camera",
+          description: `The Arducam HQ Camera servers as our primary imaging device for object detection and mapping. It captures high resolution images at 30 frames per second, ensuring detailed and accurate data collection. Designed for versatility, the camera performs well in various lighting conditions and features manual focus control, making it ideal for long-distance and dynamic environments. Additionally, its adjustable global shutter minimizes motion blur, while the adaptable lens system allows for customization based on mission requirements.`,
           bullets: [
             { point: `12.3 MP Resolution (4056 x 3040 pixels)` },
             { point: `1.55µm Pixel Size` },
             { point: `32 µs to 200s Shutter Speed` },
-            { point: `C-mount and CS-mount Lens Mount` },
+            { point: `CS-mount Lens Mount` },
+            { point: `Captures 30FPS` },
           ]
         },
 
         {
+          id: "gimbal",
           img: gimbal,
-          alt: "Gimbal - 2 Axis Nano Brushless Gimbal ",
+          styles: "scale-[0.9] overflow-visible",
+          alt: "Gimbal - 2 Axis Nano Brushless Gimbal",
           title: "Gimbal",
           titleDescription: "2 Axis Nano Brushless Gimbal",
           description: `The gimbal stabilizes the onboard camera, ensuring clear and steady imagery for mapping and object detection. By compensating for drone movement, it reduces motion blur and enhances image quality in dynamic flight conditions. Its lightweight design minimizes impact on flight performance while maintaining precise control over pitch and roll stabilization, making it ideal for aerial data collection.`,
@@ -992,6 +1006,7 @@ const drone = {
         },
 
         {
+          id: "onboard-computer",
           img: onboardcomputer,
           alt: "Onboard Computer – NVIDIA Jetson Orin Nano",
           title: "Onboard Computer",
@@ -1008,6 +1023,7 @@ const drone = {
         },
 
         {
+          id: "gps-module",
           img: gpsmodule,
           alt: "GPS Module - CubePilot Here3+",
           styles: "scale-[0.7] overflow-visible",
@@ -1024,37 +1040,56 @@ const drone = {
         },
 
         {
+          id: "remote-controller",
           img: remotecontroller,
           alt: "Remote Controller – Taranis X9D+",
           styles: "scale-[0.8] overflow-visible",
           title: "Remote Controller",
           titleDescription: "Taranis X9D+",
-          description: `The Taranis X9D+ is our handheld transmitter used by the pilot to manually control the drone when needed. It provides a reliable, low-latency connection to the drone’s RC receiver and is essential for tasks like manual takeoff, landing, or emergency override. In our case, the team is planning for a fully autonomous mission, so this controller should only be used for emergency override in our case. The X9D+ offers precise control through adjustable gimbals and programmable switches. It operates on the ACCST 2.4 GHz protocol, ensuring secure and interference-resistant communication with the drone’s onboard receiver.`,
+          description: `The Taranis X9D+ serves as our handheld transmitter, giving the pilot full manual control of the drone during safety checks or emergencies. While the controller hardware is the X9D+, we’ve enhanced its capability with an external R9M module mounted to the back. This module shifts the system from the standard 2.4 GHz operation to the 900 MHz band, significantly extending our range and maintaining robust line-of-sight communication. The R9M module works on the ACCST protocol and pairs with the FrSky R9 Slim+ receiver onboard the drone. Although the mission is intended to be fully autonomous, this controller system remains a critical safety component.`,
           bullets: [
             { point: `Frequency: 2.4 GHz (ACCST protocol)` },
             { point: `Channels: Up to 16 (via S.BUS)` },
-            { point: `Transmission Range: Up to 1.5–2 km (line-of-sight)` },
-            { point: `Compatibility: Fully compatible with FrSky X8R and other ACCST receivers` },
-            { point: `Weight: ~850 g (with battery)` },
+            { point: `Transmission Range: Up to 10 km (line-of-sight)` },
+            { point: `Weight: ~850 g (with battery and R9M module)` },
           ]
         },
 
         {
-          img: placeholder,
-          alt: "RC Receiver - FrSky X8R",
+          id: "rc-receiver",
+          img: receiver,
+          alt: "RC Receiver - FrSky R9 Slim+",
+          styles: "object-[50%_0%] scale-[0.8] overflow-visible",
           title: "RC Receiver",
-          titleDescription: "FrSky X8R",
-          description: `The X8R is the RC receiver, providing reliable long-range communication between the ground controller and the drone. Operating on the 2.4 GHz ACCST protocol, it ensures secure and interference-resistant signal transmission. The X8R supports up to 16 channels, allowing seamless integration with flight controls, gimbals, and auxiliary systems. With a dual-antenna diversity system, it enhances signal stability and reduces the risk of signal loss during flight, The compact and lightweight design makes it well-suited for UAV applications where reliability and range are critical.`,
+          titleDescription: "FrSky R9 Slim+",
+          description: `The FrSky R9 Slim+ OTA is the long-range receiver installed on the drone, designed to operate on the 900 MHz frequency band using the ACCST protocol. It pairs with the R9M module on the Taranis X9D+ transmitter to provide secure, low-latency control with a significantly extended range. This compact receiver features dual-antenna diversity for increased signal reliability and OTA (Over-The-Air) firmware updates for ease of maintenance. The R9 Slim+ is a key component of the manual override system, ensuring reliable communication even at long distances if autonomous control needs to be interrupted.`,
           bullets: [
-            { point: `Frequency Range: 2.4 GHz` },
-            { point: `Operating Voltage Range: 4.0V – 10.0V` },
-            { point: `Range: >1.5 km (typical in open conditions with matched transmitter)` },
-            { point: `Dimensions: 46.25 × 26.6 × 14.2 mm` },
-            { point: `Weight: ~16.8 grams` },
+            { point: `Frequency: 900 MHz` },
+            { point: `Dimensions: 32 x 13.5 x 5 mm` },
+            { point: `Weight: 4.3 g (with antennas)` },
+            { point: `Range: Up to 10 km (line-of-sight)` },
           ]
         },
 
         {
+          id: "transmitter-module",
+          img: transmitter,
+          alt: "Transmitter Module - FrSky R9M",
+          styles: "scale-[0.7] overflow-visible",
+          title: "Transmitter Module",
+          titleDescription: "FrSky R9M",
+          description: `The FrSky R9M is a long-range transmitter module that attaches to the back of the Taranis X9D+ controller. It enables control over the drone at much farther distances by operating on the 900 MHz frequency band instead of the standard 2.4 GHz. This makes it ideal for UAV applications requiring strong, interference-resistant communication. Paired with the R9 Slim+ OTA receiver, the R9M module ensures that the pilot can maintain reliable manual control during pre-flight testing or emergency override situations, even when the drone is operating autonomously.`,
+          bullets: [
+            { point: `Frequency Band: 900 MHz` },
+            { point: `Input Voltage Range: 4V – 12.6V` },
+            { point: `Telemetry Interface: Smart Port` },
+            { point: `Upgrade Interface: Smart Port` },
+            { point: `Modulation: PXX or CPPM (auto-detected)` },
+          ]
+        },
+
+        {
+          id: "telemetry-modem",
           img: telemetrymodem,
           alt: "Telemetry Modem – RFD900x",
           styles: "scale-[0.95] overflow-visible",
@@ -1064,6 +1099,7 @@ const drone = {
         },
 
         {
+          id: "power-distribution-board",
           img: powerdistributionboard,
           alt: "Power Distribution Board – Matek X Class 12S PDB",
           styles: "scale-[0.7] overflow-visible",
@@ -1080,20 +1116,22 @@ const drone = {
         },
 
         {
-          img: circuitbreaker,
-          alt: "Circuit Breaker – Erayco 200 Amp Breaker",
-          styles: "scale-[0.75] overflow-visible",
-          title: "Circuit Breaker",
-          titleDescription: "Erayco 200 Amp Breaker",
-          description: `The Erayco 200 serves as a crucial safety component in our drone’s power system. Installed after the battery but before the power distribution board, it protects against electrical overloads and short circuits by automatically interrupting the power flow if current exceeds safe limits. In addition to its automatic trip feature, the breaker includes a manual reset button, allowing for quick shutdowns or reactivation during testing.`,
+          id: "anti-spark-switch",
+          img: antisparkswitch,
+          alt: "Anti-Spark Switch - FLIPSKY Enhanced Pro",
+          title: "Anti-Spark Switch",
+          titleDescription: "FLIPSKY Enhanced Pro",
+          description: `This switch protects the drone’s electrical system from damaging current surges during startup. By preventing sudden inrush currents when connecting the battery, it helps preserve sensitive components and prolong system lifespan. Its 200A capacity and automatic switching make it well-suited for high-power UAV applications.`,
           bullets: [
-            { point: `Rated Current: 200 Amps` },
-            { point: `Voltage Rating: 12–48V DC` },
-            { point: `Trip Type: Thermal automatic with manual reset` },
+            { point: `Continuous Current: 200A` },
+            { point: `Peak Current: Up to 750A (for short duration)` },
+            { point: `Dimensions: 60 x 35 x 15 mm` },
+            { point: `Weight: 50g` },
           ]
         },
 
         {
+          id: "bus-bar",
           img: busbar,
           alt: "Bus Bar – Mofeez Power Distribution Block",
           styles: "scale-[0.9] overflow-visible",
@@ -1101,13 +1139,13 @@ const drone = {
           titleDescription: "Mofeez Power Distribution Block",
           description: `The Mofeez Power Distribution Block (bus bar) is used to organize and distribute electrical power from the main power source to various subsystems across the drone. It provides a safe but compact way to manage multiple high-current connections. This helps us reduce cable clutter, allowing for a more organized system. The bus bar also ensures that power is cleanly and efficiently delivered to critical components such as ESCs and other avionics. Its insulated base and protective cover enhance safety and prevent accidental shorts during operation and maintenance.`,
           bullets: [
-            { point: `Voltage Rating: Up to 48V DC` },
             { point: `Current Capacity: 250A` },
             { point: `Dimensions: 7.8 × 2.1 × 1.9 in` },
           ]
         },
 
         {
+          id: "limit-switch",
           img: limitswitch,
           alt: "Limit Switch – Omron Electronics SS-5GL2",
           styles: "scale-[0.8] overflow-visible",
@@ -1124,6 +1162,7 @@ const drone = {
         },
 
         {
+          id: "step-down-module",
           img: stepdownmodule,
           alt: "Step-Down Module - FBHDZVV Buck Voltage Regulator",
           styles: "scale-[0.7] overflow-visible",
@@ -1146,12 +1185,14 @@ const drone = {
 }
 
 const timeline = {
+  id: "timeline-hero",
   header: "Our Timeline",
   description: "A chronological snapshot of our team's progress, decisions, and engineering milestones as we prepare for SUAS 2025.",
-  img: timelinehero,
-  alt: "",
+  img: timelineherocalpoly, //timelinehero
+  alt: "Cal Poly Logo",
   elements: [
     {
+      id: "astra-first-meeting",
       date: "08/31/2024",
       title: "ASTRA",
       titleDescription: "First team meeting for the 2025 competition year",
@@ -1729,28 +1770,37 @@ const timeline = {
 }
 
 const tips = {
+  id: "helpful-tips",
   header: "Helpful Tips!",
   description: "Whether you're new to drone development or just looking to learn something new, at Cal Poly Pomona, we’re here to help! For many members of our team, this was our first time building a drone from the ground up, so we saw firsthand how overwhelming it can be. Here, we’ve gathered some resources, guides, and lessons that helped us most along the way.",
 
   simulation: {
+    id: "simulation",
     title: "Simulation",
     description: "Simulation tools allow teams to test and validate their ideas in a virtual environment before real-world implementation. By simulating beforehand, you can identify issues early, refine performance, and save valuable time and resources. This section includes example videos and setups used to support our object detection and LiDAR development.",
 
     teams: [
       {
+        flipDirection: true,
         sections: [
           {
-            linkText: "2D Lidar Simulation",
+            id: "2d-lidar-simulation",
+            linkText: "2D LiDAR Simulation",
             link: `https://www.youtube.com/watch?v=xgWjMpqiuKk`,
             author: "Max Gross",
             description: `This video shows a virtual drone in Gazebo navigating a simulated environment using our 2D LiDAR sensor. The LiDAR continuously scans the area in a horizontal plane, detecting and mapping nearby obstacles. As the drone moves, detection data is visualized in real-time, demonstrating how the system recognizes and avoids objects by adjusting its path. This simulation verified that our avoidance logic works as expected before conducting any real flight tests, minimizing risk and saving valuable development time. For new teams, setting up a similar simulation using Gazebo and ROS is a great way to test LiDAR-based obstacle detection safely and iteratively.`,
+            img: simlidar,
+            alt: "2D Lidar Simulation",
           },
     
           {
-            linkText: "(Waiting for video from josh)",
-            link: ``,
+            id: "object-recognition-simulation",
+            linkText: "Object Recognition Simulation",
+            link: `https://drive.google.com/file/d/1MPoKDMezzSS-MAb_oUhWLQGHRm0j4SkE/view`,
             author: "Joshua Estrada",
             description: `This video demonstrates a full example mission in simulation, integrating our object recognition system with waypoint-based flight. Using Mission Planner, a set of waypoints is preloaded to simulate a real SUAS flight path. Objects are placed throughout the simulated field, and the virtual drone follows its mission route, just like it would during competition. As the drone flies, it uses its downward-facing camera to detect target objects in real-time. Detection logs are printed to the terminal, showing how the system tracks the number of detections and dynamically inserts waypoints to simulate a payload drop. Each “drop” is performed once per lap to mirror mission rules. This simulation setup, built using tools like AirSim and Mission Planner, has allowed us to verify our object recognition code in a realistic scenario before any physical testing — making it a valuable reference for other teams developing autonomous vision and mission-integration pipelines.`,
+            img: simobj,
+            alt: "Object Recognition Simulation",
           },
         ],
       }
@@ -1758,15 +1808,18 @@ const tips = {
   },
 
   documents: {
+    id: "documents",
     title: "Documents",
     description: `Our team members have compiled helpful guides with step-by-steps, images, and videos for various aspects of the process, from quick 2-page references to in-depth 30-page walkthroughs. Whether you're troubleshooting a setup or trying to understand a system from scratch, these documents are a great place to start. Click the links below to explore!`,
 
     teams: [
       {
+        id: "uav-design",
         header: "UAV Design",
 
         sections: [
           {
+            id: "motor-test-documentation",
             linkText: "Motor Test Documentation",
             link: `https://drive.google.com/file/d/1mKE4JleJ8vwjK3KJ-UvFX8AAanI8kxly/view`,
             author: "Leo Chen",
@@ -1777,6 +1830,7 @@ const tips = {
           },
 
           {
+            id: "simulation-quadcopter",
             linkText: "Simulation of the Quadcopter Dynamics with LQR Based Control",
             link: `https://drive.google.com/file/d/1IRNoMYoV04OhFAlQ5JqsOju_Xs2RquTZ/view`,
             author: "Ahmad et. Al",
@@ -1789,10 +1843,12 @@ const tips = {
       },
 
       {
+        id: "obstacle-avoidance",
         header: "Obstacle Avoidance",
 
         sections: [
           {
+            id: "basics-lidar-obs",
             linkText: "The Basics of LiDAR and Obstacle Avoidance",
             link: `https://drive.google.com/file/d/1NpjCnWOdh9B8eaUiAXJacj806BH2M0pz/view`,
             author: "Ethan McKendell",
@@ -1805,10 +1861,12 @@ const tips = {
       },
 
       {
+        id: "object-recognition",
         header: "Object Recognition",
 
         sections: [
           {
+            id: "outside-resources",
             linkText: "Outside Resources",
             link: `https://drive.google.com/file/d/1CyF5JXQ4XNBDaqAWo7-REXlAQl6nki6c/view`,
             author: "Joshua Estrada",
@@ -1816,9 +1874,11 @@ const tips = {
             description: `This is a collection of resources made by our Object Recognition lead for his members to review key concepts. Each resource is linked with a short description, like another version of this page!`,
             img: docobj1,
             alt: "Document for Outside Resources",
+            styles: "w-full md:!h-30 !h-22 !object-cover"
           },
 
           {
+            id: "intro-to-git",
             linkText: "Introduction to Git",
             link: `https://drive.google.com/file/d/18qc60whzcmoNA6KMzxyfIcvbi6WTPn85/view`,
             author: "Joshua Estrada",
@@ -1829,6 +1889,7 @@ const tips = {
           },
 
           {
+            id: "hpc-setup",
             linkText: "HPC Setup and Usage Guide",
             link: `https://drive.google.com/file/d/1BHXE00T8IiNq5O0i74lIv9tuetUUwOH4/view`,
             author: "Joshua Estrada",
@@ -1839,6 +1900,7 @@ const tips = {
           },
 
           {
+            id: "camera-csi",
             linkText: "Camera Output Through CSI Port",
             link: `https://drive.google.com/file/d/1clkcGX-6ExURnzAfNaQ1HDYKYNxslzf3/view`,
             author: "Justine Gabuya",
@@ -1849,6 +1911,7 @@ const tips = {
           },
 
           {
+            id: "yolo-execution",
             linkText: "Yolo Execution Process",
             link: `https://drive.google.com/file/d/1Sl6ZkP9zT73NhPNl5Hbss5TQJfqgo1Q8/view`,
             author: "Andrew Valdez",
@@ -1859,6 +1922,7 @@ const tips = {
           },
 
           {
+            id: "obj-rec-troubleshooting",
             linkText: "Object Rec Troubleshooting",
             link: `https://drive.google.com/file/d/1egNxZQlA4XwPPMUmJVF9SlUMzbspvsRy/view`,
             author: "Justine Gabuya",
@@ -1869,6 +1933,7 @@ const tips = {
           },
 
           {
+            id: "training-env-specifications",
             linkText: "Training Environment Specifications",
             link: `https://drive.google.com/file/d/1OKKMdNn5EfT20LufHpSlHMm-gublGUKT/view`,
             author: "Joshua Estrada",
@@ -1879,6 +1944,7 @@ const tips = {
           },
 
           {
+            id: "amcap-how-to-capture",
             linkText: "How to Capture Photos with AMCap",
             link: `https://drive.google.com/file/d/15rSeBIM3vNaglQPyKazlqKhVddnBNEc5/view`,
             author: "Justine Gabuya",
@@ -1889,6 +1955,7 @@ const tips = {
           },
 
           {
+            id: "pixhawk-config-param-update",
             linkText: "Pixhawk Configuration and Parameter Update",
             link: `https://drive.google.com/file/d/18r2iqr_RY9kcO4v6e1DHiI6wKi2dEe75/view`,
             author: "Justine Gabuya",
@@ -1901,10 +1968,12 @@ const tips = {
       },
 
       {
+        id: "autonomous-navigation",
         header: "Autonomous Navigation",
 
         sections: [
           {
+            id: "setting-up-parallel-gcs",
             linkText: "Setting Up A Parallel GCS",
             link: `https://drive.google.com/file/d/1EaFy_zblDd3bfZs68HcaGJPzxSHykwfz/view`,
             author: "Kevin Kopcinski",
@@ -1915,6 +1984,7 @@ const tips = {
           },
 
           {
+            id: "pre-flight-check",
             linkText: "Pre-Flight Checklist",
             link: `https://drive.google.com/file/d/1suxkOlfv0v5XavHAQb0hyod1w8exiWKX/view`,
             author: "Leo Chen",
@@ -1925,6 +1995,7 @@ const tips = {
           },
 
           {
+            id: "flight-setup-procedure",
             linkText: "Flight Setup Procedure",
             link: `https://drive.google.com/file/d/1UaYqpfVA8zMIWchikrr0c650LqeKA-qq/view`,
             author: "Ashton Vogel",
@@ -1939,6 +2010,7 @@ const tips = {
   },
 
   techGraphics: {
+    id: "tech-graphics",
     header: "Technical Graphics:",
     p1: `This diagram shows the software pipeline our team used to connect object detection, mapping, and flight path data using ROS. It outlines how images from the drone’s camera are processed through YOLOv5, validated, localized, and sent to mapping and MAVLink integration. New teams can use this as a reference for building a structured, modular detection and localization system.`,
 

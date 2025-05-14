@@ -4,6 +4,11 @@ import { carousel1, carousel2, carousel3, logo, placeholder } from '../assets';
 import { homeContent } from '../constants';
 import { Footer } from '../components';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { scrollAndHighlight } from '../utils/scrollAndHighlight';
+import { Highlight } from './common';
+
 const Carousel = () => {
   return (
     <>
@@ -60,22 +65,33 @@ const HomeContent = () => {
   return (
     <section className="grid justify-items-center items-center lg:grid-cols-2 grid-cols-1 gap-5 w-full h-auto pt-10" id="about">
       <img src={logo} alt="Bronco Astra Logo" className="w-full md:max-w-[600px] max-w-[70%] object-cover" />{/*w-8/10 lg:w-full*/}
-      <div className="w-auto">
-        <h1 className="font-poppins font-semibold text-6xl ">ABOUT</h1>
-        <p className="pt-5">{homeContent.p1}</p>
-        <p className="pt-5">{homeContent.p2}</p>
-        <p className="pt-5">{homeContent.p3}</p>
+      <div className="w-auto" id={homeContent.id}>
+        <h1 className="font-poppins font-semibold text-6xl "><Highlight text="ABOUT" /></h1>
+        <p className="pt-5"><Highlight text={homeContent.p1} /></p>
+        <p className="pt-5"><Highlight text={homeContent.p2} /></p>
+        <p className="pt-5"><Highlight text={homeContent.p3} /></p>
       </div>
     </section>
   )
 }
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const targetId = location.hash.replace('#', '');
+    const searchParams = new URLSearchParams(location.search);
+    const query = searchParams.get('q');
+
+    scrollAndHighlight({ query, targetId });
+    window.history.replaceState({}, '', window.location.pathname + window.location.hash);
+  }, [location]);
+
   return (
-    <div className="relative w-full mt-26">{/*  h-150 */}
+    <div className="relative w-full mt-26" id="hero">{/*  h-150 */}
       <div className="absolute sm:top-5 top-2 right-5 font-semibold sm:text-3xl lg:text-5xl text-xl text-right text-white z-2">
-        <h1 className="font-poppins drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">PROJECT</h1>
-        <h1 className="font-poppins sm:pt-3 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">ASTRA 2025</h1>
+        <h1 className="font-poppins drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"><Highlight text="PROJECT" /></h1>
+        <h1 className="font-poppins sm:pt-3 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"><Highlight text="ASTRA 2025" /></h1>
       </div>
       <Carousel />
       <HomeContent />

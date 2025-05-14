@@ -5,15 +5,17 @@ import { Header1 } from '../common';
 import { drone } from '../../constants';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { getElementYPosition } from "../../utils/common";
+import { Highlight } from '../common';
 
 const AboutCard = ({ about, index }) => {
   return (
     <motion.div
       variants={fadeIn(index % 2 == 1 ? "left" : "right", "spring", index % 2 == 0 ? 0.3 : 0.6, 0.6)}
       className="flex flex-col gap-5"
+      id={about.id}
     >
-      <h3 className="font-poppins text-2xl font-semibold">{about.title}</h3>
-      <p className="text-xl">{about.description}</p>
+      <h3 className="font-poppins text-2xl font-semibold"><Highlight text={about.title} /></h3>
+      <p className="text-xl"><Highlight text={about.description} /></p>
 
       <div 
         className="flex justify-center items-center w-60 h-12 bg-blue-900 text-white hover:bg-blue-700 cursor-pointer"
@@ -32,7 +34,7 @@ const AboutCard = ({ about, index }) => {
           // }
         }}
       >
-        <h4 className="text-xl">{about.btnTitle}</h4>
+        <h4 className="text-xl"><Highlight text={about.btnTitle} /></h4>
         <MdKeyboardArrowRight className="text-3xl ml-2" />
       </div>
 

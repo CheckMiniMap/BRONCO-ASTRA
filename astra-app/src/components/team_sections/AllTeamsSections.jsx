@@ -3,6 +3,7 @@ import { team } from '../../constants';
 import { SectionWrapper } from '../../hoc';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../../utils/motion';
+import { Highlight } from '../common';
 
 const LeadProfile = ({ size, index, profile }) => {
   return (
@@ -11,7 +12,7 @@ const LeadProfile = ({ size, index, profile }) => {
       className="flex flex-col items-center "
     >
       <img src={profile.img} alt={profile.name} className={`w-65 rounded-full drop-shadow-xl object-cover ${profile.object ? `object-${profile.object}` : 'object-[100%_20%]'} aspect-1-1`} />
-      <h4 className="font-poppins text-[20px] font-semibold pt-2">{profile.name}</h4>
+      <h4 className="font-poppins text-[20px] font-semibold pt-2"><Highlight text={profile.name} /></h4>
     </motion.div>
   );
 }
@@ -45,7 +46,7 @@ const MemberProfile = ({ size, index, profile }) => {
       className={`flex flex-col items-center ${colStyles}`}
     >
       <img src={profile.img} alt={profile.name} className={`w-[45vw] h-[50vw] sm:w-55 sm:h-65 hexagon drop-shadow-xl object-cover ${profile.object ? profile.object : 'object-[100%_20%]'}`} />
-      <h4 className="text-[4vw] sm:text-[20px] pt-2">{profile.name}</h4>
+      <h4 className="text-[4vw] sm:text-[20px] pt-2"><Highlight text={profile.name} /></h4>
     </motion.div>
   );
 }
@@ -91,11 +92,11 @@ const ContentRow = ({ index, content }) => {
           <div className={divStyles}>
             <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
           </div>
-          <motion.p key={index} className="text-base"><span className="ml-5"/>{content.text}</motion.p>
+          <motion.p key={index} className="text-base"><span className="ml-5"/><Highlight text={content.text} /></motion.p>
         </>
       ) : index % 2 === 0 ? (
         <>
-          <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/>{content.text}</motion.p>
+          <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/><Highlight text={content.text} /></motion.p>
           <div className={divStyles}>
             <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
           </div>
@@ -105,7 +106,7 @@ const ContentRow = ({ index, content }) => {
           <div className={divStyles}>
             <motion.img src={content.img} alt={content.alt} className={`w-full h-full object-cover ${content.object ? content.object : ''}`} />
           </div>
-          <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/>{content.text}</motion.p>
+          <motion.p key={index} className="text-base md:text-xl"><span className="ml-5"/><Highlight text={content.text} /></motion.p>
         </>
       )}
     </motion.div>
@@ -143,7 +144,7 @@ const TeamSection = ({ team }) => {
 const CommonHeader = ({ text }) => {
   return (
     <motion.h1 variants={textVariant()} className="font-poppins text-5xl font-semibold pt-10">
-        {text}
+        <Highlight text={text} />
     </motion.h1>
     // fadeIn("up", "spring", 0.5, 0.75)
   )

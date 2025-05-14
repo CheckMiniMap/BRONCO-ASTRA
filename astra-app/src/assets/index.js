@@ -3,8 +3,8 @@ import logo from "./finallogo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import placeholder from "./placeholder.svg";
-import carousel1 from "./carousel/carousel1.jpeg";
-import carousel2 from "./carousel/carousel2.png";
+import carousel1 from "./carousel/carousel1.png";
+import carousel2 from "./carousel/carousel2.jpeg";
 import carousel3 from "./carousel/carousel3.JPG";
 import lockheed from "./lockheed-martin.png";
 
@@ -84,7 +84,7 @@ import cutmechanism from "./components/cut-mechanism.png";
 import dropmechanism from "./components/drop-mechanism.png";
 import electricalspeedcontrollers from "./components/electrical-speed-controllers.png";
 import flightcontroller from "./components/flight-controller.png";
-import gimbal from "./components/gimbal.png";
+import gimbal from "./components/gimbal.webp";
 import gpsmodule from "./components/gps-module.png";
 import groundcontrolstation from "./components/ground-control-station.png";
 import heatshrinktubing from "./components/heat-shrink-tubing.png";
@@ -100,14 +100,18 @@ import propulsion from "./components/propulsion.png";
 import remotecontroller from "./components/remote-controller.png";
 import roboticsmiddleware from "./components/robotics-middleware.png";
 import rodsandplates from "./components/rods-and-plates.png";
-//import servomotors from "./components/servo-motors.png";
+import receiver from "./components/receiver.png";
 import simulationenvironment from "./components/simulation-environment.png";
 import software from "./components/software.png";
 import stepdownmodule from "./components/step-down-module.png";
 import structure from "./components/structure.png";
 import telemetrymodem from "./components/telemetry-modem.png";
+import transmitter from "./components/transmitter.png";
+import antisparkswitch from "./components/anti-spark-switch.png";
+
 
 // Timeline
+import timelineherocalpoly from "./timeline/cal-poly-logo.png";
 import timelinehero from "./timeline/road-forest.jpg";
 import team0831 from "./timeline/8.31 whole team.png";
 import team0918 from "./timeline/9.18 whole team.png";
@@ -191,6 +195,8 @@ import docuav1 from "./tips/doc-uav-1.png";
 import docuav2 from "./tips/doc-uav-2.png";
 import graphics1 from "./tips/graphics-1.png";
 import graphics2 from "./tips/graphics-2.png";
+import simlidar from "./tips/sim-lidar.png";
+import simobj from "./tips/sim-obj.png";
 
 export {
   // UI Assets
@@ -295,14 +301,18 @@ export {
   remotecontroller,
   roboticsmiddleware,
   rodsandplates,
+  receiver,
   //servomotors,
   simulationenvironment,
   software,
   stepdownmodule,
   structure,
   telemetrymodem,
+  transmitter,
+  antisparkswitch,
 
   // Timeline
+  timelineherocalpoly,
   timelinehero,
   team0918,
   team09182,
@@ -386,4 +396,6 @@ export {
   docuav2,
   graphics1,
   graphics2,
+  simlidar,
+  simobj,
 };

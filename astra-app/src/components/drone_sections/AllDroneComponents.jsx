@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { Header1 } from '../common';
 import { drone } from '../../constants';
+import { Highlight } from '../common';
 
 const Bullet = ({ bullet }) => {
   return (
     <>
       <li className="list-disc">{bullet.point}</li>
       {bullet.subPoints && bullet.subPoints.map((subPoint, index) => (
-        <li key={index} className="ml-5">{subPoint.point}</li>
+        <li key={index} className="ml-5"><Highlight text={subPoint.point} /></li>
       ))}
     </>
   )
@@ -20,6 +21,7 @@ const ComponentSection = ({ component }) => {
     <motion.div
         variants={fadeIn("up", "spring", 0.3, 0.5)}
         className="grid grid-cols-4 gap-3 mt-8"
+        id={component.id}
     >
       <div className="flex w-full aspect-[1.2] md:col-span-1 col-span-4 md:mt-7 rounded-lg drop-shadow-lg/25 bg-white overflow-hidden">
         <img className={`w-full aspect-auto object-cover ${component.styles}`} src={component.img} alt={component.alt} />
@@ -27,14 +29,14 @@ const ComponentSection = ({ component }) => {
       
       <div className="w-full md:col-span-3 col-span-4 md:text-base text-sm">
         <h3 className={`font-semibold ${component.titleItalic && 'italic'}`}>
-          {component.title}
+          <Highlight text={component.title} />
           {component.titleDescription && (
-            <span className="font-normal italic">{` - ${component.titleDescription}`}</span>
+            <span className="font-normal italic"><Highlight text={` - ${component.titleDescription}`} /></span>
           )}
         </h3>
 
         {component.description && (
-          <p>{component.description}</p>
+          <p><Highlight text={component.description} /></p>
         )}
 
         {component.bullets && (
