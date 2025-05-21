@@ -20,7 +20,7 @@ const AboutCard = ({ about, index }) => {
       <div 
         className="flex justify-center items-center w-60 h-12 bg-blue-900 text-white hover:bg-blue-700 cursor-pointer"
         onClick={() => {
-          const element = document.getElementById(about.id);
+          const element = document.getElementById(about.navId);
           const topPos = getElementYPosition(element, 140);
           //const topPos = element.offsetTop;
 

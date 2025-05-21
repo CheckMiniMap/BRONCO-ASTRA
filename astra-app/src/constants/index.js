@@ -521,7 +521,8 @@ const drone = {
   about: [
     {
       title: "Payload",
-      id: "payload",
+      id: "payloadAbout",
+      navId: "payload",
       description: `The payload system is designed to deliver mission-specific objects with precision. It integrates mechanical release mechanisms and structural supports to ensure accurate deployment under various flight conditions, while minimizing aerodynamic and structural impact on the drone.`,
       btnTitle: "See Components",
       img: payload,
@@ -529,7 +530,8 @@ const drone = {
     },
     {
       title: "Battery",
-      id: "battery",
+      id: "batteryAbout",
+      navId: "battery",
       description: `The power system centers around a custom-configured battery pack designed to meet high current demands from all subsystems. Emphasis is placed on energy density, discharge reliability, and safe thermal performance to support sustained autonomous operations.`,
       btnTitle: "See Components",
       img: battery,
@@ -538,7 +540,8 @@ const drone = {
     },
     {
       title: "Propulsion",
-      id: "propulsion",
+      id: "propulsionAbout",
+      navId: "propulsion",
       description: `The propulsion system is responsible for generating thrust and enabling controlled flight through coordinated operation of motors, propellers, and electronic speed controllers (ESCs). Each component is selected based on performance metrics such as thrust-to-weight ratio, efficiency, and thermal behavior to ensure reliable and responsive flight dynamics.`,
       btnTitle: "See Components",
       img: propulsion,
@@ -547,7 +550,8 @@ const drone = {
     },
     {
       title: "Structure",
-      id: "structure",
+      id: "structureAbout",
+      navId: "structure",
       description: `The airframe is constructed using lightweight, high-strength materials—primarily carbon fiber—to optimize strength-to-weight ratio and structural rigidity. The design prioritizes aerodynamic efficiency, modular assembly, and durability under both static and dynamic loading during flight.`,
       btnTitle: "See Components",
       img: structure,
@@ -555,7 +559,8 @@ const drone = {
     },
     {
       title: "Software",
-      id: "software",
+      id: "softwareAbout",
+      navId: "software",
       description: `The software stack enables autonomous operation through coordinated communication between flight controllers, onboard processors, and ground control systems. It encompasses waypoint navigation, object recognition, data processing, and safety protocols to support real-time decision-making and control.`,
       btnTitle: "See Components",
       img: software,
@@ -563,7 +568,8 @@ const drone = {
     },
     {
       title: "Avionics",
-      id: "avionics",
+      id: "avionicsAbout",
+      navId: "avionics",
       description: `The avionics system integrates sensors, processors, and communication modules to facilitate real-time data acquisition, feedback control, and telemetry. Components are selected for their reliability, latency performance, and compatibility with autonomous flight frameworks.`,
       btnTitle: "See Components",
       img: avionics,
