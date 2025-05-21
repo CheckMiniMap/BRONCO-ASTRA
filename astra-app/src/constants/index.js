@@ -1208,6 +1208,7 @@ const timeline = {
     },
 
     {
+      id: "astra-task-ideas",
       date: "09/18/2024",
       title: "ASTRA",
       titleDescription: "SUAS 2025 task ideas and primer released",
@@ -1217,6 +1218,7 @@ const timeline = {
     },
     
     {
+      id: "astra-research-phase-begins",
       date: "09/18/2024",
       title: "ASTRA",
       titleDescription: "Research phase begins",
@@ -1226,6 +1228,7 @@ const timeline = {
     },
 
     {
+      id: "obs-avoidance-2d-lidar-hardware-setup",
       date: "09/21/2024",
       title: "Obstacle Avoidance",
       titleDescription: "2D LiDAR hardware set up and power verified",
@@ -1235,6 +1238,7 @@ const timeline = {
     },
 
     {
+      id: "uav-design-initial-concepts",
       date: "09/23/2024",
       title: "UAV Design",
       titleDescription: "Initial concept CAD of UAV completed",
@@ -1244,6 +1248,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-initial-datasets-detection-planning",
       date: "09/28/2024",
       title: "Object Detection",
       titleDescription: "Initial dataset and detection model planning",
@@ -1253,6 +1258,7 @@ const timeline = {
     },
 
     {
+      id: "obs-avoidance-ros-setup",
       date: "10/03/2024",
       title: "Obstacle Avoidance",
       titleDescription: "ROS workspace set up and RViz visualization achieved",
@@ -1262,6 +1268,7 @@ const timeline = {
     },
 
     {
+      id: "uav-design-test-bench-assembly-propulsion-system",
       date: "10/05/2024",
       title: "UAV Design",
       titleDescription: "Test bench assembly completed for propulsion system",
@@ -1271,6 +1278,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-ros-yolo-custom-dataset",
       date: "10/05/2024",
       title: "Object Detection",
       titleDescription: "ROS, YOLO, and custom dataset",
@@ -1280,6 +1288,7 @@ const timeline = {
     },
 
     {
+      id: "obs-avoidance-2d-lidar-fully-operational",
       date: "10/07/2024",
       title: "Obstacle Avoidance",
       titleDescription: "2D LiDAR fully operational for object detection",
@@ -1289,6 +1298,7 @@ const timeline = {
     },
 
     {
+      id: "whole-team-10-09-2024",
       date: "10/09/2024",
       title: "Whole Team",
       titleDescription: "SUAS 2025 rules release and registration opens",
@@ -1298,6 +1308,7 @@ const timeline = {
     },
 
     {
+      id: "payload-10-09-2024",
       date: "10/09/2024",
       title: "Payload",
       titleDescription: "Began conceptual design of dropping mechanism",
@@ -1307,6 +1318,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-10-12-24",
       date: "10/12/2024",
       title: "Object Detection",
       titleDescription: "Getting live video and YOLOv5 running",
@@ -1316,6 +1328,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-10-14-2024",
       date: "10/14/2024",
       title: "Electrical Integration",
       titleDescription: "Decision made to design and build custom battery",
@@ -1325,6 +1338,7 @@ const timeline = {
     },
 
     {
+      id: "payload-10-16-2024",
       date: "10/16/2024",
       title: "Payload",
       titleDescription: "Finalized conceptual design of pulley mechanism with winch",
@@ -1334,6 +1348,7 @@ const timeline = {
     },
 
     {
+      id: "uav-10-19-2024",
       date: "10/19/2024",
       title: "UAV Design",
       titleDescription: "Down-selected and finalized motors, propellers, and ESCs from initial options found in research",
@@ -1343,6 +1358,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-10-19-2024",
       date: "10/19/2024",
       title: "Object Detection",
       titleDescription: "Troubleshooting TensorFlow and expanding datasets",
@@ -1352,6 +1368,7 @@ const timeline = {
     },
 
     {
+      id: "payload-10-19-2024",
       date: "10/19/2024",
       title: "Payload",
       titleDescription: "Initial drop test completed",
@@ -1362,6 +1379,7 @@ const timeline = {
     },
 
     {
+      id: "payload-10-26-2024",
       date: "10/26/2024",
       title: "Payload",
       titleDescription: "Upgraded to pulley-belay design",
@@ -1371,6 +1389,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-11-02-2024",
       date: "11/02/2024",
       title: "Object Detection",
       titleDescription: "YOLOv5 chosen and first human model trained",
@@ -1380,6 +1399,7 @@ const timeline = {
     },
 
     {
+      id: "systems-11-07-2024",
       date: "11/07/2024",
       title: "Systems Engineering",
       titleDescription: "Successful conceptual design review presented to Lockheed Martin representatives",
@@ -1389,6 +1409,7 @@ const timeline = {
     },
 
     {
+      id: "payload-11-09-2024",
       date: "11/09/2024",
       title: "Payload",
       titleDescription: "First successful pulley system test",
@@ -1398,6 +1419,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-11-09-2024",
       date: "11/09/2024",
       title: "Object Detection",
       titleDescription: "Jetson reset and dataset planning",
@@ -1407,6 +1429,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-11-10-2024",
       date: "11/10/2024",
       title: "Electrical Integration",
       titleDescription: "Raspberry Pi HQ camera selected",
@@ -1416,6 +1439,7 @@ const timeline = {
     },
 
     {
+      id: "payload-11-16-2024",
       date: "11/16/2024",
       title: "Payload",
       titleDescription: "Pulley-belay system – 10 ft drop test",
@@ -1425,6 +1449,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-12-05-2024",
       date: "12/05/2024",
       title: "Electrical Integration",
       titleDescription: "Successful camera output via CSI port",
@@ -1434,6 +1459,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-12-07-2024",
       date: "12/07/2024",
       title: "Object Detection",
       titleDescription: "Latency fixed but training needs",
@@ -1443,6 +1469,7 @@ const timeline = {
     },
 
     {
+      id: "payload-12-08-2024",
       date: "12/08/2024",
       title: "Payload",
       titleDescription: "First iteration of cutting mechanism developed",
@@ -1452,6 +1479,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-01-04-2025",
       date: "01/04/2025",
       title: "Object Detection",
       titleDescription: "Established heartbeat connection between Jetson and Pixhawk",
@@ -1461,6 +1489,7 @@ const timeline = {
     },
 
     {
+      id: "obs-avoidance-01-04-2025",
       date: "01/04/2025",
       title: "Obstacle Avoidance",
       titleDescription: "Reliable Jetson-Pixhawk heartbeat connection established",
@@ -1470,6 +1499,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-01-12-2025",
       date: "01/12/2025",
       title: "Object Detection",
       titleDescription: "Software integration successful but introduced more issues",
@@ -1480,6 +1510,7 @@ const timeline = {
     },
 
     {
+      id: "payload-01-15-2025",
       date: "01/15/2025",
       title: "Payload",
       titleDescription: "Second pulley-belay system fully constructed",
@@ -1489,6 +1520,7 @@ const timeline = {
     },
 
     {
+      id: "systems-01-19-2025",
       date: "01/19/2025",
       title: "Systems Engineering",
       titleDescription: "Website and technical design report development began",
@@ -1498,7 +1530,8 @@ const timeline = {
     },
 
     {
-      date: "01/28/2024",
+      id: "payload-01-28-2025",
+      date: "01/28/2025",
       title: "Payload",
       titleDescription: "Major drop mechanism redesign initiated",
       img: pay0128,
@@ -1507,6 +1540,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-01-29-2025",
       date: "01/29/2025",
       title: "Object Detection",
       titleDescription: "Switched from YOLOv5 to YOLOv9",
@@ -1516,6 +1550,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-02-01-2025",
       date: "02/01/2025",
       title: "Autonomous Navigation",
       titleDescription: "Introduction to the 3S Drone",
@@ -1525,6 +1560,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-02-10-2025",
       date: "02/10/2025",
       title: "Electrical Integration",
       titleDescription: "Gimbal selected for camera stabilization",
@@ -1534,6 +1570,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-02-10-2025",
       date: "02/10/2025",
       title: "Object Detection",
       titleDescription: "Model performance evaluation",
@@ -1543,7 +1580,8 @@ const timeline = {
     },
 
     {
-      date: "02/14/2024",
+      id: "payload-02-14-2025",
+      date: "02/14/2025",
       title: "Payload",
       titleDescription: "First static test of new payload design",
       img: pay0214,
@@ -1552,6 +1590,7 @@ const timeline = {
     },
 
     {
+      id: "obs-avoidance-03-01-2025",
       date: "03/01/2025",
       title: "Obstacle Avoidance",
       titleDescription: "Successful Gazebo simulation with obstacle recognition and reaction",
@@ -1561,6 +1600,7 @@ const timeline = {
     },
 
     {
+      id: "systems-03-13-2025",
       date: "03/13/2025",
       title: "Systems Engineering",
       titleDescription: "Successful preliminary design review presented to Lockheed Martin representatives",
@@ -1570,7 +1610,8 @@ const timeline = {
     },
 
     {
-      date: "03/14/2024",
+      id: "payload-03-14-2025",
+      date: "03/14/2025",
       title: "Payload",
       titleDescription: "Second iteration of cutting mechanism completed",
       img: pay0314,
@@ -1579,6 +1620,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-03-14-2025",
       date: "03/14/2025",
       title: "Electrical Integration",
       titleDescription: "Payload electrical system integrated with Pixhawk",
@@ -1588,6 +1630,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-03-15-2025",
       date: "03/15/2025",
       title: "Autonomous Navigation",
       titleDescription: "3S manual flight test for calibration",
@@ -1597,6 +1640,7 @@ const timeline = {
     },
     
     {
+      id: "obj-detection-03-15-2025",
       date: "03/15/2025",
       title: "Object Detection",
       titleDescription: "Object detection code ready for camera testing",
@@ -1606,7 +1650,8 @@ const timeline = {
     },
 
     {
-      date: "03/16/2024",
+      id: "payload-03-16-2025",
+      date: "03/16/2025",
       title: "Payload",
       titleDescription: "Full static test of new payload and cutting systems together",
       img: pay0316,
@@ -1615,6 +1660,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-03-16-2025",
       date: "03/16/2025",
       title: "Autonomous Navigation",
       titleDescription: "3S first autonomous flight",
@@ -1626,6 +1672,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-03-17-2025",
       date: "03/17/2025",
       title: "Electrical Integration",
       titleDescription: "Custom battery complete",
@@ -1635,6 +1682,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-03-18-2025",
       date: "03/18/2025",
       title: "Electrical Integration",
       titleDescription: "Custom battery successfully wired to drone",
@@ -1644,6 +1692,7 @@ const timeline = {
     },
 
     {
+      id: "uav-03-21-2025",
       date: "03/21/2025",
       title: "UAV Design",
       titleDescription: "First motor test with custom battery",
@@ -1653,6 +1702,7 @@ const timeline = {
     },
 
     {
+      id: "electrical-03-21-2025",
       date: "03/21/2025",
       title: "Electrical Integration",
       titleDescription: "Ground test - custom battery powers entire system",
@@ -1662,6 +1712,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-03-22-2025",
       date: "03/22/2025",
       title: "Autonomous Navigation",
       titleDescription: "3S first test with major avionics (failed)",
@@ -1671,6 +1722,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-03-22-2025-2",
       date: "03/22/2025",
       title: "Autonomous Navigation",
       titleDescription: "12S first successful manual flight with custom battery",
@@ -1680,6 +1732,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-03-24-2025",
       date: "03/24/2025",
       title: "Object Detection",
       titleDescription: "Successful waypoint test",
@@ -1689,6 +1742,7 @@ const timeline = {
     },
 
     {
+      id: "payload-03-24-2025",
       date: "03/24/2025",
       title: "Payload",
       titleDescription: "Full payload system mounted to 12S drone",
@@ -1698,6 +1752,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-03-26-2025",
       date: "03/26/2025",
       title: "Autonomous Navigation",
       titleDescription: "12S first successful autonomous flight",
@@ -1707,6 +1762,7 @@ const timeline = {
     },
 
     {
+      id: "systems-03-29-2025",
       date: "03/29/2025",
       title: "Systems Engineering",
       titleDescription: "Flight readiness video script and shot plan completed",
@@ -1718,6 +1774,7 @@ const timeline = {
     },
 
     {
+      id: "obs-avoidance-04-03-2025",
       date: "04/03/2025",
       title: "Obstacle Avoidance",
       titleDescription: "First test of the 2D LiDAR on the 3S",
@@ -1727,6 +1784,7 @@ const timeline = {
     },
 
     {
+      id: "obj-detection-04-11-2025",
       date: "04/11/2025",
       title: "Object Detection",
       titleDescription: "Full mission simulation completed",
@@ -1736,6 +1794,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-04-12-2025",
       date: "04/12/2025",
       title: "Autonomous Navigation",
       titleDescription: "First attempt at filming flight readiness video",
@@ -1745,6 +1804,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-04-19-2025",
       date: "04/19/2025",
       title: "Autonomous Navigation",
       titleDescription: "Second attempt at filming flight readiness video",
@@ -1754,6 +1814,7 @@ const timeline = {
     },
 
     {
+      id: "auto-nav-04-20-2025",
       date: "04/20/2025",
       title: "Autonomous Navigation",
       titleDescription: "Third attempt at filming flight readiness video",
@@ -1763,6 +1824,7 @@ const timeline = {
     },
 
     {
+      id: "whole-team-04-22-2025",
       date: "04/22/2025",
       title: "Whole Team",
       titleDescription: "FRV submission and qualification",

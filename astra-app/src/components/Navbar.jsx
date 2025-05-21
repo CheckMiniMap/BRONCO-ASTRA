@@ -7,10 +7,13 @@ import { FiSearch } from 'react-icons/fi';
 
 import Fuse from 'fuse.js';
 import { useNavigate } from 'react-router-dom'; // for dynamic routing
-import allContent from '../constants/content'; // file with flattened data
+import cleanContent from '../constants/content'; // file with flattened data
 
 import { scrollAndHighlight } from '../utils/scrollAndHighlight';
 import { Highlight } from './common';
+import { getElementYPosition } from '../utils/common';
+
+const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 const SearchBar = ({ searchQuery, setSearchQuery, results, setResults, navigate, handleSearch }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -25,8 +28,12 @@ const SearchBar = ({ searchQuery, setSearchQuery, results, setResults, navigate,
 
     setTimeout(() => {
       const el = document.getElementById(hash);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 200);
+      const scrollOffset = 200; // change based on your fixed navbar height
+      if (el) {
+        const top = getElementYPosition(el, scrollOffset);
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }, 300);
   };
 
   return (
@@ -53,7 +60,7 @@ const SearchBar = ({ searchQuery, setSearchQuery, results, setResults, navigate,
               const snippetEnd = Math.min(result.text.length, index + 70);
               const rawSnippet = result.text.substring(snippetStart, snippetEnd);
               const highlightedSnippet = rawSnippet.replace(
-                new RegExp(`(${searchQuery})`, 'gi'),
+                new RegExp(`(${escapeRegExp(searchQuery)})`, 'gi'),
                 '<mark>$1</mark>'
               );
 
@@ -107,14 +114,14 @@ const SearchBar = ({ searchQuery, setSearchQuery, results, setResults, navigate,
 
         {results.length > 0 && (
           <div className="absolute right-0 top-10 w-[300px] bg-white border border-gray-300 rounded-md shadow-lg max-h-64 overflow-y-auto z-50">
-            {results.slice(0, 6).map((result, idx) => {
+            {results.map((result, idx) => { //results.slice(0, 6)
               const query = searchQuery.toLowerCase();
               const index = result.text.toLowerCase().indexOf(query);
               const snippetStart = Math.max(0, index - 30);
               const snippetEnd = Math.min(result.text.length, index + 70);
               const rawSnippet = result.text.substring(snippetStart, snippetEnd);
               const highlightedSnippet = rawSnippet.replace(
-                new RegExp(`(${searchQuery})`, 'gi'),
+                new RegExp(`(${escapeRegExp(searchQuery)})`, 'gi'),
                 '<mark>$1</mark>'
               );
 
@@ -147,17 +154,24 @@ const Navbar = () => {
   const [results, setResults] = useState([]);
   const navigate = useNavigate();
 
-  const fuse = new Fuse(allContent, {
+  const fuse = new Fuse(cleanContent, {
     keys: ['title', 'text'],
-    threshold: 0.3,
-  });
+    threshold: 0.2,
+    ignoreLocation: true,
+    includeScore: true,
+    includeMatches: true,
+});
 
   const handleSearch = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
     if (query.trim()) {
       const matches = fuse.search(query);
-      setResults(matches.map(match => match.item));
+      const exactMatches = matches
+        .filter(match => match.item.text.toLowerCase().includes(query.toLowerCase()))
+        .map(match => match.item);
+
+      setResults(exactMatches);
     } else {
       setResults([]);
     }

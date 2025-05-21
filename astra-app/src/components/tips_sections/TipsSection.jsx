@@ -43,6 +43,7 @@ const WrappedLinkAuthDescription = ({ doc, direction }) => {
         : 
         "col-span-6"}
       `}
+      id={doc.id}
     >
       <WrapLinkAuthDescription doc={doc} direction={direction} />
     </div>

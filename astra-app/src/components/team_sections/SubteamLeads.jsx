@@ -25,16 +25,11 @@ const SubteamProfileCard = ({ index, profile }) => {
               onClick={() => {
                 const element = document.getElementById(title.id);
                 const topPos = getElementYPosition(element, 60);
-                //const topPos = element.offsetTop;
       
                 window.scrollTo({
                     top: topPos,
                     behavior: 'smooth'
                 });
-                // if (element) {
-                //   element.scrollIntoView({ behavior: 'smooth' });
-                //   //window.location.hash = `#${about.id}`;
-                // }
               }}
             >
               <Highlight text={title.title} />

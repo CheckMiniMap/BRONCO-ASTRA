@@ -56,27 +56,26 @@ const timelineElements = () => {
 
 // Tips - Section
 const tipsSections = (teams) => {
-  const teamsContent = teams.map(t => {
+  return teams.flatMap(t => {
     const head = {
-      title: "Tips - " + t.header,
-      text: t.header,
-      url: "/tips#" + t.id
+      title: t.header ? "Tips - " + t.header : '',
+      text: t.header ?? '',
+      url: "/tips#" + (t.id ?? '')
     };
 
-    const sections = t.sections.map(s => {
-      const details = s.details ? s.details : '';
+    const sections = (t.sections || []).map(s => {
+      const details = s.details ?? '';
       return {
-        title: "Tips - " + s.linkText,
-        text: [s.linkText, s.author, details, s.description].join(' '),
-        url: "/tips#" + s.id
-      }
+        title: "Tips - " + (s.linkText ?? 'Untitled'),
+        text: [s.linkText, s.author, details, s.description].filter(Boolean).join(' '),
+        url: "/tips#" + (s.id ?? '')
+      };
     });
 
     return [head, ...sections];
-  })
+  });
+};
 
-  return teamsContent;
-}
 
 
 const allContent = [
@@ -152,37 +151,37 @@ const allContent = [
   // teams
   {
     title: "Team - UAV Design",
-    text: allTeams.find(t => t.team === "UAV Design"),
+    text: allTeams.find(t => t.team === "UAV Design").content,
     url: "/team#uav-design"
   },
   {
     title: "Team - Electrical Integration",
-    text: allTeams.find(t => t.team === "Electrical Integration"),
+    text: allTeams.find(t => t.team === "Electrical Integration").content,
     url: "/team#electrical-integration"
   },
   {
     title: "Team - Autonomous Navigation",
-    text: allTeams.find(t => t.team === "Autonomous Navigation"),
+    text: allTeams.find(t => t.team === "Autonomous Navigation").content,
     url: "/team#autonomous-navigation"
   },
   {
     title: "Team - Payload",
-    text: allTeams.find(t => t.team === "Payload"),
+    text: allTeams.find(t => t.team === "Payload").content,
     url: "/team#payload"
   },
   {
     title: "Team - Object Recognition",
-    text: allTeams.find(t => t.team === "Object Recognition"),
+    text: allTeams.find(t => t.team === "Object Recognition").content,
     url: "/team#object-recognition"
   },
   {
     title: "Team - Obstacle Avoidance",
-    text: allTeams.find(t => t.team === "Obstacle Avoidance"),
+    text: allTeams.find(t => t.team === "Obstacle Avoidance").content,
     url: "/team#obstacle-avoidance"
   },
   {
     title: "Team - Systems",
-    text: allTeams.find(t => t.team === "Systems"),
+    text: allTeams.find(t => t.team === "Systems").content,
     url: "/team#systems"
   },
   // teams - advisor + sponsors
@@ -475,4 +474,22 @@ const allContent = [
   }
 ];
 
-export default allContent;
+const cleanContent = allContent
+  .filter(c => c && typeof c === 'object')
+  .map(c => ({
+    title: typeof c.title === 'string' ? c.title : '',
+    text: typeof c.text === 'string' ? c.text : '',
+    url: c.url || ''
+  }));
+
+// console.log("🔍 Validated Search Content:");
+// cleanContent.forEach((item, index) => {
+//   if (!item.title || !item.text || !item.url) {
+//     console.warn(`⚠️ Entry #${index} may be incomplete:`, item);
+//   } else {
+//     console.log(`✅ Entry #${index}:`, item);
+//   }
+// });
+
+
+export default cleanContent;
