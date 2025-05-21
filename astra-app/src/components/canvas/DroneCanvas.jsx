@@ -1,88 +1,81 @@
-import React, { Suspense, useRef, useEffect } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { Center, Preload, useGLTF } from '@react-three/drei';
+import React, { Suspense, useState, useEffect, useRef } from 'react';
+import { Canvas, useThree } from '@react-three/fiber';
+import { OrbitControls, Center, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
-import * as THREE from 'three';
+
+const ForceInitialRender = () => {
+  const { invalidate } = useThree();
+  useEffect(() => {
+    invalidate();
+  }, []);
+  return null;
+};
+
 
 const Drone = ({ droneRef }) => {
   const drone = useGLTF('./model/drone.glb');
-
   return (
     <primitive
       ref={droneRef}
       object={drone.scene}
       scale={1}
-      position={[0, 0, 0]} // keep it at center
+      position={[0, 0, 0]}
     />
   );
 };
 
-function Controls() {
-  const controlsRef = useRef();
-  const { camera, gl, scene } = useThree();
-
-  useEffect(() => {
-    const controls = new OrbitControls(camera, gl.domElement);
-    controlsRef.current = controls;
-
-    // Focus the camera on the center of the model
-    const box = new THREE.Box3().setFromObject(scene);
-    const center = new THREE.Vector3();
-    box.getCenter(center);
-    controls.target.copy(center);
-    controls.update();
-
-    // Lock vertical orbit range
-    controls.minPolarAngle = Math.PI / 2.3;
-    controls.maxPolarAngle = Math.PI / 2.3;
-
-    // Disable zoom and pan
-    controls.enableZoom = true;
-    controls.enablePan = false;
-
-    // ✅ Enable auto-rotation
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 2.0; // Adjust for faster/slower spin
-
-    return () => {
-      controls.dispose();
-    };
-  }, [camera, gl, scene]);
-
-  useFrame(() => {
-    controlsRef.current?.update();
-  });
-
-  return null;
-}
-
 function DroneCanvas() {
   const droneRef = useRef();
+  const canvasWrapperRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+
+    if (canvasWrapperRef.current) observer.observe(canvasWrapperRef.current);
+
+    return () => {
+      if (canvasWrapperRef.current) observer.unobserve(canvasWrapperRef.current);
+    };
+  }, []);
+
 
   return (
-    <Canvas
-      shadows
-      frameloop='always'
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: 35,
-        near: 1.1,
-        far: 500,
-        position: [50, 15, -10],
-      }}
-    >
-      <ambientLight intensity={0.8} />
-      <pointLight position={[10, 10, 10]} />
-      <Center>
-        <Drone />
-        {/* <Suspense fallback={<CanvasLoader />}>
-          <Drone droneRef={droneRef} />
+    <div ref={canvasWrapperRef} className="h-full">
+      <Canvas
+        shadows
+        frameloop="demand"
+        gl={{ preserveDrawingBuffer: true }}
+        camera={{
+          fov: 35,
+          near: 1.1,
+          far: 500,
+          position: [50, 15, -10],
+        }}
+      >
+        <ambientLight intensity={0.8} />
+        <pointLight position={[10, 10, 10]} />
+        <Suspense fallback={<CanvasLoader />}>
+          <Center>
+            <Drone droneRef={droneRef} />
+          </Center>
+          <OrbitControls
+            enableZoom={true}
+            enablePan={false}
+            minPolarAngle={Math.PI / 2.3}
+            maxPolarAngle={Math.PI / 2.3}
+            autoRotate={isVisible}         // 👈 Animate only when visible
+            autoRotateSpeed={2}
+          />
           <Preload all />
-       </Suspense> */}
-      </Center>
-      <Controls />
-    </Canvas>
+          <ForceInitialRender />
+        </Suspense>
+      </Canvas>
+    </div>
   );
 }
 
