@@ -12,7 +12,7 @@ import { Highlight } from './common';
 const Carousel = () => {
   return (
     <>
-      <Swiper
+      {/* <Swiper
         cssMode={true}
         navigation={true}
         pagination={true}
@@ -25,6 +25,23 @@ const Carousel = () => {
         loop={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="" // mySwiper
+      > */}
+      <Swiper
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+          waitForTransition: true,
+        }}
+        loop={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+        onSlideChange={(swiper) => {
+          swiper.autoplay.stop();
+          swiper.autoplay.start();
+        }}
       >
         <SwiperSlide>
           <img src={carousel1} alt="Slide 1" className="object-[20%_80%]" />
@@ -34,27 +51,6 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={carousel3} alt="Slide 3" className="object-top" />
-        {/* <div className="absolute md:top-8 top-5 md:left-27 left-15 font-medium md:text-7xl text-3xl text-left text-white z-2">
-          <h1 className="font-playfair">Quick</h1>
-          <h1 className="font-playfair pt-1">& Easy</h1>
-          <div 
-            className="flex justify-center items-center w-35 h-10 border-1 border-white 
-            hover:bg-white hover:text-black duration-300 ease-in-out mt-3 cursor-pointer"
-            onClick={() => {
-              const element = document.getElementById("about");
-              if (element) {
-                const offset = element.offsetTop; // Get the element's position relative to the top of the page
-                window.scrollTo({
-                  top: offset,
-                  behavior: 'smooth', // Use 'smooth' for a smooth scroll effect
-                });
-                //element.scrollIntoView({ behavior: 'instant', block: 'start' });
-              }
-            }}
-          >
-            <h3 className="font-playfair font-normal text-lg">Read More</h3>
-          </div>
-        </div> */}
         </SwiperSlide>
       </Swiper>
     </>
