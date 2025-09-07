@@ -1194,8 +1194,8 @@ const timeline = {
   id: "timeline-hero",
   header: "Our Timeline",
   description: "A chronological snapshot of our team's progress, decisions, and engineering milestones as we prepare for SUAS 2025.",
-  img: timelineherocalpoly, //timelinehero
-  alt: "Cal Poly Logo",
+  img: timelinehero, //timelineherocalpoly
+  alt: "Drone View Road In Forest", //"Cal Poly Logo"
   elements: [
     {
       id: "astra-first-meeting",

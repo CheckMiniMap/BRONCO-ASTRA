@@ -130,7 +130,7 @@ const TimelineSection = () => {
     <>
       <div className="w-full flex justify-center" id={timeline.id}>
         <motion.div 
-          variants={textVariant()} // bg-blue-300 bg-opacity-90 rounded-lg shadow-md backdrop-blur-sm
+          variants={textVariant()}
           className="absolute lg:w-[70%] w-[85%] grid grid-cols-1 justify-center 
             backdrop-blur-md bg-[#1e3a8a]/40 border border-white/20 rounded-xl shadow-xl p-6
             lg:px-20 px-5 lg:py-10 py-3 z-1"
@@ -147,26 +147,27 @@ const TimelineSection = () => {
 
         <motion.div 
           variants={fadeIn("up", "spring", 0.3, 0.5)}
-          className="relative w-full flex justify-center items-center sm:aspect-[2.4] aspect-[2] lg:mt-25 sm:mt-12 mt-17 z-0"
-          // ~timelinehero
-          // "relative w-full sm:aspect-[2.4] aspect-[2] lg:mt-25 sm:mt-12 mt-17 z-0"
+          className="relative w-full sm:aspect-[2.4] aspect-[2] lg:mt-25 sm:mt-12 mt-17 z-0"
+          // ~Cal Poly Logo
+          //className="relative w-full flex justify-center items-center sm:aspect-[2.4] aspect-[2] lg:mt-25 sm:mt-12 mt-17 z-0"
         >
           <img
             src={timeline.img}
             alt={timeline.alt}
-            className="w-full object-cover scale-75" 
-            // ~timelinehero
-            // "w-full sm:aspect-[2.4] aspect-[2] object-cover" 
+            className="w-full sm:aspect-[2.4] aspect-[2] object-cover"
+            //~Cal Poly Logo
+            // className="w-full object-cover scale-75"
           />
-          {/* <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" /> */}
           
-          {/* ~timelinehero 
-          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 via-transparent to-transparent" /> */}
+          {/* Timeline Hero Gradients */}
+          <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 via-transparent to-transparent" />
+          
         </motion.div>
         
       </div>
 
-      <div className="flex flex-col"
+      <div className="mt-20 flex flex-col"
         // ~timelinehero "mt-20 flex flex-col"
       >
         <motion.div
